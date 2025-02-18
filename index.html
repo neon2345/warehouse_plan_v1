@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>仓库规划方案图</title>
+    <title>多仓库选址方案图</title>
     <style>
         /* 重置所有默认样式 */
         * {
@@ -220,7 +220,6 @@
             
             // 获取仓库信息和分配信息
             const warehouseInfo = clusterData.warehouses[warehouseCity];
-            // 过滤出当前仓库负责的所有配送任务
             const assignments = clusterData.assignments.filter(a => a.warehouse === warehouseCity && a.city !== warehouseCity);
             
             // 显示仓库信息窗口
@@ -243,20 +242,30 @@
             infoWindow.open(map);
             infoWindows.push(infoWindow);
             
-            // 为每个目标城市创建路线
+            // 为每个目标城市创建路线和标记
             assignments.forEach(assignment => {
-                // 创建路线
+                // 创建路线（仅用于显示，不再添加点击事件）
                 const path = [
-                    [warehouseInfo.longitude, warehouseInfo.latitude],  // 仓库位置
-                    [assignment.longitude, assignment.latitude]          // 目标城市位置
+                    [warehouseInfo.longitude, warehouseInfo.latitude],
+                    [assignment.longitude, assignment.latitude]
                 ];
                 
-                // 创建路线对象
                 const route = new AMap.Polyline({
                     path: path,
                     strokeColor: '#1890ff',
                     strokeWeight: 2,
                     strokeOpacity: 0.8,
+                    zIndex: 100
+                });
+                
+                route.setMap(map);
+                currentRoutes.push(route);
+
+                // 创建目标城市的标记，并添加点击事件
+                const marker = new AMap.Marker({
+                    position: [assignment.longitude, assignment.latitude],
+                    content: '<div class="warehouse-marker" style="background-color: #1890ff;"></div>',
+                    offset: new AMap.Pixel(-8, -8),
                     zIndex: 100,
                     extData: {
                         warehouse: warehouseCity,
@@ -267,9 +276,8 @@
                         totalCost: assignment.totalCost
                     }
                 });
-                
-                // 添加点击事件
-                route.on('click', (e) => {
+
+                marker.on('click', (e) => {
                     const data = e.target.getExtData();
                     const content = `
                         <div class="route-info-window">
@@ -283,17 +291,16 @@
                     
                     const infoWindow = new AMap.InfoWindow({
                         content: content,
-                        position: e.lnglat,
+                        position: e.target.getPosition(),
                         offset: new AMap.Pixel(0, -20)
                     });
                     
                     infoWindow.open(map);
                     infoWindows.push(infoWindow);
                 });
-                
-                // 将路线添加到地图
-                route.setMap(map);
-                currentRoutes.push(route);
+
+                marker.setMap(map);
+                currentPolygons.push(marker);
             });
         }
 
