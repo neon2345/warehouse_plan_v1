@@ -2,19 +2,10 @@ const warehouseData = {
   "云南": {
     "totalCost": 143021.0,
     "center": {
-      "longitude": 101.29023556249999,
-      "latitude": 24.889321187500002
+      "longitude": 101.29023556250002,
+      "latitude": 24.8893211875
     },
     "warehouses": {
-      "大理白族自治州": {
-        "longitude": 100.267608,
-        "latitude": 25.606548,
-        "hasOvertime": true,
-        "totalCost": 39251.3,
-        "cityCount": 7,
-        "totalTrips": 40.0,
-        "avgDuration": 2.5285714285714285
-      },
       "玉溪市": {
         "longitude": 102.526673,
         "latitude": 24.346786,
@@ -23,6 +14,15 @@ const warehouseData = {
         "cityCount": 9,
         "totalTrips": 128.0,
         "avgDuration": 3.2088888888888887
+      },
+      "大理白族自治州": {
+        "longitude": 100.267608,
+        "latitude": 25.606548,
+        "hasOvertime": true,
+        "totalCost": 39251.3,
+        "cityCount": 7,
+        "totalTrips": 40.0,
+        "avgDuration": 2.5285714285714285
       }
     },
     "assignments": [
@@ -33,7 +33,7 @@ const warehouseData = {
         "latitude": 25.606548,
         "trips": 12.0,
         "duration": 0.0,
-        "cost": 6240.0,
+        "cost": 520.0,
         "totalCost": 6240.0,
         "isWarehouse": true
       },
@@ -44,7 +44,7 @@ const warehouseData = {
         "latitude": 25.045678,
         "trips": 5.0,
         "duration": 2.13,
-        "cost": 4511.5,
+        "cost": 902.3,
         "totalCost": 4511.5,
         "isWarehouse": false
       },
@@ -55,7 +55,7 @@ const warehouseData = {
         "latitude": 26.855165,
         "trips": 7.0,
         "duration": 2.42,
-        "cost": 6401.5,
+        "cost": 914.5,
         "totalCost": 6401.5,
         "isWarehouse": false
       },
@@ -66,7 +66,7 @@ const warehouseData = {
         "latitude": 25.112018,
         "trips": 5.0,
         "duration": 2.48,
-        "cost": 4644.5,
+        "cost": 928.9,
         "totalCost": 4644.5,
         "isWarehouse": false
       },
@@ -88,7 +88,7 @@ const warehouseData = {
         "latitude": 27.819149,
         "trips": 2.0,
         "duration": 3.55,
-        "cost": 3121.2,
+        "cost": 1560.6,
         "totalCost": 3121.2,
         "isWarehouse": false
       },
@@ -99,7 +99,7 @@ const warehouseData = {
         "latitude": 24.433146,
         "trips": 8.0,
         "duration": 4.09,
-        "cost": 13145.6,
+        "cost": 1643.2,
         "totalCost": 13145.6,
         "isWarehouse": false
       },
@@ -110,7 +110,7 @@ const warehouseData = {
         "latitude": 24.346786,
         "trips": 10.0,
         "duration": 0.0,
-        "cost": 5200.0,
+        "cost": 520.0,
         "totalCost": 5200.0,
         "isWarehouse": true
       },
@@ -121,7 +121,7 @@ const warehouseData = {
         "latitude": 24.88149,
         "trips": 78.0,
         "duration": 1.05,
-        "cost": 40560.0,
+        "cost": 520.0,
         "totalCost": 40560.0,
         "isWarehouse": false
       },
@@ -132,7 +132,7 @@ const warehouseData = {
         "latitude": 23.363129,
         "trips": 11.0,
         "duration": 2.52,
-        "cost": 10478.6,
+        "cost": 952.6,
         "totalCost": 10478.6,
         "isWarehouse": false
       },
@@ -143,7 +143,7 @@ const warehouseData = {
         "latitude": 25.490866,
         "trips": 12.0,
         "duration": 2.59,
-        "cost": 13840.8,
+        "cost": 1153.3999999999999,
         "totalCost": 13840.8,
         "isWarehouse": false
       },
@@ -154,7 +154,7 @@ const warehouseData = {
         "latitude": 23.400983,
         "trips": 6.0,
         "duration": 3.57,
-        "cost": 9466.2,
+        "cost": 1577.7,
         "totalCost": 9466.2,
         "isWarehouse": false
       },
@@ -176,7 +176,7 @@ const warehouseData = {
         "latitude": 23.884175,
         "trips": 2.0,
         "duration": 4.59,
-        "cost": 4180.6,
+        "cost": 2090.3,
         "totalCost": 4180.6,
         "isWarehouse": false
       },
@@ -198,7 +198,7 @@ const warehouseData = {
         "latitude": 22.009037,
         "trips": 7.0,
         "duration": 5.63,
-        "cost": 16159.5,
+        "cost": 2308.5,
         "totalCost": 16159.5,
         "isWarehouse": false
       }
@@ -207,7 +207,7 @@ const warehouseData = {
   "京津冀": {
     "totalCost": 1027376.1,
     "center": {
-      "longitude": 116.1528588125,
+      "longitude": 116.15285881249999,
       "latitude": 38.8699654375
     },
     "warehouses": {
@@ -220,15 +220,6 @@ const warehouseData = {
         "totalTrips": 380.0,
         "avgDuration": 1.4633333333333336
       },
-      "唐山市": {
-        "longitude": 118.180149,
-        "latitude": 39.63068,
-        "hasOvertime": false,
-        "totalCost": 119368.8,
-        "cityCount": 3,
-        "totalTrips": 173.0,
-        "avgDuration": 1.4166666666666667
-      },
       "廊坊市": {
         "longitude": 116.683546,
         "latitude": 39.538304,
@@ -237,6 +228,15 @@ const warehouseData = {
         "cityCount": 7,
         "totalTrips": 1027.0,
         "avgDuration": 1.695714285714286
+      },
+      "唐山市": {
+        "longitude": 118.180149,
+        "latitude": 39.63068,
+        "hasOvertime": false,
+        "totalCost": 119368.8,
+        "cityCount": 3,
+        "totalTrips": 173.0,
+        "avgDuration": 1.4166666666666667
       }
     },
     "assignments": [
@@ -247,7 +247,7 @@ const warehouseData = {
         "latitude": 39.63068,
         "trips": 92.0,
         "duration": 0.0,
-        "cost": 47840.0,
+        "cost": 520.0,
         "totalCost": 47840.0,
         "isWarehouse": true
       },
@@ -258,7 +258,7 @@ const warehouseData = {
         "latitude": 39.888243,
         "trips": 43.0,
         "duration": 1.85,
-        "cost": 33737.8,
+        "cost": 784.6,
         "totalCost": 33737.8,
         "isWarehouse": false
       },
@@ -269,7 +269,7 @@ const warehouseData = {
         "latitude": 40.952942,
         "trips": 38.0,
         "duration": 2.4,
-        "cost": 37791.0,
+        "cost": 994.5,
         "totalCost": 37791.0,
         "isWarehouse": false
       },
@@ -280,7 +280,7 @@ const warehouseData = {
         "latitude": 39.538304,
         "trips": 113.0,
         "duration": 0.0,
-        "cost": 58760.0,
+        "cost": 520.0,
         "totalCost": 58760.0,
         "isWarehouse": true
       },
@@ -291,7 +291,7 @@ const warehouseData = {
         "latitude": 39.904179,
         "trips": 385.0,
         "duration": 1.23,
-        "cost": 200200.0,
+        "cost": 520.0,
         "totalCost": 200200.0,
         "isWarehouse": false
       },
@@ -313,7 +313,7 @@ const warehouseData = {
         "latitude": 39.085318,
         "trips": 187.0,
         "duration": 1.46,
-        "cost": 97240.0,
+        "cost": 520.0,
         "totalCost": 97240.0,
         "isWarehouse": false
       },
@@ -324,7 +324,7 @@ const warehouseData = {
         "latitude": 38.874476,
         "trips": 129.0,
         "duration": 2.09,
-        "cost": 102684.0,
+        "cost": 796.0,
         "totalCost": 102684.0,
         "isWarehouse": false
       },
@@ -335,7 +335,7 @@ const warehouseData = {
         "latitude": 38.304676,
         "trips": 126.0,
         "duration": 2.15,
-        "cost": 104013.0,
+        "cost": 825.5,
         "totalCost": 104013.0,
         "isWarehouse": false
       },
@@ -346,7 +346,7 @@ const warehouseData = {
         "latitude": 40.768931,
         "trips": 86.0,
         "duration": 3.55,
-        "cost": 108953.4,
+        "cost": 1266.8999999999999,
         "totalCost": 108953.4,
         "isWarehouse": false
       },
@@ -357,7 +357,7 @@ const warehouseData = {
         "latitude": 37.060227,
         "trips": 81.0,
         "duration": 0.0,
-        "cost": 42120.0,
+        "cost": 520.0,
         "totalCost": 42120.0,
         "isWarehouse": true
       },
@@ -368,7 +368,7 @@ const warehouseData = {
         "latitude": 36.625849,
         "trips": 95.0,
         "duration": 0.9,
-        "cost": 49400.0,
+        "cost": 520.0,
         "totalCost": 49400.0,
         "isWarehouse": false
       },
@@ -379,7 +379,7 @@ const warehouseData = {
         "latitude": 38.042007,
         "trips": 155.0,
         "duration": 1.74,
-        "cost": 103834.5,
+        "cost": 669.9,
         "totalCost": 103834.5,
         "isWarehouse": false
       },
@@ -390,7 +390,7 @@ const warehouseData = {
         "latitude": 37.739367,
         "trips": 47.0,
         "duration": 1.95,
-        "cost": 38347.3,
+        "cost": 815.9000000000001,
         "totalCost": 38347.3,
         "isWarehouse": false
       },
@@ -422,7 +422,7 @@ const warehouseData = {
     "totalCost": 149126.3,
     "center": {
       "longitude": 111.15416599999999,
-      "latitude": 40.516681
+      "latitude": 40.516681000000005
     },
     "warehouses": {
       "包头市": {
@@ -443,7 +443,7 @@ const warehouseData = {
         "latitude": 40.621327,
         "trips": 50.0,
         "duration": 0.0,
-        "cost": 26000.0,
+        "cost": 520.0,
         "totalCost": 26000.0,
         "isWarehouse": true
       },
@@ -454,7 +454,7 @@ const warehouseData = {
         "latitude": 39.608744,
         "trips": 50.0,
         "duration": 1.65,
-        "cost": 34500.0,
+        "cost": 690.0,
         "totalCost": 34500.0,
         "isWarehouse": false
       },
@@ -465,7 +465,7 @@ const warehouseData = {
         "latitude": 40.842127,
         "trips": 63.0,
         "duration": 1.9,
-        "cost": 55566.0,
+        "cost": 882.0,
         "totalCost": 55566.0,
         "isWarehouse": false
       },
@@ -476,7 +476,7 @@ const warehouseData = {
         "latitude": 40.994526,
         "trips": 21.0,
         "duration": 3.32,
-        "cost": 33060.3,
+        "cost": 1574.3000000000002,
         "totalCost": 33060.3,
         "isWarehouse": false
       }
@@ -485,8 +485,8 @@ const warehouseData = {
   "吉林": {
     "totalCost": 308243.8,
     "center": {
-      "longitude": 125.56074225000002,
-      "latitude": 43.507989583333334
+      "longitude": 125.56074224999999,
+      "latitude": 43.50798958333334
     },
     "warehouses": {
       "长春市": {
@@ -516,7 +516,7 @@ const warehouseData = {
         "latitude": 42.909426,
         "trips": 40.0,
         "duration": 0.0,
-        "cost": 20800.0,
+        "cost": 520.0,
         "totalCost": 20800.0,
         "isWarehouse": true
       },
@@ -538,7 +538,7 @@ const warehouseData = {
         "latitude": 43.816996,
         "trips": 123.0,
         "duration": 0.0,
-        "cost": 63960.0,
+        "cost": 520.0,
         "totalCost": 63960.0,
         "isWarehouse": true
       },
@@ -549,7 +549,7 @@ const warehouseData = {
         "latitude": 43.166764,
         "trips": 18.0,
         "duration": 1.42,
-        "cost": 11122.2,
+        "cost": 617.9000000000001,
         "totalCost": 11122.2,
         "isWarehouse": false
       },
@@ -560,7 +560,7 @@ const warehouseData = {
         "latitude": 42.887961,
         "trips": 10.0,
         "duration": 1.42,
-        "cost": 5914.0,
+        "cost": 591.4,
         "totalCost": 5914.0,
         "isWarehouse": false
       },
@@ -571,7 +571,7 @@ const warehouseData = {
         "latitude": 43.838132,
         "trips": 54.0,
         "duration": 1.44,
-        "cost": 32680.8,
+        "cost": 605.1999999999999,
         "totalCost": 32680.8,
         "isWarehouse": false
       },
@@ -593,7 +593,7 @@ const warehouseData = {
         "latitude": 45.14191,
         "trips": 52.0,
         "duration": 2.03,
-        "cost": 46321.6,
+        "cost": 890.8,
         "totalCost": 46321.6,
         "isWarehouse": false
       },
@@ -604,7 +604,7 @@ const warehouseData = {
         "latitude": 41.728312,
         "trips": 23.0,
         "duration": 2.75,
-        "cost": 31735.4,
+        "cost": 1379.8,
         "totalCost": 31735.4,
         "isWarehouse": false
       },
@@ -615,7 +615,7 @@ const warehouseData = {
         "latitude": 41.944132,
         "trips": 17.0,
         "duration": 2.75,
-        "cost": 23296.8,
+        "cost": 1370.3999999999999,
         "totalCost": 23296.8,
         "isWarehouse": false
       },
@@ -626,7 +626,7 @@ const warehouseData = {
         "latitude": 45.620131,
         "trips": 20.0,
         "duration": 3.67,
-        "cost": 36406.0,
+        "cost": 1820.3,
         "totalCost": 36406.0,
         "isWarehouse": false
       },
@@ -637,7 +637,7 @@ const warehouseData = {
         "latitude": 46.082373,
         "trips": 15.0,
         "duration": 4.7,
-        "cost": 34432.5,
+        "cost": 2295.5,
         "totalCost": 34432.5,
         "isWarehouse": false
       }
@@ -646,19 +646,10 @@ const warehouseData = {
   "山东": {
     "totalCost": 944500.9,
     "center": {
-      "longitude": 118.22740162500003,
-      "latitude": 36.381881687500005
+      "longitude": 118.227401625,
+      "latitude": 36.3818816875
     },
     "warehouses": {
-      "泰安市": {
-        "longitude": 117.086963,
-        "latitude": 36.201784,
-        "hasOvertime": false,
-        "totalCost": 516905.39999999997,
-        "cityCount": 10,
-        "totalTrips": 734.0,
-        "avgDuration": 1.721
-      },
       "青岛市": {
         "longitude": 120.382665,
         "latitude": 36.066938,
@@ -667,6 +658,15 @@ const warehouseData = {
         "cityCount": 6,
         "totalTrips": 507.0,
         "avgDuration": 2.146666666666667
+      },
+      "泰安市": {
+        "longitude": 117.086963,
+        "latitude": 36.201784,
+        "hasOvertime": false,
+        "totalCost": 516905.39999999997,
+        "cityCount": 10,
+        "totalTrips": 734.0,
+        "avgDuration": 1.721
       }
     },
     "assignments": [
@@ -677,7 +677,7 @@ const warehouseData = {
         "latitude": 36.201784,
         "trips": 57.0,
         "duration": 0.0,
-        "cost": 29640.0,
+        "cost": 520.0,
         "totalCost": 29640.0,
         "isWarehouse": true
       },
@@ -688,7 +688,7 @@ const warehouseData = {
         "latitude": 36.652069,
         "trips": 297.0,
         "duration": 1.11,
-        "cost": 154440.0,
+        "cost": 520.0,
         "totalCost": 154440.0,
         "isWarehouse": false
       },
@@ -699,7 +699,7 @@ const warehouseData = {
         "latitude": 35.415117,
         "trips": 75.0,
         "duration": 1.65,
-        "cost": 51307.5,
+        "cost": 684.1,
         "totalCost": 51307.5,
         "isWarehouse": false
       },
@@ -710,7 +710,7 @@ const warehouseData = {
         "latitude": 37.436492,
         "trips": 41.0,
         "duration": 1.81,
-        "cost": 35124.7,
+        "cost": 856.6999999999999,
         "totalCost": 35124.7,
         "isWarehouse": false
       },
@@ -721,7 +721,7 @@ const warehouseData = {
         "latitude": 36.455857,
         "trips": 37.0,
         "duration": 1.84,
-        "cost": 25252.5,
+        "cost": 682.5,
         "totalCost": 25252.5,
         "isWarehouse": false
       },
@@ -732,7 +732,7 @@ const warehouseData = {
         "latitude": 36.813787,
         "trips": 70.0,
         "duration": 1.85,
-        "cost": 57120.0,
+        "cost": 816.0,
         "totalCost": 57120.0,
         "isWarehouse": false
       },
@@ -743,7 +743,7 @@ const warehouseData = {
         "latitude": 34.810858,
         "trips": 27.0,
         "duration": 1.85,
-        "cost": 24332.4,
+        "cost": 901.2,
         "totalCost": 24332.4,
         "isWarehouse": false
       },
@@ -754,7 +754,7 @@ const warehouseData = {
         "latitude": 35.103771,
         "trips": 53.0,
         "duration": 2.25,
-        "cost": 52719.1,
+        "cost": 994.6999999999999,
         "totalCost": 52719.1,
         "isWarehouse": false
       },
@@ -765,7 +765,7 @@ const warehouseData = {
         "latitude": 35.234309,
         "trips": 51.0,
         "duration": 2.41,
-        "cost": 57456.6,
+        "cost": 1126.6,
         "totalCost": 57456.6,
         "isWarehouse": false
       },
@@ -776,7 +776,7 @@ const warehouseData = {
         "latitude": 37.382687,
         "trips": 26.0,
         "duration": 2.44,
-        "cost": 29512.6,
+        "cost": 1135.1,
         "totalCost": 29512.6,
         "isWarehouse": false
       },
@@ -787,7 +787,7 @@ const warehouseData = {
         "latitude": 36.066938,
         "trips": 184.0,
         "duration": 0.0,
-        "cost": 95680.0,
+        "cost": 520.0,
         "totalCost": 95680.0,
         "isWarehouse": true
       },
@@ -798,7 +798,7 @@ const warehouseData = {
         "latitude": 36.707668,
         "trips": 101.0,
         "duration": 1.91,
-        "cost": 84153.2,
+        "cost": 833.1999999999999,
         "totalCost": 84153.2,
         "isWarehouse": false
       },
@@ -809,7 +809,7 @@ const warehouseData = {
         "latitude": 37.464551,
         "trips": 98.0,
         "duration": 2.41,
-        "cost": 111582.8,
+        "cost": 1138.6000000000001,
         "totalCost": 111582.8,
         "isWarehouse": false
       },
@@ -820,7 +820,7 @@ const warehouseData = {
         "latitude": 35.416912,
         "trips": 52.0,
         "duration": 2.54,
-        "cost": 35297.6,
+        "cost": 678.8,
         "totalCost": 35297.6,
         "isWarehouse": false
       },
@@ -831,7 +831,7 @@ const warehouseData = {
         "latitude": 37.433992,
         "trips": 33.0,
         "duration": 2.94,
-        "cost": 47315.4,
+        "cost": 1433.8,
         "totalCost": 47315.4,
         "isWarehouse": false
       },
@@ -842,7 +842,7 @@ const warehouseData = {
         "latitude": 37.513315,
         "trips": 39.0,
         "duration": 3.08,
-        "cost": 53566.5,
+        "cost": 1373.5,
         "totalCost": 53566.5,
         "isWarehouse": false
       }
@@ -851,19 +851,10 @@ const warehouseData = {
   "山西": {
     "totalCost": 71023.3,
     "center": {
-      "longitude": 112.45971236363638,
-      "latitude": 37.41645972727273
+      "longitude": 112.45971236363636,
+      "latitude": 37.41645972727272
     },
     "warehouses": {
-      "太原市": {
-        "longitude": 112.549656,
-        "latitude": 37.870451,
-        "hasOvertime": false,
-        "totalCost": 60315.4,
-        "cityCount": 7,
-        "totalTrips": 87.0,
-        "avgDuration": 1.6414285714285715
-      },
       "临汾市": {
         "longitude": 111.51931,
         "latitude": 36.088581,
@@ -872,6 +863,15 @@ const warehouseData = {
         "cityCount": 4,
         "totalTrips": 14.0,
         "avgDuration": 1.81
+      },
+      "太原市": {
+        "longitude": 112.549656,
+        "latitude": 37.870451,
+        "hasOvertime": false,
+        "totalCost": 60315.4,
+        "cityCount": 7,
+        "totalTrips": 87.0,
+        "avgDuration": 1.6414285714285715
       }
     },
     "assignments": [
@@ -882,7 +882,7 @@ const warehouseData = {
         "latitude": 36.088581,
         "trips": 4.0,
         "duration": 0.0,
-        "cost": 2080.0,
+        "cost": 520.0,
         "totalCost": 2080.0,
         "isWarehouse": true
       },
@@ -893,7 +893,7 @@ const warehouseData = {
         "latitude": 35.02667,
         "trips": 3.0,
         "duration": 1.88,
-        "cost": 2328.6,
+        "cost": 776.1999999999999,
         "totalCost": 2328.6,
         "isWarehouse": false
       },
@@ -904,7 +904,7 @@ const warehouseData = {
         "latitude": 36.195142,
         "trips": 4.0,
         "duration": 2.34,
-        "cost": 3608.0,
+        "cost": 902.0,
         "totalCost": 3608.0,
         "isWarehouse": false
       },
@@ -915,7 +915,7 @@ const warehouseData = {
         "latitude": 35.491315,
         "trips": 3.0,
         "duration": 3.02,
-        "cost": 2691.3,
+        "cost": 897.1,
         "totalCost": 2691.3,
         "isWarehouse": false
       },
@@ -926,7 +926,7 @@ const warehouseData = {
         "latitude": 37.870451,
         "trips": 28.0,
         "duration": 0.0,
-        "cost": 14560.0,
+        "cost": 520.0,
         "totalCost": 14560.0,
         "isWarehouse": true
       },
@@ -937,7 +937,7 @@ const warehouseData = {
         "latitude": 37.688006,
         "trips": 25.0,
         "duration": 0.68,
-        "cost": 13000.0,
+        "cost": 520.0,
         "totalCost": 13000.0,
         "isWarehouse": false
       },
@@ -948,7 +948,7 @@ const warehouseData = {
         "latitude": 38.415958,
         "trips": 3.0,
         "duration": 1.25,
-        "cost": 1560.0,
+        "cost": 520.0,
         "totalCost": 1560.0,
         "isWarehouse": false
       },
@@ -959,7 +959,7 @@ const warehouseData = {
         "latitude": 37.857094,
         "trips": 3.0,
         "duration": 1.66,
-        "cost": 1799.4,
+        "cost": 599.8000000000001,
         "totalCost": 1799.4,
         "isWarehouse": false
       },
@@ -970,7 +970,7 @@ const warehouseData = {
         "latitude": 37.518996,
         "trips": 20.0,
         "duration": 2.3,
-        "cost": 19224.0,
+        "cost": 961.2,
         "totalCost": 19224.0,
         "isWarehouse": false
       },
@@ -981,7 +981,7 @@ const warehouseData = {
         "latitude": 39.331734,
         "trips": 4.0,
         "duration": 2.43,
-        "cost": 4367.2,
+        "cost": 1091.8,
         "totalCost": 4367.2,
         "isWarehouse": false
       },
@@ -992,7 +992,7 @@ const warehouseData = {
         "latitude": 40.09711,
         "trips": 4.0,
         "duration": 3.17,
-        "cost": 5804.8,
+        "cost": 1451.2,
         "totalCost": 5804.8,
         "isWarehouse": false
       }
@@ -1001,7 +1001,7 @@ const warehouseData = {
   "川渝": {
     "totalCost": 1035426.5,
     "center": {
-      "longitude": 104.61214250000002,
+      "longitude": 104.61214249999999,
       "latitude": 30.12705136363637
     },
     "warehouses": {
@@ -1041,7 +1041,7 @@ const warehouseData = {
         "latitude": 27.881396,
         "trips": 49.0,
         "duration": 0.0,
-        "cost": 25480.0,
+        "cost": 520.0,
         "totalCost": 25480.0,
         "isWarehouse": true
       },
@@ -1052,7 +1052,7 @@ const warehouseData = {
         "latitude": 26.582417,
         "trips": 37.0,
         "duration": 2.96,
-        "cost": 40910.9,
+        "cost": 1105.7,
         "totalCost": 40910.9,
         "isWarehouse": false
       },
@@ -1063,7 +1063,7 @@ const warehouseData = {
         "latitude": 30.456354,
         "trips": 44.0,
         "duration": 0.0,
-        "cost": 22880.0,
+        "cost": 520.0,
         "totalCost": 22880.0,
         "isWarehouse": true
       },
@@ -1074,7 +1074,7 @@ const warehouseData = {
         "latitude": 30.837235,
         "trips": 80.0,
         "duration": 1.08,
-        "cost": 41600.0,
+        "cost": 520.0,
         "totalCost": 41600.0,
         "isWarehouse": false
       },
@@ -1085,7 +1085,7 @@ const warehouseData = {
         "latitude": 30.53268,
         "trips": 41.0,
         "duration": 1.41,
-        "cost": 25694.7,
+        "cost": 626.7,
         "totalCost": 25694.7,
         "isWarehouse": false
       },
@@ -1096,7 +1096,7 @@ const warehouseData = {
         "latitude": 29.563707,
         "trips": 322.0,
         "duration": 1.78,
-        "cost": 202280.4,
+        "cost": 628.1999999999999,
         "totalCost": 202280.4,
         "isWarehouse": false
       },
@@ -1107,7 +1107,7 @@ const warehouseData = {
         "latitude": 31.209278,
         "trips": 43.0,
         "duration": 2.22,
-        "cost": 37362.7,
+        "cost": 868.9,
         "totalCost": 37362.7,
         "isWarehouse": false
       },
@@ -1118,7 +1118,7 @@ const warehouseData = {
         "latitude": 31.867853,
         "trips": 25.0,
         "duration": 2.31,
-        "cost": 25227.5,
+        "cost": 1009.1,
         "totalCost": 25227.5,
         "isWarehouse": false
       },
@@ -1129,7 +1129,7 @@ const warehouseData = {
         "latitude": 32.435774,
         "trips": 29.0,
         "duration": 3.3,
-        "cost": 42867.8,
+        "cost": 1478.2,
         "totalCost": 42867.8,
         "isWarehouse": false
       },
@@ -1140,7 +1140,7 @@ const warehouseData = {
         "latitude": 30.572961,
         "trips": 321.0,
         "duration": 0.0,
-        "cost": 166920.0,
+        "cost": 520.0,
         "totalCost": 166920.0,
         "isWarehouse": true
       },
@@ -1151,7 +1151,7 @@ const warehouseData = {
         "latitude": 30.077113,
         "trips": 34.0,
         "duration": 0.98,
-        "cost": 17680.0,
+        "cost": 520.0,
         "totalCost": 17680.0,
         "isWarehouse": false
       },
@@ -1162,7 +1162,7 @@ const warehouseData = {
         "latitude": 30.129236,
         "trips": 22.0,
         "duration": 1.04,
-        "cost": 11440.0,
+        "cost": 520.0,
         "totalCost": 11440.0,
         "isWarehouse": false
       },
@@ -1173,7 +1173,7 @@ const warehouseData = {
         "latitude": 31.127449,
         "trips": 45.0,
         "duration": 1.2,
-        "cost": 23400.0,
+        "cost": 520.0,
         "totalCost": 23400.0,
         "isWarehouse": false
       },
@@ -1184,7 +1184,7 @@ const warehouseData = {
         "latitude": 30.009998,
         "trips": 31.0,
         "duration": 1.51,
-        "cost": 21126.5,
+        "cost": 681.5,
         "totalCost": 21126.5,
         "isWarehouse": false
       },
@@ -1195,7 +1195,7 @@ const warehouseData = {
         "latitude": 29.552275,
         "trips": 42.0,
         "duration": 1.58,
-        "cost": 29870.4,
+        "cost": 711.2,
         "totalCost": 29870.4,
         "isWarehouse": false
       },
@@ -1206,7 +1206,7 @@ const warehouseData = {
         "latitude": 31.467673,
         "trips": 73.0,
         "duration": 1.83,
-        "cost": 50800.7,
+        "cost": 695.9,
         "totalCost": 50800.7,
         "isWarehouse": false
       },
@@ -1217,7 +1217,7 @@ const warehouseData = {
         "latitude": 29.58021,
         "trips": 24.0,
         "duration": 1.93,
-        "cost": 21295.2,
+        "cost": 887.3000000000001,
         "totalCost": 21295.2,
         "isWarehouse": false
       },
@@ -1228,7 +1228,7 @@ const warehouseData = {
         "latitude": 29.33924,
         "trips": 32.0,
         "duration": 2.06,
-        "cost": 30956.8,
+        "cost": 967.4,
         "totalCost": 30956.8,
         "isWarehouse": false
       },
@@ -1239,7 +1239,7 @@ const warehouseData = {
         "latitude": 28.752354,
         "trips": 46.0,
         "duration": 2.66,
-        "cost": 56782.4,
+        "cost": 1234.4,
         "totalCost": 56782.4,
         "isWarehouse": false
       },
@@ -1250,7 +1250,7 @@ const warehouseData = {
         "latitude": 28.87098,
         "trips": 41.0,
         "duration": 2.88,
-        "cost": 55329.5,
+        "cost": 1349.5,
         "totalCost": 55329.5,
         "isWarehouse": false
       },
@@ -1261,7 +1261,7 @@ const warehouseData = {
         "latitude": 30.04952,
         "trips": 27.0,
         "duration": 3.13,
-        "cost": 36450.0,
+        "cost": 1350.0,
         "totalCost": 36450.0,
         "isWarehouse": false
       },
@@ -1272,7 +1272,7 @@ const warehouseData = {
         "latitude": 31.899427,
         "trips": 30.0,
         "duration": 3.92,
-        "cost": 49071.0,
+        "cost": 1635.7,
         "totalCost": 49071.0,
         "isWarehouse": false
       }
@@ -1281,19 +1281,10 @@ const warehouseData = {
   "广东": {
     "totalCost": 812431.1,
     "center": {
-      "longitude": 113.76031195238093,
+      "longitude": 113.76031195238097,
       "latitude": 22.991651095238097
     },
     "warehouses": {
-      "茂名市": {
-        "longitude": 110.925533,
-        "latitude": 21.662728,
-        "hasOvertime": false,
-        "totalCost": 77763.4,
-        "cityCount": 3,
-        "totalTrips": 132.0,
-        "avgDuration": 1.0466666666666666
-      },
       "东莞市": {
         "longitude": 113.751884,
         "latitude": 23.021016,
@@ -1302,6 +1293,15 @@ const warehouseData = {
         "cityCount": 13,
         "totalTrips": 532.0,
         "avgDuration": 1.6892307692307695
+      },
+      "茂名市": {
+        "longitude": 110.925533,
+        "latitude": 21.662728,
+        "hasOvertime": false,
+        "totalCost": 77763.4,
+        "cityCount": 3,
+        "totalTrips": 132.0,
+        "avgDuration": 1.0466666666666666
       },
       "揭阳市": {
         "longitude": 116.372732,
@@ -1321,7 +1321,7 @@ const warehouseData = {
         "latitude": 23.021016,
         "trips": 25.0,
         "duration": 0.0,
-        "cost": 13000.0,
+        "cost": 520.0,
         "totalCost": 13000.0,
         "isWarehouse": true
       },
@@ -1332,7 +1332,7 @@ const warehouseData = {
         "latitude": 23.130061,
         "trips": 30.0,
         "duration": 1.12,
-        "cost": 15600.0,
+        "cost": 520.0,
         "totalCost": 15600.0,
         "isWarehouse": false
       },
@@ -1343,7 +1343,7 @@ const warehouseData = {
         "latitude": 22.543527,
         "trips": 49.0,
         "duration": 1.27,
-        "cost": 25480.0,
+        "cost": 520.0,
         "totalCost": 25480.0,
         "isWarehouse": false
       },
@@ -1354,7 +1354,7 @@ const warehouseData = {
         "latitude": 23.112368,
         "trips": 118.0,
         "duration": 1.3,
-        "cost": 61360.0,
+        "cost": 520.0,
         "totalCost": 61360.0,
         "isWarehouse": false
       },
@@ -1365,7 +1365,7 @@ const warehouseData = {
         "latitude": 22.517024,
         "trips": 21.0,
         "duration": 1.35,
-        "cost": 10920.0,
+        "cost": 520.0,
         "totalCost": 10920.0,
         "isWarehouse": false
       },
@@ -1376,7 +1376,7 @@ const warehouseData = {
         "latitude": 23.021351,
         "trips": 22.0,
         "duration": 1.38,
-        "cost": 11440.0,
+        "cost": 520.0,
         "totalCost": 11440.0,
         "isWarehouse": false
       },
@@ -1387,7 +1387,7 @@ const warehouseData = {
         "latitude": 22.578948,
         "trips": 79.0,
         "duration": 1.6,
-        "cost": 48237.4,
+        "cost": 610.6,
         "totalCost": 48237.4,
         "isWarehouse": false
       },
@@ -1398,7 +1398,7 @@ const warehouseData = {
         "latitude": 22.271644,
         "trips": 24.0,
         "duration": 1.74,
-        "cost": 16188.0,
+        "cost": 674.5,
         "totalCost": 16188.0,
         "isWarehouse": false
       },
@@ -1409,7 +1409,7 @@ const warehouseData = {
         "latitude": 23.682064,
         "trips": 36.0,
         "duration": 1.84,
-        "cost": 25128.0,
+        "cost": 698.0,
         "totalCost": 25128.0,
         "isWarehouse": false
       },
@@ -1420,7 +1420,7 @@ const warehouseData = {
         "latitude": 23.744276,
         "trips": 55.0,
         "duration": 2.19,
-        "cost": 47916.0,
+        "cost": 871.2,
         "totalCost": 47916.0,
         "isWarehouse": false
       },
@@ -1431,7 +1431,7 @@ const warehouseData = {
         "latitude": 23.047747,
         "trips": 14.0,
         "duration": 2.36,
-        "cost": 11621.4,
+        "cost": 830.1,
         "totalCost": 11621.4,
         "isWarehouse": false
       },
@@ -1442,7 +1442,7 @@ const warehouseData = {
         "latitude": 22.915163,
         "trips": 12.0,
         "duration": 2.78,
-        "cost": 12868.8,
+        "cost": 1072.3999999999999,
         "totalCost": 12868.8,
         "isWarehouse": false
       },
@@ -1453,7 +1453,7 @@ const warehouseData = {
         "latitude": 24.810977,
         "trips": 47.0,
         "duration": 3.03,
-        "cost": 63506.4,
+        "cost": 1351.2,
         "totalCost": 63506.4,
         "isWarehouse": false
       },
@@ -1464,7 +1464,7 @@ const warehouseData = {
         "latitude": 23.550968,
         "trips": 88.0,
         "duration": 0.0,
-        "cost": 45760.0,
+        "cost": 520.0,
         "totalCost": 45760.0,
         "isWarehouse": true
       },
@@ -1475,7 +1475,7 @@ const warehouseData = {
         "latitude": 23.657662,
         "trips": 26.0,
         "duration": 0.93,
-        "cost": 13520.0,
+        "cost": 520.0,
         "totalCost": 13520.0,
         "isWarehouse": false
       },
@@ -1486,7 +1486,7 @@ const warehouseData = {
         "latitude": 23.354152,
         "trips": 2.0,
         "duration": 1.24,
-        "cost": 1040.0,
+        "cost": 520.0,
         "totalCost": 1040.0,
         "isWarehouse": false
       },
@@ -1497,7 +1497,7 @@ const warehouseData = {
         "latitude": 24.288832,
         "trips": 187.0,
         "duration": 1.75,
-        "cost": 106272.1,
+        "cost": 568.3000000000001,
         "totalCost": 106272.1,
         "isWarehouse": false
       },
@@ -1508,7 +1508,7 @@ const warehouseData = {
         "latitude": 22.787204,
         "trips": 232.0,
         "duration": 2.0,
-        "cost": 204809.6,
+        "cost": 882.8000000000001,
         "totalCost": 204809.6,
         "isWarehouse": false
       },
@@ -1519,7 +1519,7 @@ const warehouseData = {
         "latitude": 21.662728,
         "trips": 33.0,
         "duration": 0.0,
-        "cost": 17160.0,
+        "cost": 520.0,
         "totalCost": 17160.0,
         "isWarehouse": true
       },
@@ -1530,7 +1530,7 @@ const warehouseData = {
         "latitude": 21.270108,
         "trips": 41.0,
         "duration": 1.43,
-        "cost": 21320.0,
+        "cost": 520.0,
         "totalCost": 21320.0,
         "isWarehouse": false
       },
@@ -1541,7 +1541,7 @@ const warehouseData = {
         "latitude": 21.856853,
         "trips": 58.0,
         "duration": 1.71,
-        "cost": 39283.4,
+        "cost": 677.3000000000001,
         "totalCost": 39283.4,
         "isWarehouse": false
       }
@@ -1550,19 +1550,10 @@ const warehouseData = {
   "广西": {
     "totalCost": 508896.7,
     "center": {
-      "longitude": 109.14426885714285,
+      "longitude": 109.14426885714283,
       "latitude": 23.278474571428568
     },
     "warehouses": {
-      "南宁市": {
-        "longitude": 108.366407,
-        "latitude": 22.8177,
-        "hasOvertime": false,
-        "totalCost": 289457.5,
-        "cityCount": 8,
-        "totalTrips": 386.0,
-        "avgDuration": 1.84
-      },
       "柳州市": {
         "longitude": 109.428071,
         "latitude": 24.326442,
@@ -1571,6 +1562,15 @@ const warehouseData = {
         "cityCount": 6,
         "totalTrips": 266.0,
         "avgDuration": 1.8133333333333332
+      },
+      "南宁市": {
+        "longitude": 108.366407,
+        "latitude": 22.8177,
+        "hasOvertime": false,
+        "totalCost": 289457.5,
+        "cityCount": 8,
+        "totalTrips": 386.0,
+        "avgDuration": 1.84
       }
     },
     "assignments": [
@@ -1581,7 +1581,7 @@ const warehouseData = {
         "latitude": 22.8177,
         "trips": 170.0,
         "duration": 0.0,
-        "cost": 88400.0,
+        "cost": 520.0,
         "totalCost": 88400.0,
         "isWarehouse": true
       },
@@ -1592,7 +1592,7 @@ const warehouseData = {
         "latitude": 22.377139,
         "trips": 20.0,
         "duration": 1.57,
-        "cost": 13440.0,
+        "cost": 672.0,
         "totalCost": 13440.0,
         "isWarehouse": false
       },
@@ -1603,7 +1603,7 @@ const warehouseData = {
         "latitude": 21.980894,
         "trips": 28.0,
         "duration": 1.7,
-        "cost": 18328.8,
+        "cost": 654.6,
         "totalCost": 18328.8,
         "isWarehouse": false
       },
@@ -1614,7 +1614,7 @@ const warehouseData = {
         "latitude": 21.686732,
         "trips": 21.0,
         "duration": 1.7,
-        "cost": 15575.7,
+        "cost": 741.7,
         "totalCost": 15575.7,
         "isWarehouse": false
       },
@@ -1625,7 +1625,7 @@ const warehouseData = {
         "latitude": 23.11182,
         "trips": 48.0,
         "duration": 1.87,
-        "cost": 37449.6,
+        "cost": 780.1999999999999,
         "totalCost": 37449.6,
         "isWarehouse": false
       },
@@ -1636,7 +1636,7 @@ const warehouseData = {
         "latitude": 22.654001,
         "trips": 35.0,
         "duration": 2.41,
-        "cost": 37765.0,
+        "cost": 1079.0,
         "totalCost": 37765.0,
         "isWarehouse": false
       },
@@ -1647,7 +1647,7 @@ const warehouseData = {
         "latitude": 21.481305,
         "trips": 26.0,
         "duration": 2.66,
-        "cost": 30451.2,
+        "cost": 1171.2,
         "totalCost": 30451.2,
         "isWarehouse": false
       },
@@ -1658,7 +1658,7 @@ const warehouseData = {
         "latitude": 23.90307,
         "trips": 38.0,
         "duration": 2.81,
-        "cost": 48047.2,
+        "cost": 1264.3999999999999,
         "totalCost": 48047.2,
         "isWarehouse": false
       },
@@ -1669,7 +1669,7 @@ const warehouseData = {
         "latitude": 24.326442,
         "trips": 57.0,
         "duration": 0.0,
-        "cost": 29640.0,
+        "cost": 520.0,
         "totalCost": 29640.0,
         "isWarehouse": true
       },
@@ -1680,7 +1680,7 @@ const warehouseData = {
         "latitude": 23.750105,
         "trips": 26.0,
         "duration": 1.05,
-        "cost": 13520.0,
+        "cost": 520.0,
         "totalCost": 13520.0,
         "isWarehouse": false
       },
@@ -1691,7 +1691,7 @@ const warehouseData = {
         "latitude": 25.235615,
         "trips": 91.0,
         "duration": 1.78,
-        "cost": 70670.6,
+        "cost": 776.6,
         "totalCost": 70670.6,
         "isWarehouse": false
       },
@@ -1702,7 +1702,7 @@ const warehouseData = {
         "latitude": 24.692906,
         "trips": 33.0,
         "duration": 2.05,
-        "cost": 27693.6,
+        "cost": 839.1999999999999,
         "totalCost": 27693.6,
         "isWarehouse": false
       },
@@ -1713,7 +1713,7 @@ const warehouseData = {
         "latitude": 23.476733,
         "trips": 37.0,
         "duration": 2.89,
-        "cost": 47841.0,
+        "cost": 1293.0,
         "totalCost": 47841.0,
         "isWarehouse": false
       },
@@ -1724,7 +1724,7 @@ const warehouseData = {
         "latitude": 24.404182,
         "trips": 22.0,
         "duration": 3.11,
-        "cost": 30074.0,
+        "cost": 1367.0,
         "totalCost": 30074.0,
         "isWarehouse": false
       }
@@ -1733,8 +1733,8 @@ const warehouseData = {
   "新疆": {
     "totalCost": 27576.3,
     "center": {
-      "longitude": 84.10677266666667,
-      "latitude": 43.07583166666667
+      "longitude": 84.10677266666666,
+      "latitude": 43.075831666666666
     },
     "warehouses": {
       "昌吉回族自治州": {
@@ -1927,19 +1927,10 @@ const warehouseData = {
   "江西": {
     "totalCost": 559418.1,
     "center": {
-      "longitude": 115.76891054545455,
+      "longitude": 115.76891054545453,
       "latitude": 28.04642163636364
     },
     "warehouses": {
-      "南昌市": {
-        "longitude": 115.857972,
-        "latitude": 28.682976,
-        "hasOvertime": false,
-        "totalCost": 313212.3,
-        "cityCount": 6,
-        "totalTrips": 410.0,
-        "avgDuration": 1.7566666666666666
-      },
       "吉安市": {
         "longitude": 114.96681,
         "latitude": 27.091243,
@@ -1948,6 +1939,15 @@ const warehouseData = {
         "cityCount": 5,
         "totalTrips": 309.0,
         "avgDuration": 1.616
+      },
+      "南昌市": {
+        "longitude": 115.857972,
+        "latitude": 28.682976,
+        "hasOvertime": false,
+        "totalCost": 313212.3,
+        "cityCount": 6,
+        "totalTrips": 410.0,
+        "avgDuration": 1.7566666666666666
       }
     },
     "assignments": [
@@ -1958,7 +1958,7 @@ const warehouseData = {
         "latitude": 28.682976,
         "trips": 133.0,
         "duration": 0.0,
-        "cost": 69160.0,
+        "cost": 520.0,
         "totalCost": 69160.0,
         "isWarehouse": true
       },
@@ -1969,7 +1969,7 @@ const warehouseData = {
         "latitude": 27.948979,
         "trips": 44.0,
         "duration": 1.41,
-        "cost": 26193.2,
+        "cost": 595.3000000000001,
         "totalCost": 26193.2,
         "isWarehouse": false
       },
@@ -1980,7 +1980,7 @@ const warehouseData = {
         "latitude": 29.66116,
         "trips": 103.0,
         "duration": 1.43,
-        "cost": 66136.3,
+        "cost": 642.1,
         "totalCost": 66136.3,
         "isWarehouse": false
       },
@@ -1991,7 +1991,7 @@ const warehouseData = {
         "latitude": 28.272092,
         "trips": 19.0,
         "duration": 2.0,
-        "cost": 15314.0,
+        "cost": 806.0,
         "totalCost": 15314.0,
         "isWarehouse": false
       },
@@ -2002,7 +2002,7 @@ const warehouseData = {
         "latitude": 29.2744,
         "trips": 34.0,
         "duration": 2.36,
-        "cost": 34183.6,
+        "cost": 1005.4,
         "totalCost": 34183.6,
         "isWarehouse": false
       },
@@ -2013,7 +2013,7 @@ const warehouseData = {
         "latitude": 28.45513,
         "trips": 77.0,
         "duration": 3.34,
-        "cost": 102225.2,
+        "cost": 1327.6,
         "totalCost": 102225.2,
         "isWarehouse": false
       },
@@ -2024,7 +2024,7 @@ const warehouseData = {
         "latitude": 27.091243,
         "trips": 61.0,
         "duration": 0.0,
-        "cost": 31720.0,
+        "cost": 520.0,
         "totalCost": 31720.0,
         "isWarehouse": true
       },
@@ -2035,7 +2035,7 @@ const warehouseData = {
         "latitude": 27.818553,
         "trips": 17.0,
         "duration": 1.44,
-        "cost": 9224.2,
+        "cost": 542.6,
         "totalCost": 9224.2,
         "isWarehouse": false
       },
@@ -2046,7 +2046,7 @@ const warehouseData = {
         "latitude": 27.816245,
         "trips": 62.0,
         "duration": 1.96,
-        "cost": 39549.8,
+        "cost": 637.9000000000001,
         "totalCost": 39549.8,
         "isWarehouse": false
       },
@@ -2057,7 +2057,7 @@ const warehouseData = {
         "latitude": 25.831139,
         "trips": 140.0,
         "duration": 2.16,
-        "cost": 134792.0,
+        "cost": 962.8,
         "totalCost": 134792.0,
         "isWarehouse": false
       },
@@ -2068,7 +2068,7 @@ const warehouseData = {
         "latitude": 27.658721,
         "trips": 29.0,
         "duration": 2.52,
-        "cost": 30919.8,
+        "cost": 1066.2,
         "totalCost": 30919.8,
         "isWarehouse": false
       }
@@ -2077,7 +2077,7 @@ const warehouseData = {
   "河南": {
     "totalCost": 727295.3,
     "center": {
-      "longitude": 113.7302472222222,
+      "longitude": 113.73024722222222,
       "latitude": 34.42902477777778
     },
     "warehouses": {
@@ -2108,7 +2108,7 @@ const warehouseData = {
         "latitude": 33.58038,
         "trips": 21.0,
         "duration": 0.0,
-        "cost": 10920.0,
+        "cost": 520.0,
         "totalCost": 10920.0,
         "isWarehouse": true
       },
@@ -2119,7 +2119,7 @@ const warehouseData = {
         "latitude": 34.03732,
         "trips": 39.0,
         "duration": 1.07,
-        "cost": 20280.0,
+        "cost": 520.0,
         "totalCost": 20280.0,
         "isWarehouse": false
       },
@@ -2130,7 +2130,7 @@ const warehouseData = {
         "latitude": 33.766554,
         "trips": 43.0,
         "duration": 1.23,
-        "cost": 22360.0,
+        "cost": 520.0,
         "totalCost": 22360.0,
         "isWarehouse": false
       },
@@ -2141,7 +2141,7 @@ const warehouseData = {
         "latitude": 33.014038,
         "trips": 48.0,
         "duration": 1.25,
-        "cost": 24960.0,
+        "cost": 520.0,
         "totalCost": 24960.0,
         "isWarehouse": false
       },
@@ -2152,7 +2152,7 @@ const warehouseData = {
         "latitude": 33.634652,
         "trips": 63.0,
         "duration": 1.3,
-        "cost": 32760.0,
+        "cost": 520.0,
         "totalCost": 32760.0,
         "isWarehouse": false
       },
@@ -2163,7 +2163,7 @@ const warehouseData = {
         "latitude": 32.148624,
         "trips": 64.0,
         "duration": 2.2,
-        "cost": 61094.4,
+        "cost": 954.6,
         "totalCost": 61094.4,
         "isWarehouse": false
       },
@@ -2174,7 +2174,7 @@ const warehouseData = {
         "latitude": 32.990218,
         "trips": 92.0,
         "duration": 2.57,
-        "cost": 87409.2,
+        "cost": 950.1,
         "totalCost": 87409.2,
         "isWarehouse": false
       },
@@ -2185,7 +2185,7 @@ const warehouseData = {
         "latitude": 34.415165,
         "trips": 58.0,
         "duration": 2.57,
-        "cost": 62280.4,
+        "cost": 1073.8,
         "totalCost": 62280.4,
         "isWarehouse": false
       },
@@ -2196,7 +2196,7 @@ const warehouseData = {
         "latitude": 35.215726,
         "trips": 41.0,
         "duration": 0.0,
-        "cost": 21320.0,
+        "cost": 520.0,
         "totalCost": 21320.0,
         "isWarehouse": true
       },
@@ -2207,7 +2207,7 @@ const warehouseData = {
         "latitude": 35.069057,
         "trips": 9.0,
         "duration": 1.06,
-        "cost": 4680.0,
+        "cost": 520.0,
         "totalCost": 4680.0,
         "isWarehouse": false
       },
@@ -2218,7 +2218,7 @@ const warehouseData = {
         "latitude": 35.303589,
         "trips": 86.0,
         "duration": 1.25,
-        "cost": 44720.0,
+        "cost": 520.0,
         "totalCost": 44720.0,
         "isWarehouse": false
       },
@@ -2229,7 +2229,7 @@ const warehouseData = {
         "latitude": 34.746303,
         "trips": 195.0,
         "duration": 1.32,
-        "cost": 101400.0,
+        "cost": 520.0,
         "totalCost": 101400.0,
         "isWarehouse": false
       },
@@ -2240,7 +2240,7 @@ const warehouseData = {
         "latitude": 34.619702,
         "trips": 104.0,
         "duration": 1.66,
-        "cost": 66102.4,
+        "cost": 635.5999999999999,
         "totalCost": 66102.4,
         "isWarehouse": false
       },
@@ -2251,7 +2251,7 @@ const warehouseData = {
         "latitude": 34.798083,
         "trips": 39.0,
         "duration": 1.76,
-        "cost": 27069.9,
+        "cost": 694.1,
         "totalCost": 27069.9,
         "isWarehouse": false
       },
@@ -2262,7 +2262,7 @@ const warehouseData = {
         "latitude": 35.748329,
         "trips": 25.0,
         "duration": 1.76,
-        "cost": 19150.0,
+        "cost": 766.0,
         "totalCost": 19150.0,
         "isWarehouse": false
       },
@@ -2273,7 +2273,7 @@ const warehouseData = {
         "latitude": 36.098779,
         "trips": 50.0,
         "duration": 2.2,
-        "cost": 49440.0,
+        "cost": 988.8,
         "totalCost": 49440.0,
         "isWarehouse": false
       },
@@ -2284,7 +2284,7 @@ const warehouseData = {
         "latitude": 35.762731,
         "trips": 36.0,
         "duration": 2.5,
-        "cost": 39657.6,
+        "cost": 1101.6,
         "totalCost": 39657.6,
         "isWarehouse": false
       },
@@ -2295,7 +2295,7 @@ const warehouseData = {
         "latitude": 34.773196,
         "trips": 26.0,
         "duration": 2.87,
-        "cost": 31691.4,
+        "cost": 1218.9,
         "totalCost": 31691.4,
         "isWarehouse": false
       }
@@ -2304,8 +2304,8 @@ const warehouseData = {
   "浙江": {
     "totalCost": 660154.2,
     "center": {
-      "longitude": 120.54709154545453,
-      "latitude": 29.54100781818181
+      "longitude": 120.54709154545452,
+      "latitude": 29.54100781818182
     },
     "warehouses": {
       "温州市": {
@@ -2335,7 +2335,7 @@ const warehouseData = {
         "latitude": 27.993849,
         "trips": 147.0,
         "duration": 0.0,
-        "cost": 76440.0,
+        "cost": 520.0,
         "totalCost": 76440.0,
         "isWarehouse": true
       },
@@ -2346,7 +2346,7 @@ const warehouseData = {
         "latitude": 28.467694,
         "trips": 47.0,
         "duration": 1.84,
-        "cost": 31720.3,
+        "cost": 674.9,
         "totalCost": 31720.3,
         "isWarehouse": false
       },
@@ -2357,7 +2357,7 @@ const warehouseData = {
         "latitude": 28.655716,
         "trips": 83.0,
         "duration": 2.15,
-        "cost": 54257.1,
+        "cost": 653.6999999999999,
         "totalCost": 54257.1,
         "isWarehouse": false
       },
@@ -2368,7 +2368,7 @@ const warehouseData = {
         "latitude": 30.051549,
         "trips": 61.0,
         "duration": 0.0,
-        "cost": 31720.0,
+        "cost": 520.0,
         "totalCost": 31720.0,
         "isWarehouse": true
       },
@@ -2379,7 +2379,7 @@ const warehouseData = {
         "latitude": 30.246026,
         "trips": 249.0,
         "duration": 0.86,
-        "cost": 129480.0,
+        "cost": 520.0,
         "totalCost": 129480.0,
         "isWarehouse": false
       },
@@ -2390,7 +2390,7 @@ const warehouseData = {
         "latitude": 30.746814,
         "trips": 77.0,
         "duration": 1.31,
-        "cost": 41433.7,
+        "cost": 538.0999999999999,
         "totalCost": 41433.7,
         "isWarehouse": false
       },
@@ -2401,7 +2401,7 @@ const warehouseData = {
         "latitude": 29.860258,
         "trips": 121.0,
         "duration": 1.47,
-        "cost": 74995.8,
+        "cost": 619.8000000000001,
         "totalCost": 74995.8,
         "isWarehouse": false
       },
@@ -2412,7 +2412,7 @@ const warehouseData = {
         "latitude": 30.894178,
         "trips": 51.0,
         "duration": 1.85,
-        "cost": 37112.7,
+        "cost": 727.6999999999999,
         "totalCost": 37112.7,
         "isWarehouse": false
       },
@@ -2423,7 +2423,7 @@ const warehouseData = {
         "latitude": 29.985578,
         "trips": 26.0,
         "duration": 2.19,
-        "cost": 25451.4,
+        "cost": 978.9000000000001,
         "totalCost": 25451.4,
         "isWarehouse": false
       },
@@ -2434,7 +2434,7 @@ const warehouseData = {
         "latitude": 29.079195,
         "trips": 123.0,
         "duration": 2.29,
-        "cost": 107428.2,
+        "cost": 873.4,
         "totalCost": 107428.2,
         "isWarehouse": false
       },
@@ -2445,7 +2445,7 @@ const warehouseData = {
         "latitude": 28.970229,
         "trips": 39.0,
         "duration": 2.92,
-        "cost": 50115.0,
+        "cost": 1285.0,
         "totalCost": 50115.0,
         "isWarehouse": false
       }
@@ -2454,8 +2454,8 @@ const warehouseData = {
   "海南": {
     "totalCost": 173672.5,
     "center": {
-      "longitude": 109.80723049999999,
-      "latitude": 19.189997722222223
+      "longitude": 109.8072305,
+      "latitude": 19.189997722222227
     },
     "warehouses": {
       "琼中黎族苗族自治县": {
@@ -2476,7 +2476,7 @@ const warehouseData = {
         "latitude": 19.03327,
         "trips": 2.0,
         "duration": 0.0,
-        "cost": 1040.0,
+        "cost": 520.0,
         "totalCost": 1040.0,
         "isWarehouse": true
       },
@@ -2487,7 +2487,7 @@ const warehouseData = {
         "latitude": 19.351662,
         "trips": 8.0,
         "duration": 0.78,
-        "cost": 4160.0,
+        "cost": 520.0,
         "totalCost": 4160.0,
         "isWarehouse": false
       },
@@ -2498,7 +2498,7 @@ const warehouseData = {
         "latitude": 18.774827,
         "trips": 6.0,
         "duration": 1.06,
-        "cost": 3120.0,
+        "cost": 520.0,
         "totalCost": 3120.0,
         "isWarehouse": false
       },
@@ -2509,7 +2509,7 @@ const warehouseData = {
         "latitude": 19.520948,
         "trips": 32.0,
         "duration": 1.11,
-        "cost": 16640.0,
+        "cost": 520.0,
         "totalCost": 16640.0,
         "isWarehouse": false
       },
@@ -2520,7 +2520,7 @@ const warehouseData = {
         "latitude": 18.750063,
         "trips": 9.0,
         "duration": 1.15,
-        "cost": 4680.0,
+        "cost": 520.0,
         "totalCost": 4680.0,
         "isWarehouse": false
       },
@@ -2531,7 +2531,7 @@ const warehouseData = {
         "latitude": 19.259112,
         "trips": 11.0,
         "duration": 1.25,
-        "cost": 5720.0,
+        "cost": 520.0,
         "totalCost": 5720.0,
         "isWarehouse": false
       },
@@ -2542,7 +2542,7 @@ const warehouseData = {
         "latitude": 18.793697,
         "trips": 8.0,
         "duration": 1.28,
-        "cost": 4160.0,
+        "cost": 520.0,
         "totalCost": 4160.0,
         "isWarehouse": false
       },
@@ -2553,7 +2553,7 @@ const warehouseData = {
         "latitude": 19.221641,
         "trips": 5.0,
         "duration": 1.34,
-        "cost": 2600.0,
+        "cost": 520.0,
         "totalCost": 2600.0,
         "isWarehouse": false
       },
@@ -2564,7 +2564,7 @@ const warehouseData = {
         "latitude": 19.681215,
         "trips": 4.0,
         "duration": 1.35,
-        "cost": 2335.6,
+        "cost": 583.9,
         "totalCost": 2335.6,
         "isWarehouse": false
       },
@@ -2575,7 +2575,7 @@ const warehouseData = {
         "latitude": 18.640339,
         "trips": 8.0,
         "duration": 1.43,
-        "cost": 4716.0,
+        "cost": 589.5,
         "totalCost": 4716.0,
         "isWarehouse": false
       },
@@ -2586,7 +2586,7 @@ const warehouseData = {
         "latitude": 19.738885,
         "trips": 9.0,
         "duration": 1.5,
-        "cost": 5213.7,
+        "cost": 579.3,
         "totalCost": 5213.7,
         "isWarehouse": false
       },
@@ -2597,7 +2597,7 @@ const warehouseData = {
         "latitude": 19.544234,
         "trips": 9.0,
         "duration": 1.67,
-        "cost": 6665.4,
+        "cost": 740.5999999999999,
         "totalCost": 6665.4,
         "isWarehouse": false
       },
@@ -2608,7 +2608,7 @@ const warehouseData = {
         "latitude": 20.045805,
         "trips": 70.0,
         "duration": 1.71,
-        "cost": 50400.0,
+        "cost": 720.0,
         "totalCost": 50400.0,
         "isWarehouse": false
       },
@@ -2619,7 +2619,7 @@ const warehouseData = {
         "latitude": 19.912025,
         "trips": 2.0,
         "duration": 1.83,
-        "cost": 1544.6,
+        "cost": 772.3,
         "totalCost": 1544.6,
         "isWarehouse": false
       },
@@ -2630,7 +2630,7 @@ const warehouseData = {
         "latitude": 19.298139,
         "trips": 8.0,
         "duration": 2.01,
-        "cost": 7374.4,
+        "cost": 921.8,
         "totalCost": 7374.4,
         "isWarehouse": false
       },
@@ -2641,7 +2641,7 @@ const warehouseData = {
         "latitude": 18.506045,
         "trips": 18.0,
         "duration": 2.29,
-        "cost": 9360.0,
+        "cost": 520.0,
         "totalCost": 9360.0,
         "isWarehouse": false
       },
@@ -2652,7 +2652,7 @@ const warehouseData = {
         "latitude": 18.252865,
         "trips": 42.0,
         "duration": 2.4,
-        "cost": 37233.0,
+        "cost": 886.5,
         "totalCost": 37233.0,
         "isWarehouse": false
       },
@@ -2663,7 +2663,7 @@ const warehouseData = {
         "latitude": 19.095187,
         "trips": 6.0,
         "duration": 2.48,
-        "cost": 6709.8,
+        "cost": 1118.3,
         "totalCost": 6709.8,
         "isWarehouse": false
       }
@@ -2673,18 +2673,9 @@ const warehouseData = {
     "totalCost": 482080.9,
     "center": {
       "longitude": 112.88791800000001,
-      "latitude": 30.835526117647056
+      "latitude": 30.83552611764705
     },
     "warehouses": {
-      "武汉市": {
-        "longitude": 114.304569,
-        "latitude": 30.593354,
-        "hasOvertime": false,
-        "totalCost": 250384.4,
-        "cityCount": 9,
-        "totalTrips": 479.0,
-        "avgDuration": 1.3322222222222222
-      },
       "襄阳市": {
         "longitude": 112.121743,
         "latitude": 32.010161,
@@ -2702,6 +2693,15 @@ const warehouseData = {
         "cityCount": 4,
         "totalTrips": 196.0,
         "avgDuration": 1.71
+      },
+      "武汉市": {
+        "longitude": 114.304569,
+        "latitude": 30.593354,
+        "hasOvertime": false,
+        "totalCost": 250384.4,
+        "cityCount": 9,
+        "totalTrips": 479.0,
+        "avgDuration": 1.3322222222222222
       }
     },
     "assignments": [
@@ -2712,7 +2712,7 @@ const warehouseData = {
         "latitude": 30.69217,
         "trips": 51.0,
         "duration": 0.0,
-        "cost": 26520.0,
+        "cost": 520.0,
         "totalCost": 26520.0,
         "isWarehouse": true
       },
@@ -2723,7 +2723,7 @@ const warehouseData = {
         "latitude": 30.336282,
         "trips": 64.0,
         "duration": 1.45,
-        "cost": 36902.4,
+        "cost": 576.6,
         "totalCost": 36902.4,
         "isWarehouse": false
       },
@@ -2734,7 +2734,7 @@ const warehouseData = {
         "latitude": 31.035445,
         "trips": 26.0,
         "duration": 1.74,
-        "cost": 16985.8,
+        "cost": 653.3,
         "totalCost": 16985.8,
         "isWarehouse": false
       },
@@ -2745,7 +2745,7 @@ const warehouseData = {
         "latitude": 30.272104,
         "trips": 55.0,
         "duration": 3.65,
-        "cost": 62617.5,
+        "cost": 1138.5,
         "totalCost": 62617.5,
         "isWarehouse": false
       },
@@ -2756,7 +2756,7 @@ const warehouseData = {
         "latitude": 30.593354,
         "trips": 300.0,
         "duration": 0.0,
-        "cost": 156000.0,
+        "cost": 520.0,
         "totalCost": 156000.0,
         "isWarehouse": true
       },
@@ -2767,7 +2767,7 @@ const warehouseData = {
         "latitude": 30.918311,
         "trips": 36.0,
         "duration": 1.05,
-        "cost": 18720.0,
+        "cost": 520.0,
         "totalCost": 18720.0,
         "isWarehouse": false
       },
@@ -2778,7 +2778,7 @@ const warehouseData = {
         "latitude": 30.453722,
         "trips": 48.0,
         "duration": 1.18,
-        "cost": 24960.0,
+        "cost": 520.0,
         "totalCost": 24960.0,
         "isWarehouse": false
       },
@@ -2789,7 +2789,7 @@ const warehouseData = {
         "latitude": 30.391461,
         "trips": 23.0,
         "duration": 1.24,
-        "cost": 11960.0,
+        "cost": 520.0,
         "totalCost": 11960.0,
         "isWarehouse": false
       },
@@ -2800,7 +2800,7 @@ const warehouseData = {
         "latitude": 29.84135,
         "trips": 35.0,
         "duration": 1.45,
-        "cost": 18200.0,
+        "cost": 520.0,
         "totalCost": 18200.0,
         "isWarehouse": false
       },
@@ -2822,7 +2822,7 @@ const warehouseData = {
         "latitude": 30.201082,
         "trips": 34.0,
         "duration": 1.47,
-        "cost": 18462.0,
+        "cost": 543.0,
         "totalCost": 18462.0,
         "isWarehouse": false
       },
@@ -2855,7 +2855,7 @@ const warehouseData = {
         "latitude": 32.010161,
         "trips": 63.0,
         "duration": 0.0,
-        "cost": 32760.0,
+        "cost": 520.0,
         "totalCost": 32760.0,
         "isWarehouse": true
       },
@@ -2866,7 +2866,7 @@ const warehouseData = {
         "latitude": 31.690275,
         "trips": 19.0,
         "duration": 1.91,
-        "cost": 16647.8,
+        "cost": 876.1999999999999,
         "totalCost": 16647.8,
         "isWarehouse": false
       },
@@ -2877,7 +2877,7 @@ const warehouseData = {
         "latitude": 32.629057,
         "trips": 43.0,
         "duration": 2.13,
-        "cost": 38291.5,
+        "cost": 890.5,
         "totalCost": 38291.5,
         "isWarehouse": false
       },
@@ -2897,19 +2897,10 @@ const warehouseData = {
   "湖南": {
     "totalCost": 707395.2,
     "center": {
-      "longitude": 111.9344515,
+      "longitude": 111.93445150000001,
       "latitude": 27.846758071428578
     },
     "warehouses": {
-      "益阳市": {
-        "longitude": 112.355994,
-        "latitude": 28.554853,
-        "hasOvertime": false,
-        "totalCost": 448617.1,
-        "cityCount": 9,
-        "totalTrips": 589.0,
-        "avgDuration": 2.0677777777777777
-      },
       "衡阳市": {
         "longitude": 112.572016,
         "latitude": 26.894216,
@@ -2918,6 +2909,15 @@ const warehouseData = {
         "cityCount": 5,
         "totalTrips": 363.0,
         "avgDuration": 1.536
+      },
+      "益阳市": {
+        "longitude": 112.355994,
+        "latitude": 28.554853,
+        "hasOvertime": false,
+        "totalCost": 448617.1,
+        "cityCount": 9,
+        "totalTrips": 589.0,
+        "avgDuration": 2.0677777777777777
       }
     },
     "assignments": [
@@ -2928,7 +2928,7 @@ const warehouseData = {
         "latitude": 28.554853,
         "trips": 31.0,
         "duration": 0.0,
-        "cost": 16120.0,
+        "cost": 520.0,
         "totalCost": 16120.0,
         "isWarehouse": true
       },
@@ -2939,7 +2939,7 @@ const warehouseData = {
         "latitude": 28.228304,
         "trips": 236.0,
         "duration": 1.21,
-        "cost": 122720.0,
+        "cost": 520.0,
         "totalCost": 122720.0,
         "isWarehouse": false
       },
@@ -2950,7 +2950,7 @@ const warehouseData = {
         "latitude": 29.031446,
         "trips": 76.0,
         "duration": 1.36,
-        "cost": 40432.0,
+        "cost": 532.0,
         "totalCost": 40432.0,
         "isWarehouse": false
       },
@@ -2961,7 +2961,7 @@ const warehouseData = {
         "latitude": 27.699838,
         "trips": 46.0,
         "duration": 1.71,
-        "cost": 29743.6,
+        "cost": 646.6,
         "totalCost": 29743.6,
         "isWarehouse": false
       },
@@ -2972,7 +2972,7 @@ const warehouseData = {
         "latitude": 27.83136,
         "trips": 41.0,
         "duration": 1.77,
-        "cost": 26756.6,
+        "cost": 652.5999999999999,
         "totalCost": 26756.6,
         "isWarehouse": false
       },
@@ -2983,7 +2983,7 @@ const warehouseData = {
         "latitude": 29.35648,
         "trips": 63.0,
         "duration": 1.99,
-        "cost": 52775.1,
+        "cost": 837.6999999999999,
         "totalCost": 52775.1,
         "isWarehouse": false
       },
@@ -3005,7 +3005,7 @@ const warehouseData = {
         "latitude": 27.569813,
         "trips": 60.0,
         "duration": 3.79,
-        "cost": 102810.0,
+        "cost": 1713.5,
         "totalCost": 102810.0,
         "isWarehouse": false
       },
@@ -3016,7 +3016,7 @@ const warehouseData = {
         "latitude": 28.312592,
         "trips": 35.0,
         "duration": 3.9,
-        "cost": 55933.5,
+        "cost": 1598.1,
         "totalCost": 55933.5,
         "isWarehouse": false
       },
@@ -3027,7 +3027,7 @@ const warehouseData = {
         "latitude": 26.894216,
         "trips": 84.0,
         "duration": 0.0,
-        "cost": 43680.0,
+        "cost": 520.0,
         "totalCost": 43680.0,
         "isWarehouse": true
       },
@@ -3038,7 +3038,7 @@ const warehouseData = {
         "latitude": 26.419861,
         "trips": 79.0,
         "duration": 1.67,
-        "cost": 55932.0,
+        "cost": 708.0,
         "totalCost": 55932.0,
         "isWarehouse": false
       },
@@ -3049,7 +3049,7 @@ const warehouseData = {
         "latitude": 27.239528,
         "trips": 65.0,
         "duration": 1.82,
-        "cost": 46403.5,
+        "cost": 713.9,
         "totalCost": 46403.5,
         "isWarehouse": false
       },
@@ -3060,7 +3060,7 @@ const warehouseData = {
         "latitude": 27.828862,
         "trips": 62.0,
         "duration": 1.87,
-        "cost": 45880.0,
+        "cost": 740.0,
         "totalCost": 45880.0,
         "isWarehouse": false
       },
@@ -3071,7 +3071,7 @@ const warehouseData = {
         "latitude": 25.770117,
         "trips": 73.0,
         "duration": 2.32,
-        "cost": 66882.6,
+        "cost": 916.2,
         "totalCost": 66882.6,
         "isWarehouse": false
       }
@@ -3080,19 +3080,10 @@ const warehouseData = {
   "甘青宁": {
     "totalCost": 74159.0,
     "center": {
-      "longitude": 103.3642575806452,
+      "longitude": 103.36425758064519,
       "latitude": 36.96223132258064
     },
     "warehouses": {
-      "西宁市": {
-        "longitude": 101.777795,
-        "latitude": 36.616621,
-        "hasOvertime": true,
-        "totalCost": 19427.0,
-        "cityCount": 11,
-        "totalTrips": 11.0,
-        "avgDuration": 4.079999999999999
-      },
       "定西市": {
         "longitude": 104.592342,
         "latitude": 35.607947,
@@ -3101,6 +3092,15 @@ const warehouseData = {
         "cityCount": 12,
         "totalTrips": 12.0,
         "avgDuration": 2.8633333333333333
+      },
+      "西宁市": {
+        "longitude": 101.777795,
+        "latitude": 36.616621,
+        "hasOvertime": true,
+        "totalCost": 19427.0,
+        "cityCount": 11,
+        "totalTrips": 11.0,
+        "avgDuration": 4.079999999999999
       },
       "乌海市": {
         "longitude": 106.79415,
@@ -3120,7 +3120,7 @@ const warehouseData = {
         "latitude": 39.655048,
         "trips": 14.0,
         "duration": 0.0,
-        "cost": 7280.0,
+        "cost": 520.0,
         "totalCost": 7280.0,
         "isWarehouse": true
       },
@@ -3142,7 +3142,7 @@ const warehouseData = {
         "latitude": 40.742987,
         "trips": 22.0,
         "duration": 1.79,
-        "cost": 17589.0,
+        "cost": 799.5,
         "totalCost": 17589.0,
         "isWarehouse": false
       },
@@ -3164,7 +3164,7 @@ const warehouseData = {
         "latitude": 38.851554,
         "trips": 10.0,
         "duration": 2.03,
-        "cost": 8412.0,
+        "cost": 841.2,
         "totalCost": 8412.0,
         "isWarehouse": false
       },
@@ -3463,15 +3463,6 @@ const warehouseData = {
       "latitude": 25.64291711111111
     },
     "warehouses": {
-      "厦门市": {
-        "longitude": 118.08891,
-        "latitude": 24.479627,
-        "hasOvertime": false,
-        "totalCost": 240927.6,
-        "cityCount": 4,
-        "totalTrips": 444.0,
-        "avgDuration": 1.09
-      },
       "福州市": {
         "longitude": 119.296411,
         "latitude": 26.074286,
@@ -3480,6 +3471,15 @@ const warehouseData = {
         "cityCount": 5,
         "totalTrips": 434.0,
         "avgDuration": 1.666
+      },
+      "厦门市": {
+        "longitude": 118.08891,
+        "latitude": 24.479627,
+        "hasOvertime": false,
+        "totalCost": 240927.6,
+        "cityCount": 4,
+        "totalTrips": 444.0,
+        "avgDuration": 1.09
       }
     },
     "assignments": [
@@ -3490,7 +3490,7 @@ const warehouseData = {
         "latitude": 24.479627,
         "trips": 130.0,
         "duration": 0.0,
-        "cost": 67600.0,
+        "cost": 520.0,
         "totalCost": 67600.0,
         "isWarehouse": true
       },
@@ -3501,7 +3501,7 @@ const warehouseData = {
         "latitude": 24.515297,
         "trips": 82.0,
         "duration": 1.08,
-        "cost": 42640.0,
+        "cost": 520.0,
         "totalCost": 42640.0,
         "isWarehouse": false
       },
@@ -3512,7 +3512,7 @@ const warehouseData = {
         "latitude": 24.874452,
         "trips": 196.0,
         "duration": 1.37,
-        "cost": 101920.0,
+        "cost": 520.0,
         "totalCost": 101920.0,
         "isWarehouse": false
       },
@@ -3523,7 +3523,7 @@ const warehouseData = {
         "latitude": 25.075884,
         "trips": 36.0,
         "duration": 1.91,
-        "cost": 28767.6,
+        "cost": 799.0999999999999,
         "totalCost": 28767.6,
         "isWarehouse": false
       },
@@ -3534,7 +3534,7 @@ const warehouseData = {
         "latitude": 26.074286,
         "trips": 214.0,
         "duration": 0.0,
-        "cost": 111280.0,
+        "cost": 520.0,
         "totalCost": 111280.0,
         "isWarehouse": true
       },
@@ -3545,7 +3545,7 @@ const warehouseData = {
         "latitude": 26.666222,
         "trips": 61.0,
         "duration": 1.4,
-        "cost": 32037.2,
+        "cost": 525.2,
         "totalCost": 32037.2,
         "isWarehouse": false
       },
@@ -3556,7 +3556,7 @@ const warehouseData = {
         "latitude": 25.454202,
         "trips": 62.0,
         "duration": 1.44,
-        "cost": 34366.6,
+        "cost": 554.3,
         "totalCost": 34366.6,
         "isWarehouse": false
       },
@@ -3567,7 +3567,7 @@ const warehouseData = {
         "latitude": 27.382829,
         "trips": 50.0,
         "duration": 2.64,
-        "cost": 60085.0,
+        "cost": 1201.7,
         "totalCost": 60085.0,
         "isWarehouse": false
       },
@@ -3578,7 +3578,7 @@ const warehouseData = {
         "latitude": 26.263455,
         "trips": 47.0,
         "duration": 2.85,
-        "cost": 55836.0,
+        "cost": 1188.0,
         "totalCost": 55836.0,
         "isWarehouse": false
       }
@@ -3587,19 +3587,10 @@ const warehouseData = {
   "苏皖": {
     "totalCost": 1147779.7,
     "center": {
-      "longitude": 118.33382182758622,
-      "latitude": 32.304428551724136
+      "longitude": 118.33382182758625,
+      "latitude": 32.30442855172414
     },
     "warehouses": {
-      "芜湖市": {
-        "longitude": 118.433065,
-        "latitude": 31.352614,
-        "hasOvertime": false,
-        "totalCost": 412664.4,
-        "cityCount": 11,
-        "totalTrips": 575.0,
-        "avgDuration": 1.6090909090909091
-      },
       "常州市": {
         "longitude": 119.974092,
         "latitude": 31.811313,
@@ -3617,6 +3608,15 @@ const warehouseData = {
         "cityCount": 10,
         "totalTrips": 465.0,
         "avgDuration": 1.86
+      },
+      "芜湖市": {
+        "longitude": 118.433065,
+        "latitude": 31.352614,
+        "hasOvertime": false,
+        "totalCost": 412664.4,
+        "cityCount": 11,
+        "totalTrips": 575.0,
+        "avgDuration": 1.6090909090909091
       }
     },
     "assignments": [
@@ -3627,7 +3627,7 @@ const warehouseData = {
         "latitude": 33.647726,
         "trips": 32.0,
         "duration": 0.0,
-        "cost": 16640.0,
+        "cost": 520.0,
         "totalCost": 16640.0,
         "isWarehouse": true
       },
@@ -3638,7 +3638,7 @@ const warehouseData = {
         "latitude": 33.956264,
         "trips": 18.0,
         "duration": 1.07,
-        "cost": 9360.0,
+        "cost": 520.0,
         "totalCost": 9360.0,
         "isWarehouse": false
       },
@@ -3649,7 +3649,7 @@ const warehouseData = {
         "latitude": 34.204224,
         "trips": 106.0,
         "duration": 1.21,
-        "cost": 55120.0,
+        "cost": 520.0,
         "totalCost": 55120.0,
         "isWarehouse": false
       },
@@ -3660,7 +3660,7 @@ const warehouseData = {
         "latitude": 32.91682,
         "trips": 33.0,
         "duration": 1.48,
-        "cost": 18585.6,
+        "cost": 563.1999999999999,
         "totalCost": 18585.6,
         "isWarehouse": false
       },
@@ -3671,7 +3671,7 @@ const warehouseData = {
         "latitude": 33.846285,
         "trips": 35.0,
         "duration": 1.86,
-        "cost": 25623.5,
+        "cost": 732.1,
         "totalCost": 25623.5,
         "isWarehouse": false
       },
@@ -3682,7 +3682,7 @@ const warehouseData = {
         "latitude": 32.585384,
         "trips": 30.0,
         "duration": 1.86,
-        "cost": 25539.0,
+        "cost": 851.3,
         "totalCost": 25539.0,
         "isWarehouse": false
       },
@@ -3693,7 +3693,7 @@ const warehouseData = {
         "latitude": 33.963186,
         "trips": 39.0,
         "duration": 2.01,
-        "cost": 36086.7,
+        "cost": 925.3,
         "totalCost": 36086.7,
         "isWarehouse": false
       },
@@ -3704,7 +3704,7 @@ const warehouseData = {
         "latitude": 33.551495,
         "trips": 47.0,
         "duration": 2.67,
-        "cost": 57072.1,
+        "cost": 1214.3,
         "totalCost": 57072.1,
         "isWarehouse": false
       },
@@ -3715,7 +3715,7 @@ const warehouseData = {
         "latitude": 34.596639,
         "trips": 50.0,
         "duration": 3.06,
-        "cost": 76450.0,
+        "cost": 1529.0,
         "totalCost": 76450.0,
         "isWarehouse": false
       },
@@ -3726,7 +3726,7 @@ const warehouseData = {
         "latitude": 32.891032,
         "trips": 75.0,
         "duration": 3.38,
-        "cost": 58612.5,
+        "cost": 781.5,
         "totalCost": 58612.5,
         "isWarehouse": false
       },
@@ -3737,7 +3737,7 @@ const warehouseData = {
         "latitude": 31.811313,
         "trips": 66.0,
         "duration": 0.0,
-        "cost": 34320.0,
+        "cost": 520.0,
         "totalCost": 34320.0,
         "isWarehouse": true
       },
@@ -3748,7 +3748,7 @@ const warehouseData = {
         "latitude": 32.188141,
         "trips": 66.0,
         "duration": 1.02,
-        "cost": 34320.0,
+        "cost": 520.0,
         "totalCost": 34320.0,
         "isWarehouse": false
       },
@@ -3759,7 +3759,7 @@ const warehouseData = {
         "latitude": 31.491064,
         "trips": 84.0,
         "duration": 1.09,
-        "cost": 43680.0,
+        "cost": 520.0,
         "totalCost": 43680.0,
         "isWarehouse": false
       },
@@ -3770,7 +3770,7 @@ const warehouseData = {
         "latitude": 32.456692,
         "trips": 46.0,
         "duration": 1.22,
-        "cost": 23920.0,
+        "cost": 520.0,
         "totalCost": 23920.0,
         "isWarehouse": false
       },
@@ -3781,7 +3781,7 @@ const warehouseData = {
         "latitude": 32.394404,
         "trips": 44.0,
         "duration": 1.44,
-        "cost": 25119.6,
+        "cost": 570.9,
         "totalCost": 25119.6,
         "isWarehouse": false
       },
@@ -3792,7 +3792,7 @@ const warehouseData = {
         "latitude": 31.299758,
         "trips": 190.0,
         "duration": 1.58,
-        "cost": 98800.0,
+        "cost": 520.0,
         "totalCost": 98800.0,
         "isWarehouse": false
       },
@@ -3803,7 +3803,7 @@ const warehouseData = {
         "latitude": 31.981269,
         "trips": 63.0,
         "duration": 2.16,
-        "cost": 39299.4,
+        "cost": 623.8000000000001,
         "totalCost": 39299.4,
         "isWarehouse": false
       },
@@ -3814,7 +3814,7 @@ const warehouseData = {
         "latitude": 33.348176,
         "trips": 53.0,
         "duration": 2.29,
-        "cost": 56566.9,
+        "cost": 1067.3,
         "totalCost": 56566.9,
         "isWarehouse": false
       },
@@ -3825,7 +3825,7 @@ const warehouseData = {
         "latitude": 31.352614,
         "trips": 59.0,
         "duration": 0.0,
-        "cost": 30680.0,
+        "cost": 520.0,
         "totalCost": 30680.0,
         "isWarehouse": true
       },
@@ -3836,7 +3836,7 @@ const warehouseData = {
         "latitude": 31.668765,
         "trips": 35.0,
         "duration": 0.76,
-        "cost": 18200.0,
+        "cost": 520.0,
         "totalCost": 18200.0,
         "isWarehouse": false
       },
@@ -3847,7 +3847,7 @@ const warehouseData = {
         "latitude": 30.939278,
         "trips": 34.0,
         "duration": 1.18,
-        "cost": 17680.0,
+        "cost": 520.0,
         "totalCost": 17680.0,
         "isWarehouse": false
       },
@@ -3858,7 +3858,7 @@ const warehouseData = {
         "latitude": 30.945214,
         "trips": 3.0,
         "duration": 1.36,
-        "cost": 1560.0,
+        "cost": 520.0,
         "totalCost": 1560.0,
         "isWarehouse": false
       },
@@ -3869,7 +3869,7 @@ const warehouseData = {
         "latitude": 32.059344,
         "trips": 126.0,
         "duration": 1.47,
-        "cost": 65847.6,
+        "cost": 522.6,
         "totalCost": 65847.6,
         "isWarehouse": false
       },
@@ -3880,7 +3880,7 @@ const warehouseData = {
         "latitude": 32.255904,
         "trips": 49.0,
         "duration": 1.66,
-        "cost": 35226.1,
+        "cost": 718.9,
         "totalCost": 35226.1,
         "isWarehouse": false
       },
@@ -3891,7 +3891,7 @@ const warehouseData = {
         "latitude": 30.674264,
         "trips": 15.0,
         "duration": 1.75,
-        "cost": 10977.0,
+        "cost": 731.8,
         "totalCost": 10977.0,
         "isWarehouse": false
       },
@@ -3902,7 +3902,7 @@ const warehouseData = {
         "latitude": 31.820567,
         "trips": 145.0,
         "duration": 1.82,
-        "cost": 113013.0,
+        "cost": 779.4,
         "totalCost": 113013.0,
         "isWarehouse": false
       },
@@ -3913,7 +3913,7 @@ const warehouseData = {
         "latitude": 30.531828,
         "trips": 53.0,
         "duration": 2.19,
-        "cost": 52883.4,
+        "cost": 997.8000000000001,
         "totalCost": 52883.4,
         "isWarehouse": false
       },
@@ -3924,7 +3924,7 @@ const warehouseData = {
         "latitude": 31.735892,
         "trips": 35.0,
         "duration": 2.7,
-        "cost": 42210.0,
+        "cost": 1206.0,
         "totalCost": 42210.0,
         "isWarehouse": false
       },
@@ -3935,7 +3935,7 @@ const warehouseData = {
         "latitude": 29.714886,
         "trips": 21.0,
         "duration": 2.81,
-        "cost": 24387.3,
+        "cost": 1161.3,
         "totalCost": 24387.3,
         "isWarehouse": false
       }
@@ -3944,8 +3944,8 @@ const warehouseData = {
   "贵州": {
     "totalCost": 303196.5,
     "center": {
-      "longitude": 106.59230133333332,
-      "latitude": 26.683784888888894
+      "longitude": 106.59230133333334,
+      "latitude": 26.68378488888889
     },
     "warehouses": {
       "安顺市": {
@@ -3975,7 +3975,7 @@ const warehouseData = {
         "latitude": 26.253103,
         "trips": 19.0,
         "duration": 0.0,
-        "cost": 9880.0,
+        "cost": 520.0,
         "totalCost": 9880.0,
         "isWarehouse": true
       },
@@ -3986,7 +3986,7 @@ const warehouseData = {
         "latitude": 26.646694,
         "trips": 89.0,
         "duration": 1.32,
-        "cost": 46280.0,
+        "cost": 520.0,
         "totalCost": 46280.0,
         "isWarehouse": false
       },
@@ -3997,7 +3997,7 @@ const warehouseData = {
         "latitude": 26.592538,
         "trips": 44.0,
         "duration": 2.0,
-        "cost": 35648.8,
+        "cost": 810.2,
         "totalCost": 35648.8,
         "isWarehouse": false
       },
@@ -4008,7 +4008,7 @@ const warehouseData = {
         "latitude": 26.253136,
         "trips": 3.0,
         "duration": 2.49,
-        "cost": 3099.9,
+        "cost": 1033.3,
         "totalCost": 3099.9,
         "isWarehouse": false
       },
@@ -4019,7 +4019,7 @@ const warehouseData = {
         "latitude": 27.283615,
         "trips": 19.0,
         "duration": 2.66,
-        "cost": 20409.8,
+        "cost": 1074.2,
         "totalCost": 20409.8,
         "isWarehouse": false
       },
@@ -4030,7 +4030,7 @@ const warehouseData = {
         "latitude": 25.087733,
         "trips": 33.0,
         "duration": 2.97,
-        "cost": 37332.9,
+        "cost": 1131.3,
         "totalCost": 37332.9,
         "isWarehouse": false
       },
@@ -4041,7 +4041,7 @@ const warehouseData = {
         "latitude": 27.721931,
         "trips": 96.0,
         "duration": 0.0,
-        "cost": 49920.0,
+        "cost": 520.0,
         "totalCost": 49920.0,
         "isWarehouse": true
       },
@@ -4052,7 +4052,7 @@ const warehouseData = {
         "latitude": 26.583759,
         "trips": 51.0,
         "duration": 2.56,
-        "cost": 59828.1,
+        "cost": 1173.1,
         "totalCost": 59828.1,
         "isWarehouse": false
       },
@@ -4063,7 +4063,7 @@ const warehouseData = {
         "latitude": 27.731555,
         "trips": 30.0,
         "duration": 3.49,
-        "cost": 40797.0,
+        "cost": 1359.9,
         "totalCost": 40797.0,
         "isWarehouse": false
       }
@@ -4103,7 +4103,7 @@ const warehouseData = {
         "latitude": 42.256876,
         "trips": 38.0,
         "duration": 0.0,
-        "cost": 19760.0,
+        "cost": 520.0,
         "totalCost": 19760.0,
         "isWarehouse": true
       },
@@ -4114,7 +4114,7 @@ const warehouseData = {
         "latitude": 41.601855,
         "trips": 19.0,
         "duration": 2.06,
-        "cost": 17523.7,
+        "cost": 922.3000000000001,
         "totalCost": 17523.7,
         "isWarehouse": false
       },
@@ -4125,7 +4125,7 @@ const warehouseData = {
         "latitude": 43.933212,
         "trips": 25.0,
         "duration": 4.07,
-        "cost": 52080.0,
+        "cost": 2083.2,
         "totalCost": 52080.0,
         "isWarehouse": false
       },
@@ -4136,7 +4136,7 @@ const warehouseData = {
         "latitude": 41.267396,
         "trips": 20.0,
         "duration": 0.0,
-        "cost": 10400.0,
+        "cost": 520.0,
         "totalCost": 10400.0,
         "isWarehouse": true
       },
@@ -4147,7 +4147,7 @@ const warehouseData = {
         "latitude": 41.108239,
         "trips": 38.0,
         "duration": 0.92,
-        "cost": 19760.0,
+        "cost": 520.0,
         "totalCost": 19760.0,
         "isWarehouse": false
       },
@@ -4169,7 +4169,7 @@ const warehouseData = {
         "latitude": 41.677576,
         "trips": 123.0,
         "duration": 1.21,
-        "cost": 63960.0,
+        "cost": 520.0,
         "totalCost": 63960.0,
         "isWarehouse": false
       },
@@ -4180,7 +4180,7 @@ const warehouseData = {
         "latitude": 41.486834,
         "trips": 17.0,
         "duration": 1.29,
-        "cost": 8840.0,
+        "cost": 520.0,
         "totalCost": 8840.0,
         "isWarehouse": false
       },
@@ -4191,7 +4191,7 @@ const warehouseData = {
         "latitude": 42.223709,
         "trips": 14.0,
         "duration": 1.68,
-        "cost": 10595.2,
+        "cost": 756.8000000000001,
         "totalCost": 10595.2,
         "isWarehouse": false
       },
@@ -4202,7 +4202,7 @@ const warehouseData = {
         "latitude": 40.625027,
         "trips": 29.0,
         "duration": 1.74,
-        "cost": 20314.5,
+        "cost": 700.5,
         "totalCost": 20314.5,
         "isWarehouse": false
       },
@@ -4213,7 +4213,7 @@ const warehouseData = {
         "latitude": 40.71956,
         "trips": 12.0,
         "duration": 1.89,
-        "cost": 8846.4,
+        "cost": 737.1999999999999,
         "totalCost": 8846.4,
         "isWarehouse": false
       },
@@ -4224,7 +4224,7 @@ const warehouseData = {
         "latitude": 41.881311,
         "trips": 22.0,
         "duration": 2.04,
-        "cost": 12082.4,
+        "cost": 549.1999999999999,
         "totalCost": 12082.4,
         "isWarehouse": false
       },
@@ -4235,7 +4235,7 @@ const warehouseData = {
         "latitude": 40.000646,
         "trips": 36.0,
         "duration": 2.68,
-        "cost": 41943.6,
+        "cost": 1165.1,
         "totalCost": 41943.6,
         "isWarehouse": false
       },
@@ -4246,7 +4246,7 @@ const warehouseData = {
         "latitude": 41.096114,
         "trips": 30.0,
         "duration": 2.83,
-        "cost": 33543.0,
+        "cost": 1118.1,
         "totalCost": 33543.0,
         "isWarehouse": false
       },
@@ -4257,7 +4257,7 @@ const warehouseData = {
         "latitude": 42.022028,
         "trips": 20.0,
         "duration": 3.04,
-        "cost": 19696.0,
+        "cost": 984.8,
         "totalCost": 19696.0,
         "isWarehouse": false
       },
@@ -4268,7 +4268,7 @@ const warehouseData = {
         "latitude": 38.913962,
         "trips": 68.0,
         "duration": 3.41,
-        "cost": 116701.6,
+        "cost": 1716.2,
         "totalCost": 116701.6,
         "isWarehouse": false
       },
@@ -4279,7 +4279,7 @@ const warehouseData = {
         "latitude": 40.710974,
         "trips": 26.0,
         "duration": 3.41,
-        "cost": 35292.4,
+        "cost": 1357.4,
         "totalCost": 35292.4,
         "isWarehouse": false
       },
@@ -4290,7 +4290,7 @@ const warehouseData = {
         "latitude": 43.653566,
         "trips": 27.0,
         "duration": 3.77,
-        "cost": 47927.7,
+        "cost": 1775.1,
         "totalCost": 47927.7,
         "isWarehouse": false
       }
@@ -4300,7 +4300,7 @@ const warehouseData = {
     "totalCost": 324364.3,
     "center": {
       "longitude": 108.85961981818183,
-      "latitude": 34.66194327272727
+      "latitude": 34.661943272727264
     },
     "warehouses": {
       "咸阳市": {
@@ -4330,7 +4330,7 @@ const warehouseData = {
         "latitude": 34.329896,
         "trips": 76.0,
         "duration": 0.0,
-        "cost": 39520.0,
+        "cost": 520.0,
         "totalCost": 39520.0,
         "isWarehouse": true
       },
@@ -4341,7 +4341,7 @@ const warehouseData = {
         "latitude": 34.343207,
         "trips": 167.0,
         "duration": 0.72,
-        "cost": 86840.0,
+        "cost": 520.0,
         "totalCost": 86840.0,
         "isWarehouse": false
       },
@@ -4363,7 +4363,7 @@ const warehouseData = {
         "latitude": 34.520632,
         "trips": 37.0,
         "duration": 1.27,
-        "cost": 19240.0,
+        "cost": 520.0,
         "totalCost": 19240.0,
         "isWarehouse": false
       },
@@ -4374,7 +4374,7 @@ const warehouseData = {
         "latitude": 34.897133,
         "trips": 16.0,
         "duration": 1.41,
-        "cost": 8320.0,
+        "cost": 520.0,
         "totalCost": 8320.0,
         "isWarehouse": false
       },
@@ -4385,7 +4385,7 @@ const warehouseData = {
         "latitude": 34.362862,
         "trips": 44.0,
         "duration": 1.69,
-        "cost": 34042.8,
+        "cost": 773.7,
         "totalCost": 34042.8,
         "isWarehouse": false
       },
@@ -4396,7 +4396,7 @@ const warehouseData = {
         "latitude": 33.873358,
         "trips": 13.0,
         "duration": 2.15,
-        "cost": 10407.8,
+        "cost": 800.5999999999999,
         "totalCost": 10407.8,
         "isWarehouse": false
       },
@@ -4407,7 +4407,7 @@ const warehouseData = {
         "latitude": 32.685435,
         "trips": 20.0,
         "duration": 3.32,
-        "cost": 27096.0,
+        "cost": 1354.8,
         "totalCost": 27096.0,
         "isWarehouse": false
       },
@@ -4418,7 +4418,7 @@ const warehouseData = {
         "latitude": 33.066373,
         "trips": 25.0,
         "duration": 3.74,
-        "cost": 34632.5,
+        "cost": 1385.3,
         "totalCost": 34632.5,
         "isWarehouse": false
       },
@@ -4429,7 +4429,7 @@ const warehouseData = {
         "latitude": 38.28576,
         "trips": 61.0,
         "duration": 0.0,
-        "cost": 31720.0,
+        "cost": 520.0,
         "totalCost": 31720.0,
         "isWarehouse": true
       },
@@ -4440,7 +4440,7 @@ const warehouseData = {
         "latitude": 36.650109,
         "trips": 23.0,
         "duration": 3.09,
-        "cost": 32025.2,
+        "cost": 1392.4,
         "totalCost": 32025.2,
         "isWarehouse": false
       }
@@ -4480,7 +4480,7 @@ const warehouseData = {
         "latitude": 49.166536,
         "trips": 52.0,
         "duration": 0.0,
-        "cost": 27040.0,
+        "cost": 520.0,
         "totalCost": 27040.0,
         "isWarehouse": true
       },
@@ -4491,7 +4491,7 @@ const warehouseData = {
         "latitude": 50.41129,
         "trips": 14.0,
         "duration": 6.27,
-        "cost": 34531.0,
+        "cost": 2466.5,
         "totalCost": 34531.0,
         "isWarehouse": false
       },
@@ -4502,7 +4502,7 @@ const warehouseData = {
         "latitude": 45.802981,
         "trips": 133.0,
         "duration": 0.0,
-        "cost": 69160.0,
+        "cost": 520.0,
         "totalCost": 69160.0,
         "isWarehouse": true
       },
@@ -4513,7 +4513,7 @@ const warehouseData = {
         "latitude": 46.654147,
         "trips": 30.0,
         "duration": 1.67,
-        "cost": 17925.0,
+        "cost": 597.5,
         "totalCost": 17925.0,
         "isWarehouse": false
       },
@@ -4524,7 +4524,7 @@ const warehouseData = {
         "latitude": 46.589498,
         "trips": 42.0,
         "duration": 1.84,
-        "cost": 33549.6,
+        "cost": 798.8,
         "totalCost": 33549.6,
         "isWarehouse": false
       },
@@ -4535,7 +4535,7 @@ const warehouseData = {
         "latitude": 47.354892,
         "trips": 34.0,
         "duration": 3.22,
-        "cost": 53903.6,
+        "cost": 1585.3999999999999,
         "totalCost": 53903.6,
         "isWarehouse": false
       },
@@ -4546,7 +4546,7 @@ const warehouseData = {
         "latitude": 47.728332,
         "trips": 27.0,
         "duration": 3.62,
-        "cost": 45441.0,
+        "cost": 1683.0,
         "totalCost": 45441.0,
         "isWarehouse": false
       },
@@ -4557,7 +4557,7 @@ const warehouseData = {
         "latitude": 44.551486,
         "trips": 40.0,
         "duration": 3.73,
-        "cost": 69652.0,
+        "cost": 1741.3,
         "totalCost": 69652.0,
         "isWarehouse": false
       },
@@ -4568,7 +4568,7 @@ const warehouseData = {
         "latitude": 46.800002,
         "trips": 22.0,
         "duration": 4.16,
-        "cost": 42673.4,
+        "cost": 1939.7,
         "totalCost": 42673.4,
         "isWarehouse": false
       },
@@ -4579,7 +4579,7 @@ const warehouseData = {
         "latitude": 45.771178,
         "trips": 14.0,
         "duration": 4.69,
-        "cost": 30478.0,
+        "cost": 2177.0,
         "totalCost": 30478.0,
         "isWarehouse": false
       },
@@ -4590,7 +4590,7 @@ const warehouseData = {
         "latitude": 46.676157,
         "trips": 11.0,
         "duration": 4.92,
-        "cost": 25418.8,
+        "cost": 2310.7999999999997,
         "totalCost": 25418.8,
         "isWarehouse": false
       },
@@ -4601,7 +4601,7 @@ const warehouseData = {
         "latitude": 47.350659,
         "trips": 7.0,
         "duration": 4.93,
-        "cost": 15714.3,
+        "cost": 2244.9,
         "totalCost": 15714.3,
         "isWarehouse": false
       },
@@ -4612,7 +4612,7 @@ const warehouseData = {
         "latitude": 45.295087,
         "trips": 16.0,
         "duration": 5.21,
-        "cost": 39076.8,
+        "cost": 2442.3,
         "totalCost": 39076.8,
         "isWarehouse": false
       },
@@ -4623,7 +4623,7 @@ const warehouseData = {
         "latitude": 50.244887,
         "trips": 18.0,
         "duration": 6.1,
-        "cost": 53647.2,
+        "cost": 2980.3999999999996,
         "totalCost": 53647.2,
         "isWarehouse": false
       }
