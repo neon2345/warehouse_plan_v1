@@ -4,14 +4,12 @@
     <meta charset="utf-8">
     <title>多仓库选址方案图</title>
     <style>
-        /* 重置所有默认样式 */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* 基础样式 */
         html, body {
             margin: 0;
             padding: 0;
@@ -21,7 +19,6 @@
             position: relative;
         }
         
-        /* 地图容器样式 */
         #container {
             width: 100%;
             height: 100vh;
@@ -32,12 +29,10 @@
             bottom: 0;
         }
 
-        /* 确保地图内部元素也是全屏的 */
         .amap-maps {
             height: 100vh !important;
         }
 
-        /* 保留原有样式 */
         #control-panel {
             position: fixed;
             top: 10px;
@@ -52,7 +47,6 @@
             width: 200px;
         }
         
-        /* 新增样式 */
         .warehouse-marker {
             width: 12px;
             height: 12px;
@@ -165,7 +159,6 @@
         let currentRoutes = [];
         let currentCostLabel = null;
 
-        // 初始化地图
         window.onload = function() {
             map = new AMap.Map('container', {
                 zoom: 4,
@@ -179,7 +172,6 @@
                 level: 'city'
             });
 
-            // 等待地图加载完成后再创建 provinceLayer
             map.on('complete', function() {
                 provinceLayer = new AMap.DistrictLayer.Province({
                     zIndex: 12,
@@ -218,11 +210,10 @@
         function showWarehouseRoutes(warehouseCity, clusterData) {
             clearRoutes();
             
-            // 获取仓库信息和分配信息
             const warehouseInfo = clusterData.warehouses[warehouseCity];
             const assignments = clusterData.assignments.filter(a => a.warehouse === warehouseCity && a.city !== warehouseCity);
             
-            // 显示仓库信息窗口
+            // 仓库信息
             const infoContent = `
                 <div class="route-info-window">
                     <div><b>${warehouseCity}</b></div>
@@ -242,9 +233,7 @@
             infoWindow.open(map);
             infoWindows.push(infoWindow);
             
-            // 为每个目标城市创建路线和标记
             assignments.forEach(assignment => {
-                // 创建路线（仅用于显示，不再添加点击事件）
                 const path = [
                     [warehouseInfo.longitude, warehouseInfo.latitude],
                     [assignment.longitude, assignment.latitude]
@@ -261,7 +250,6 @@
                 route.setMap(map);
                 currentRoutes.push(route);
 
-                // 创建目标城市的标记，并添加点击事件
                 const marker = new AMap.Marker({
                     position: [assignment.longitude, assignment.latitude],
                     content: '<div class="warehouse-marker" style="background-color: #1890ff;"></div>',
@@ -311,7 +299,6 @@
             const clusterData = warehouseData[clusterName];
             if (!clusterData) return;
             
-            // 添加区域高亮
             clusterData.assignments.forEach(assignment => {
                 const search = new AMap.DistrictSearch({
                     subdistrict: 0,
@@ -344,7 +331,6 @@
                 });
             });
 
-            // 显示总成本标签
             const costLabel = document.createElement('div');
             costLabel.className = 'cost-label';
             costLabel.innerHTML = `总成本：${(clusterData.totalCost / 10000).toFixed(2)}万元`;
@@ -356,7 +342,6 @@
             });
             currentCostLabel.setMap(map);
             
-            // 显示仓库和目标城市
             Object.entries(clusterData.warehouses).forEach(([city, info]) => {
                 const marker = new AMap.Marker({
                     position: [info.longitude, info.latitude],
@@ -373,7 +358,6 @@
                 currentPolygons.push(marker);
             });
             
-            // 显示目标城市
             clusterData.assignments.forEach(assignment => {
                 if (!assignment.isWarehouse) {
                     const marker = new AMap.Marker({
