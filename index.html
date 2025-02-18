@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>多仓库选址方案图</title>
+    <style>
+        /* 保留原有样式 */
+        #container {
+            width: 100%;
+            height: 800px;
+        }
+        #control-panel {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 999;
+            background-color: white;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-height: 80vh;
+            overflow-y: auto;
+            width: 200px;
+        }
+        
+        /* 新增样式 */
+        .warehouse-marker {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+            cursor: pointer;
+        }
+        
+        .warehouse-normal {
+            background-color: #52c41a;
+        }
+        
+        .warehouse-overtime {
+            background-color: #ff4d4f;
+        }
+        
+        .route-info-window {
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            max-width: 250px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        
+        .route-info-window b {
+            font-size: 14px;
+            color: #1890ff;
+            display: block;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 5px;
+        }
+        
+        .cost-label {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        #control-panel::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        #control-panel::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+        
+        #control-panel::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 3px;
+        }
+        
+        #control-panel::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .cluster-btn {
+            margin: 2px 0;
+            padding: 4px 8px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            text-align: left;
+            font-size: 12px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .cluster-btn.active {
+            background-color: #1890ff;
+            color: white;
+        }
+
+        .cluster-btn:hover {
+            background-color: #40a9ff;
+            color: white;
+        }
+    </style>
+    <script>
+        window._AMapSecurityConfig = {
+            securityJsCode: "8c9a26e733b197e9a8b86ea7baa3d592",
+        };
+    </script>
+    <script language="javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=05274d5027e6b22978b2ade4630f3596&plugin=AMap.DistrictSearch,AMap.Scale,AMap.ToolBar,AMap.GeometryUtil,AMap.MouseTool,AMap.Geocoder,AMap.Driving,AMap.Text,AMap.DistrictLayer"></script>
+
+</head>
+<body>
+    <div id="container"></div>
+    <div id="control-panel">
+        <button id="overview-btn" onclick="showAllProvinces()" class="cluster-btn">显示全国概览</button>
+        <div id="cluster-buttons"></div>
+    </div>
+    <script src="multi_warehouse_data.js"></script>
+    <script>
+        let map = null;
+        let districtSearch = null;
+        let currentPolygons = [];
+        let provinceLayer = null;
+        let currentActiveButton = null;
+        let infoWindows = [];
+        let currentRoutes = [];
+        let currentCostLabel = null;
+
+        // 初始化地图
+        window.onload = function() {
+            map = new AMap.Map('container', {
+                zoom: 4,
+                center: [116.397428, 39.90923],
+                viewMode: '3D'
+            });
+
+            districtSearch = new AMap.DistrictSearch({
+                subdistrict: 0,
+                extensions: 'all',
+                level: 'city'
+            });
+
+            // 等待地图加载完成后再创建 provinceLayer
+            map.on('complete', function() {
+                provinceLayer = new AMap.DistrictLayer.Province({
+                    zIndex: 12,
+                    opacity: 0.8,
+                    visible: true,
+                    styles: {
+                        'fill': '#F5F5F5',
+                        'province-stroke': '#D4D4D4',
+                        'city-stroke': '#D4D4D4',
+                        'county-stroke': '#D4D4D4'
+                    }
+                });
+
+                generateClusterButtons();
+                showAllProvinces();
+            });
+        }
+
+        function clearRoutes() {
+            currentRoutes.forEach(route => {
+                route.setMap(null);
+            });
+            currentRoutes = [];
+            
+            infoWindows.forEach(window => {
+                window.close();
+            });
+            infoWindows = [];
+            
+            if (currentCostLabel) {
+                currentCostLabel.setMap(null);
+                currentCostLabel = null;
+            }
+        }
+
+        function showWarehouseRoutes(warehouseCity, clusterData) {
+            clearRoutes();
+            
+            // 获取仓库信息和分配信息
+            const warehouseInfo = clusterData.warehouses[warehouseCity];
+            // 过滤出当前仓库负责的所有配送任务
+            const assignments = clusterData.assignments.filter(a => a.warehouse === warehouseCity && a.city !== warehouseCity);
+            
+            // 显示仓库信息窗口
+            const infoContent = `
+                <div class="route-info-window">
+                    <div><b>${warehouseCity}</b></div>
+                    <div>负责城市数：${warehouseInfo.cityCount}</div>
+                    <div>总车次：${warehouseInfo.totalTrips}</div>
+                    <div>平均履约时长：${warehouseInfo.avgDuration?.toFixed(2) || '暂无'}小时</div>
+                    <div>总成本：${(warehouseInfo.totalCost / 10000).toFixed(2)}万元</div>
+                </div>
+            `;
+            
+            const infoWindow = new AMap.InfoWindow({
+                content: infoContent,
+                position: [warehouseInfo.longitude, warehouseInfo.latitude],
+                offset: new AMap.Pixel(0, -20)
+            });
+            
+            infoWindow.open(map);
+            infoWindows.push(infoWindow);
+            
+            // 为每个目标城市创建路线
+            assignments.forEach(assignment => {
+                // 创建路线
+                const path = [
+                    [warehouseInfo.longitude, warehouseInfo.latitude],  // 仓库位置
+                    [assignment.longitude, assignment.latitude]          // 目标城市位置
+                ];
+                
+                // 创建路线对象
+                const route = new AMap.Polyline({
+                    path: path,
+                    strokeColor: '#1890ff',
+                    strokeWeight: 2,
+                    strokeOpacity: 0.8,
+                    zIndex: 100,
+                    extData: {
+                        warehouse: warehouseCity,
+                        city: assignment.city,
+                        trips: assignment.trips,
+                        duration: assignment.duration,
+                        cost: assignment.cost,
+                        totalCost: assignment.totalCost
+                    }
+                });
+                
+                // 添加点击事件
+                route.on('click', (e) => {
+                    const data = e.target.getExtData();
+                    const content = `
+                        <div class="route-info-window">
+                            <div><b>${data.warehouse} → ${data.city}</b></div>
+                            <div>车次：${data.trips}</div>
+                            <div>运输时间：${data.duration.toFixed(2)}小时</div>
+                            <div>单车运费：${data.cost.toFixed(2)}元</div>
+                            <div>总运费：${(data.totalCost / 10000).toFixed(2)}万元</div>
+                        </div>
+                    `;
+                    
+                    const infoWindow = new AMap.InfoWindow({
+                        content: content,
+                        position: e.lnglat,
+                        offset: new AMap.Pixel(0, -20)
+                    });
+                    
+                    infoWindow.open(map);
+                    infoWindows.push(infoWindow);
+                });
+                
+                // 将路线添加到地图
+                route.setMap(map);
+                currentRoutes.push(route);
+            });
+        }
+
+        function showClusterCities(clusterName) {
+            clearMap();
+            clearRoutes();
+            
+            const clusterData = warehouseData[clusterName];
+            if (!clusterData) return;
+            
+            // 添加区域高亮
+            clusterData.assignments.forEach(assignment => {
+                const search = new AMap.DistrictSearch({
+                    subdistrict: 0,
+                    extensions: 'all',
+                    level: 'city'
+                });
+                
+                search.search(assignment.city, function(status, result) {
+                    if (status === 'complete' && result.districtList && result.districtList[0]) {
+                        const district = result.districtList[0];
+                        const bounds = district.boundaries;
+                        
+                        if (bounds) {
+                            bounds.forEach(boundary => {
+                                const polygon = new AMap.Polygon({
+                                    path: boundary,
+                                    strokeColor: '#1890ff',
+                                    strokeWeight: 2,
+                                    strokeOpacity: 0.9,
+                                    fillColor: '#e6f7ff',
+                                    fillOpacity: 0.7,
+                                    zIndex: 10
+                                });
+                                
+                                polygon.setMap(map);
+                                currentPolygons.push(polygon);
+                            });
+                        }
+                    }
+                });
+            });
+
+            // 显示总成本标签
+            const costLabel = document.createElement('div');
+            costLabel.className = 'cost-label';
+            costLabel.innerHTML = `总成本：${(clusterData.totalCost / 10000).toFixed(2)}万元`;
+            currentCostLabel = new AMap.Marker({
+                position: [clusterData.center.longitude, clusterData.center.latitude],
+                content: costLabel,
+                offset: new AMap.Pixel(0, -50),
+                zIndex: 200
+            });
+            currentCostLabel.setMap(map);
+            
+            // 显示仓库和目标城市
+            Object.entries(clusterData.warehouses).forEach(([city, info]) => {
+                const marker = new AMap.Marker({
+                    position: [info.longitude, info.latitude],
+                    content: `<div class="warehouse-marker ${info.hasOvertime ? 'warehouse-overtime' : 'warehouse-normal'}"></div>`,
+                    offset: new AMap.Pixel(-8, -8),
+                    zIndex: 110
+                });
+                
+                marker.on('click', () => {
+                    showWarehouseRoutes(city, clusterData);
+                });
+                
+                marker.setMap(map);
+                currentPolygons.push(marker);
+            });
+            
+            // 显示目标城市
+            clusterData.assignments.forEach(assignment => {
+                if (!assignment.isWarehouse) {
+                    const marker = new AMap.Marker({
+                        position: [assignment.longitude, assignment.latitude],
+                        content: '<div class="warehouse-marker" style="background-color: #1890ff;"></div>',
+                        offset: new AMap.Pixel(-8, -8),
+                        zIndex: 100
+                    });
+                    marker.setMap(map);
+                    currentPolygons.push(marker);
+                }
+            });
+            
+            map.setFitView();
+        }
+
+        function generateClusterButtons() {
+            const buttonContainer = document.getElementById('cluster-buttons');
+            
+            Object.keys(warehouseData).forEach(cluster => {
+                const clusterData = warehouseData[cluster];
+                const cityCount = clusterData.assignments.length;
+                const warehouseCount = Object.keys(clusterData.warehouses).length;
+                
+                const button = document.createElement('button');
+                button.textContent = `${cluster} (${warehouseCount}仓/${cityCount}城市)`;
+                button.className = 'cluster-btn';
+                button.onclick = () => {
+                    if (currentActiveButton) {
+                        currentActiveButton.classList.remove('active');
+                    }
+                    button.classList.add('active');
+                    currentActiveButton = button;
+                    showClusterCities(cluster);
+                };
+                buttonContainer.appendChild(button);
+            });
+        }
+
+        function showAllProvinces() {
+            if (currentActiveButton) {
+                currentActiveButton.classList.remove('active');
+            }
+            const overviewButton = document.getElementById('overview-btn');
+            overviewButton.classList.add('active');
+            currentActiveButton = overviewButton;
+
+            clearMap();
+            clearRoutes();
+            provinceLayer.setMap(map);
+        }
+
+        function clearMap() {
+            console.log('Clearing map...');
+            if (currentPolygons.length > 0) {
+                currentPolygons.forEach(item => {
+                    if (item) {
+                        item.setMap(null);
+                    }
+                });
+                currentPolygons = [];
+            }
+            
+            if (provinceLayer) {
+                provinceLayer.setMap(null);
+            }
+            console.log('Map cleared');
+        }
+
+        window.onerror = function(msg, url, line) {
+            console.error('Error: ' + msg + '\nURL: ' + url + '\nLine: ' + line);
+            return false;
+        };
+    </script>
+</body>
+</html> 
