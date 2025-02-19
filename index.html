@@ -2,14 +2,16 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>多仓库选址方案图</title>
+    <title>仓库规划</title>
     <style>
+        /* 重置所有默认样式 */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        /* 基础样式 */
         html, body {
             margin: 0;
             padding: 0;
@@ -18,7 +20,8 @@
             overflow: hidden;
             position: relative;
         }
-        
+
+        /* 地图容器样式 */
         #container {
             width: 100%;
             height: 100vh;
@@ -29,10 +32,12 @@
             bottom: 0;
         }
 
+        /* 确保地图内部元素也是全屏的 */
         .amap-maps {
             height: 100vh !important;
         }
 
+        /* 保留原有样式 */
         #control-panel {
             position: fixed;
             top: 10px;
@@ -47,6 +52,7 @@
             width: 200px;
         }
         
+        /* 新增样式 */
         .warehouse-marker {
             width: 12px;
             height: 12px;
@@ -140,7 +146,7 @@
         };
     </script>
     <script language="javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=05274d5027e6b22978b2ade4630f3596&plugin=AMap.DistrictSearch,AMap.Scale,AMap.ToolBar,AMap.GeometryUtil,AMap.MouseTool,AMap.Geocoder,AMap.Driving,AMap.Text,AMap.DistrictLayer"></script>
-
+</head>
 </head>
 <body>
     <div id="container"></div>
@@ -148,7 +154,7 @@
         <button id="overview-btn" onclick="showAllProvinces()" class="cluster-btn">显示全国概览</button>
         <div id="cluster-buttons"></div>
     </div>
-    <script src="multi_warehouse_data.js"></script>
+    <script src="multi_warehouse_data_v1.1.js"></script>
     <script>
         let map = null;
         let districtSearch = null;
@@ -159,6 +165,7 @@
         let currentRoutes = [];
         let currentCostLabel = null;
 
+        // 初始化地图
         window.onload = function() {
             map = new AMap.Map('container', {
                 zoom: 4,
@@ -167,27 +174,25 @@
             });
 
             districtSearch = new AMap.DistrictSearch({
-                subdistrict: 0,
+                subdistrict: 1,
                 extensions: 'all',
                 level: 'city'
             });
 
-            map.on('complete', function() {
-                provinceLayer = new AMap.DistrictLayer.Province({
-                    zIndex: 12,
-                    opacity: 0.8,
-                    visible: true,
-                    styles: {
-                        'fill': '#F5F5F5',
-                        'province-stroke': '#D4D4D4',
-                        'city-stroke': '#D4D4D4',
-                        'county-stroke': '#D4D4D4'
-                    }
-                });
-
-                generateClusterButtons();
-                showAllProvinces();
+            provinceLayer = new AMap.DistrictLayer.Province({
+                zIndex: 12,
+                opacity: 0.8,
+                visible: true,
+                styles: {
+                    'fill': '#F5F5F5',
+                    'province-stroke': '#D4D4D4',
+                    'city-stroke': '#D4D4D4',
+                    'county-stroke': '#D4D4D4'
+                }
             });
+
+            generateClusterButtons();
+            showAllProvinces();
         }
 
         function clearRoutes() {
@@ -210,14 +215,17 @@
         function showWarehouseRoutes(warehouseCity, clusterData) {
             clearRoutes();
             
+            // 获取仓库信息和分配信息
             const warehouseInfo = clusterData.warehouses[warehouseCity];
+            // 过滤出当前仓库负责的所有配送任务
             const assignments = clusterData.assignments.filter(a => a.warehouse === warehouseCity && a.city !== warehouseCity);
             
-            // 仓库信息
+            // 显示仓库信息窗口
             const infoContent = `
                 <div class="route-info-window">
                     <div><b>${warehouseCity}</b></div>
                     <div>负责城市数：${warehouseInfo.cityCount}</div>
+                    <div>负责城市规划门店总数：${warehouseInfo.totalPlannedStores?.toFixed(0) || '0'}</div>
                     <div>总车次：${warehouseInfo.totalTrips}</div>
                     <div>平均履约时长：${warehouseInfo.avgDuration?.toFixed(2) || '暂无'}小时</div>
                     <div>总成本：${(warehouseInfo.totalCost / 10000).toFixed(2)}万元</div>
@@ -233,27 +241,20 @@
             infoWindow.open(map);
             infoWindows.push(infoWindow);
             
+            // 为每个目标城市创建路线
             assignments.forEach(assignment => {
+                // 创建路线
                 const path = [
-                    [warehouseInfo.longitude, warehouseInfo.latitude],
-                    [assignment.longitude, assignment.latitude]
+                    [warehouseInfo.longitude, warehouseInfo.latitude],  // 仓库位置
+                    [assignment.longitude, assignment.latitude]          // 目标城市位置
                 ];
                 
+                // 创建路线对象
                 const route = new AMap.Polyline({
                     path: path,
                     strokeColor: '#1890ff',
                     strokeWeight: 2,
                     strokeOpacity: 0.8,
-                    zIndex: 100
-                });
-                
-                route.setMap(map);
-                currentRoutes.push(route);
-
-                const marker = new AMap.Marker({
-                    position: [assignment.longitude, assignment.latitude],
-                    content: '<div class="warehouse-marker" style="background-color: #1890ff;"></div>',
-                    offset: new AMap.Pixel(-8, -8),
                     zIndex: 100,
                     extData: {
                         warehouse: warehouseCity,
@@ -261,34 +262,14 @@
                         trips: assignment.trips,
                         duration: assignment.duration,
                         cost: assignment.cost,
-                        totalCost: assignment.totalCost
+                        totalCost: assignment.totalCost,
+                        plannedStores: assignment.plannedStores
                     }
                 });
-
-                marker.on('click', (e) => {
-                    const data = e.target.getExtData();
-                    const content = `
-                        <div class="route-info-window">
-                            <div><b>${data.warehouse} → ${data.city}</b></div>
-                            <div>车次：${data.trips}</div>
-                            <div>运输时间：${data.duration.toFixed(2)}小时</div>
-                            <div>单车运费：${data.cost.toFixed(2)}元</div>
-                            <div>总运费：${(data.totalCost / 10000).toFixed(2)}万元</div>
-                        </div>
-                    `;
-                    
-                    const infoWindow = new AMap.InfoWindow({
-                        content: content,
-                        position: e.target.getPosition(),
-                        offset: new AMap.Pixel(0, -20)
-                    });
-                    
-                    infoWindow.open(map);
-                    infoWindows.push(infoWindow);
-                });
-
-                marker.setMap(map);
-                currentPolygons.push(marker);
+                
+                // 将路线添加到地图
+                route.setMap(map);
+                currentRoutes.push(route);
             });
         }
 
@@ -297,22 +278,59 @@
             clearRoutes();
             
             const clusterData = warehouseData[clusterName];
-            if (!clusterData) return;
+            if (!clusterData) {
+                console.error('No cluster data found for:', clusterName);
+                return;
+            }
             
+            console.log(`Processing cluster: ${clusterName}`);
+            
+            // 添加区域高亮
             clusterData.assignments.forEach(assignment => {
+                console.log(`Processing city: ${assignment.city}`, assignment); // 添加城市处理日志
+                
                 const search = new AMap.DistrictSearch({
-                    subdistrict: 0,
+                    subdistrict: 1,
                     extensions: 'all',
                     level: 'city'
                 });
                 
                 search.search(assignment.city, function(status, result) {
-                    if (status === 'complete' && result.districtList && result.districtList[0]) {
-                        const district = result.districtList[0];
-                        const bounds = district.boundaries;
+                    if (status === 'complete' && result.districtList && result.districtList.length > 0) {
+                        let cityDistrict = result.districtList[0];
                         
-                        if (bounds) {
-                            bounds.forEach(boundary => {
+                        // 特殊处理眉山市
+                        if (assignment.city === '眉山市') {
+                            search.setLevel('city');  // 设置搜索级别为city
+                            search.search('四川省眉山市', function(status2, result2) {
+                                if (status2 === 'complete' && result2.districtList && result2.districtList.length > 0) {
+                                    const msDistrict = result2.districtList[0];
+                                    if (msDistrict.boundaries) {
+                                        console.log(`Using boundaries for 四川省眉山市: ${msDistrict.boundaries.length} polygons`);
+                                        msDistrict.boundaries.forEach((boundary) => {
+                                            const polygon = new AMap.Polygon({
+                                                path: boundary,
+                                                strokeColor: '#1890ff',
+                                                strokeWeight: 2,
+                                                strokeOpacity: 0.9,
+                                                fillColor: '#e6f7ff',
+                                                fillOpacity: 0.7,
+                                                zIndex: 10,
+                                                extData: { cityName: assignment.city }
+                                            });
+                                            polygon.setMap(map);
+                                            currentPolygons.push(polygon);
+                                        });
+                                    }
+                                }
+                            });
+                            return;
+                        }
+                        
+                        // 处理其他城市
+                        if (cityDistrict.boundaries) {
+                            console.log(`Using boundaries for ${assignment.city}: ${cityDistrict.boundaries.length} polygons`);
+                            cityDistrict.boundaries.forEach((boundary) => {
                                 const polygon = new AMap.Polygon({
                                     path: boundary,
                                     strokeColor: '#1890ff',
@@ -320,17 +338,20 @@
                                     strokeOpacity: 0.9,
                                     fillColor: '#e6f7ff',
                                     fillOpacity: 0.7,
-                                    zIndex: 10
+                                    zIndex: 10,
+                                    extData: { cityName: assignment.city }
                                 });
-                                
                                 polygon.setMap(map);
                                 currentPolygons.push(polygon);
                             });
+                        } else {
+                            console.error(`No boundaries found for ${assignment.city}, level: ${cityDistrict.level}`);
                         }
                     }
                 });
             });
 
+            // 显示总成本标签
             const costLabel = document.createElement('div');
             costLabel.className = 'cost-label';
             costLabel.innerHTML = `总成本：${(clusterData.totalCost / 10000).toFixed(2)}万元`;
@@ -342,6 +363,7 @@
             });
             currentCostLabel.setMap(map);
             
+            // 显示仓库和目标城市
             Object.entries(clusterData.warehouses).forEach(([city, info]) => {
                 const marker = new AMap.Marker({
                     position: [info.longitude, info.latitude],
@@ -358,14 +380,48 @@
                 currentPolygons.push(marker);
             });
             
+            // 显示目标城市
             clusterData.assignments.forEach(assignment => {
                 if (!assignment.isWarehouse) {
                     const marker = new AMap.Marker({
                         position: [assignment.longitude, assignment.latitude],
                         content: '<div class="warehouse-marker" style="background-color: #1890ff;"></div>',
                         offset: new AMap.Pixel(-8, -8),
-                        zIndex: 100
+                        zIndex: 100,
+                        extData: {
+                            warehouse: assignment.warehouse,
+                            city: assignment.city,
+                            trips: assignment.trips,
+                            duration: assignment.duration,
+                            cost: assignment.cost,
+                            totalCost: assignment.totalCost,
+                            plannedStores: assignment.plannedStores
+                        }
                     });
+
+                    marker.on('click', (e) => {
+                        const data = e.target.getExtData();
+                        const content = `
+                            <div class="route-info-window">
+                                <div><b>${data.warehouse} → ${data.city}</b></div>
+                                <div>规划门店数：${data.plannedStores?.toFixed(0) || '0'}</div>
+                                <div>车次：${data.trips}</div>
+                                <div>运输时间：${data.duration.toFixed(2)}小时</div>
+                                <div>单车运费：${data.cost.toFixed(2)}元</div>
+                                <div>总运费：${(data.totalCost / 10000).toFixed(2)}万元</div>
+                            </div>
+                        `;
+                        
+                        const infoWindow = new AMap.InfoWindow({
+                            content: content,
+                            position: e.target.getPosition(),
+                            offset: new AMap.Pixel(0, -20)
+                        });
+                        
+                        infoWindow.open(map);
+                        infoWindows.push(infoWindow);
+                    });
+
                     marker.setMap(map);
                     currentPolygons.push(marker);
                 }
@@ -427,8 +483,14 @@
             console.log('Map cleared');
         }
 
-        window.onerror = function(msg, url, line) {
-            console.error('Error: ' + msg + '\nURL: ' + url + '\nLine: ' + line);
+        window.onerror = function(msg, url, line, col, error) {
+            console.error('Error details:', {
+                message: msg,
+                url: url,
+                line: line,
+                column: col,
+                error: error
+            });
             return false;
         };
     </script>
