@@ -1,213 +1,221 @@
 const warehouseData = {
   "云南": {
-    "totalCost": 143021.0,
+    "totalCost": 224505.1,
     "center": {
       "longitude": 101.29023556250002,
       "latitude": 24.8893211875
     },
     "warehouses": {
-      "玉溪市": {
-        "longitude": 102.526673,
-        "latitude": 24.346786,
+      "楚雄彝族自治州": {
+        "longitude": 101.528304,
+        "latitude": 25.045678,
         "hasOvertime": true,
-        "totalCost": 103769.7,
-        "cityCount": 9,
-        "totalTrips": 128.0,
-        "avgDuration": 3.2088888888888887
-      },
-      "大理白族自治州": {
-        "longitude": 100.267608,
-        "latitude": 25.606548,
-        "hasOvertime": true,
-        "totalCost": 39251.3,
-        "cityCount": 7,
-        "totalTrips": 40.0,
-        "avgDuration": 2.5285714285714285
+        "totalCost": 224505.10000000003,
+        "cityCount": 16,
+        "totalTrips": 168.0,
+        "avgDuration": 4.21,
+        "totalPlannedStores": 471.0
       }
     },
     "assignments": [
       {
-        "city": "大理白族自治州",
-        "warehouse": "大理白族自治州",
-        "longitude": 100.267608,
-        "latitude": 25.606548,
-        "trips": 12.0,
-        "duration": 0.0,
-        "cost": 520.0,
-        "totalCost": 6240.0,
-        "isWarehouse": true
-      },
-      {
         "city": "楚雄彝族自治州",
-        "warehouse": "大理白族自治州",
+        "warehouse": "楚雄彝族自治州",
         "longitude": 101.528304,
         "latitude": 25.045678,
         "trips": 5.0,
-        "duration": 2.13,
-        "cost": 902.3,
-        "totalCost": 4511.5,
-        "isWarehouse": false
-      },
-      {
-        "city": "丽江市",
-        "warehouse": "大理白族自治州",
-        "longitude": 100.225936,
-        "latitude": 26.855165,
-        "trips": 7.0,
-        "duration": 2.42,
-        "cost": 914.5,
-        "totalCost": 6401.5,
-        "isWarehouse": false
-      },
-      {
-        "city": "保山市",
-        "warehouse": "大理白族自治州",
-        "longitude": 99.161489,
-        "latitude": 25.112018,
-        "trips": 5.0,
-        "duration": 2.48,
-        "cost": 928.9,
-        "totalCost": 4644.5,
-        "isWarehouse": false
-      },
-      {
-        "city": "怒江傈僳族自治州",
-        "warehouse": "大理白族自治州",
-        "longitude": 98.8566,
-        "latitude": 25.817555,
-        "trips": 1.0,
-        "duration": 3.03,
-        "cost": 1187.0,
-        "totalCost": 1187.0,
-        "isWarehouse": false
-      },
-      {
-        "city": "迪庆藏族自治州",
-        "warehouse": "大理白族自治州",
-        "longitude": 99.70211,
-        "latitude": 27.819149,
-        "trips": 2.0,
-        "duration": 3.55,
-        "cost": 1560.6,
-        "totalCost": 3121.2,
-        "isWarehouse": false
-      },
-      {
-        "city": "德宏傣族景颇族自治州",
-        "warehouse": "大理白族自治州",
-        "longitude": 98.585621,
-        "latitude": 24.433146,
-        "trips": 8.0,
-        "duration": 4.09,
-        "cost": 1643.2,
-        "totalCost": 13145.6,
-        "isWarehouse": false
-      },
-      {
-        "city": "玉溪市",
-        "warehouse": "玉溪市",
-        "longitude": 102.526673,
-        "latitude": 24.346786,
-        "trips": 10.0,
         "duration": 0.0,
         "cost": 520.0,
-        "totalCost": 5200.0,
-        "isWarehouse": true
+        "totalCost": 2600.0,
+        "isWarehouse": true,
+        "plannedStores": 20.0
       },
       {
         "city": "昆明市",
-        "warehouse": "玉溪市",
+        "warehouse": "楚雄彝族自治州",
         "longitude": 102.833669,
         "latitude": 24.88149,
         "trips": 78.0,
-        "duration": 1.05,
-        "cost": 520.0,
-        "totalCost": 40560.0,
-        "isWarehouse": false
+        "duration": 2.11,
+        "cost": 860.9,
+        "totalCost": 67150.2,
+        "isWarehouse": false,
+        "plannedStores": 118.0
       },
       {
-        "city": "红河哈尼族彝族自治州",
-        "warehouse": "玉溪市",
-        "longitude": 103.374873,
-        "latitude": 23.363129,
-        "trips": 11.0,
-        "duration": 2.52,
-        "cost": 952.6,
-        "totalCost": 10478.6,
-        "isWarehouse": false
+        "city": "大理白族自治州",
+        "warehouse": "楚雄彝族自治州",
+        "longitude": 100.267608,
+        "latitude": 25.606548,
+        "trips": 12.0,
+        "duration": 2.11,
+        "cost": 895.5,
+        "totalCost": 10746.0,
+        "isWarehouse": false,
+        "plannedStores": 34.0
+      },
+      {
+        "city": "玉溪市",
+        "warehouse": "楚雄彝族自治州",
+        "longitude": 102.526673,
+        "latitude": 24.346786,
+        "trips": 10.0,
+        "duration": 2.29,
+        "cost": 1051.3,
+        "totalCost": 10513.0,
+        "isWarehouse": false,
+        "plannedStores": 30.0
       },
       {
         "city": "曲靖市",
-        "warehouse": "玉溪市",
+        "warehouse": "楚雄彝族自治州",
         "longitude": 103.796288,
         "latitude": 25.490866,
         "trips": 12.0,
-        "duration": 2.59,
-        "cost": 1153.3999999999999,
-        "totalCost": 13840.8,
-        "isWarehouse": false
+        "duration": 3.26,
+        "cost": 1480.2,
+        "totalCost": 17762.4,
+        "isWarehouse": false,
+        "plannedStores": 34.0
+      },
+      {
+        "city": "丽江市",
+        "warehouse": "楚雄彝族自治州",
+        "longitude": 100.225936,
+        "latitude": 26.855165,
+        "trips": 7.0,
+        "duration": 3.68,
+        "cost": 1657.8999999999999,
+        "totalCost": 11605.3,
+        "isWarehouse": false,
+        "plannedStores": 13.0
+      },
+      {
+        "city": "保山市",
+        "warehouse": "楚雄彝族自治州",
+        "longitude": 99.161489,
+        "latitude": 25.112018,
+        "trips": 5.0,
+        "duration": 4.04,
+        "cost": 1758.7,
+        "totalCost": 8793.5,
+        "isWarehouse": false,
+        "plannedStores": 18.0
+      },
+      {
+        "city": "怒江傈僳族自治州",
+        "warehouse": "楚雄彝族自治州",
+        "longitude": 98.8566,
+        "latitude": 25.817555,
+        "trips": 1.0,
+        "duration": 4.55,
+        "cost": 2016.8,
+        "totalCost": 2016.8,
+        "isWarehouse": false,
+        "plannedStores": 10.0
+      },
+      {
+        "city": "红河哈尼族彝族自治州",
+        "warehouse": "楚雄彝族自治州",
+        "longitude": 103.374873,
+        "latitude": 23.363129,
+        "trips": 11.0,
+        "duration": 4.77,
+        "cost": 2042.7,
+        "totalCost": 22469.7,
+        "isWarehouse": false,
+        "plannedStores": 44.0
+      },
+      {
+        "city": "迪庆藏族自治州",
+        "warehouse": "楚雄彝族自治州",
+        "longitude": 99.70211,
+        "latitude": 27.819149,
+        "trips": 2.0,
+        "duration": 5.05,
+        "cost": 2401.0,
+        "totalCost": 4802.0,
+        "isWarehouse": false,
+        "plannedStores": 8.0
       },
       {
         "city": "文山壮族苗族自治州",
-        "warehouse": "玉溪市",
+        "warehouse": "楚雄彝族自治州",
         "longitude": 104.21567,
         "latitude": 23.400983,
         "trips": 6.0,
-        "duration": 3.57,
-        "cost": 1577.7,
-        "totalCost": 9466.2,
-        "isWarehouse": false
-      },
-      {
-        "city": "普洱市",
-        "warehouse": "玉溪市",
-        "longitude": 100.966011,
-        "latitude": 22.825229,
-        "trips": 1.0,
-        "duration": 3.98,
-        "cost": 1675.3,
-        "totalCost": 1675.3,
-        "isWarehouse": false
-      },
-      {
-        "city": "临沧市",
-        "warehouse": "玉溪市",
-        "longitude": 100.088837,
-        "latitude": 23.884175,
-        "trips": 2.0,
-        "duration": 4.59,
-        "cost": 2090.3,
-        "totalCost": 4180.6,
-        "isWarehouse": false
+        "duration": 5.13,
+        "cost": 2473.1,
+        "totalCost": 14838.6,
+        "isWarehouse": false,
+        "plannedStores": 37.0
       },
       {
         "city": "昭通市",
-        "warehouse": "玉溪市",
+        "warehouse": "楚雄彝族自治州",
         "longitude": 103.717078,
         "latitude": 27.338185,
         "trips": 1.0,
-        "duration": 4.95,
-        "cost": 2208.7,
-        "totalCost": 2208.7,
-        "isWarehouse": false
+        "duration": 5.51,
+        "cost": 2553.6,
+        "totalCost": 2553.6,
+        "isWarehouse": false,
+        "plannedStores": 25.0
+      },
+      {
+        "city": "德宏傣族景颇族自治州",
+        "warehouse": "楚雄彝族自治州",
+        "longitude": 98.585621,
+        "latitude": 24.433146,
+        "trips": 8.0,
+        "duration": 5.66,
+        "cost": 2473.0,
+        "totalCost": 19784.0,
+        "isWarehouse": false,
+        "plannedStores": 27.0
+      },
+      {
+        "city": "普洱市",
+        "warehouse": "楚雄彝族自治州",
+        "longitude": 100.966011,
+        "latitude": 22.825229,
+        "trips": 1.0,
+        "duration": 5.76,
+        "cost": 2561.6,
+        "totalCost": 2561.6,
+        "isWarehouse": false,
+        "plannedStores": 23.0
+      },
+      {
+        "city": "临沧市",
+        "warehouse": "楚雄彝族自治州",
+        "longitude": 100.088837,
+        "latitude": 23.884175,
+        "trips": 2.0,
+        "duration": 6.14,
+        "cost": 1972.4,
+        "totalCost": 3944.8,
+        "isWarehouse": false,
+        "plannedStores": 17.0
       },
       {
         "city": "西双版纳傣族自治州",
-        "warehouse": "玉溪市",
+        "warehouse": "楚雄彝族自治州",
         "longitude": 100.797002,
         "latitude": 22.009037,
         "trips": 7.0,
-        "duration": 5.63,
-        "cost": 2308.5,
-        "totalCost": 16159.5,
-        "isWarehouse": false
+        "duration": 7.3,
+        "cost": 3194.7999999999997,
+        "totalCost": 22363.6,
+        "isWarehouse": false,
+        "plannedStores": 13.0
       }
     ]
   },
   "京津冀": {
     "totalCost": 1027376.1,
     "center": {
-      "longitude": 116.15285881249999,
+      "longitude": 116.1528588125,
       "latitude": 38.8699654375
     },
     "warehouses": {
@@ -218,7 +226,8 @@ const warehouseData = {
         "totalCost": 235587.0,
         "cityCount": 6,
         "totalTrips": 380.0,
-        "avgDuration": 1.4633333333333336
+        "avgDuration": 1.4633333333333336,
+        "totalPlannedStores": 326.0
       },
       "廊坊市": {
         "longitude": 116.683546,
@@ -227,7 +236,8 @@ const warehouseData = {
         "totalCost": 672420.3,
         "cityCount": 7,
         "totalTrips": 1027.0,
-        "avgDuration": 1.695714285714286
+        "avgDuration": 1.695714285714286,
+        "totalPlannedStores": 669.0
       },
       "唐山市": {
         "longitude": 118.180149,
@@ -236,7 +246,8 @@ const warehouseData = {
         "totalCost": 119368.8,
         "cityCount": 3,
         "totalTrips": 173.0,
-        "avgDuration": 1.4166666666666667
+        "avgDuration": 1.4166666666666667,
+        "totalPlannedStores": 115.0
       }
     },
     "assignments": [
@@ -249,7 +260,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 47840.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 60.0
       },
       {
         "city": "秦皇岛市",
@@ -260,7 +272,8 @@ const warehouseData = {
         "duration": 1.85,
         "cost": 784.6,
         "totalCost": 33737.8,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 29.0
       },
       {
         "city": "承德市",
@@ -271,7 +284,8 @@ const warehouseData = {
         "duration": 2.4,
         "cost": 994.5,
         "totalCost": 37791.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 26.0
       },
       {
         "city": "廊坊市",
@@ -282,7 +296,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 58760.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 69.0
       },
       {
         "city": "北京市",
@@ -293,7 +308,8 @@ const warehouseData = {
         "duration": 1.23,
         "cost": 520.0,
         "totalCost": 200200.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 215.0
       },
       {
         "city": "雄安新区",
@@ -304,7 +320,8 @@ const warehouseData = {
         "duration": 1.39,
         "cost": 569.9,
         "totalCost": 569.9,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 0.0
       },
       {
         "city": "天津市",
@@ -315,7 +332,8 @@ const warehouseData = {
         "duration": 1.46,
         "cost": 520.0,
         "totalCost": 97240.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 140.0
       },
       {
         "city": "保定市",
@@ -326,7 +344,8 @@ const warehouseData = {
         "duration": 2.09,
         "cost": 796.0,
         "totalCost": 102684.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 111.0
       },
       {
         "city": "沧州市",
@@ -337,7 +356,8 @@ const warehouseData = {
         "duration": 2.15,
         "cost": 825.5,
         "totalCost": 104013.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 71.0
       },
       {
         "city": "张家口市",
@@ -348,7 +368,8 @@ const warehouseData = {
         "duration": 3.55,
         "cost": 1266.8999999999999,
         "totalCost": 108953.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 63.0
       },
       {
         "city": "邢台市",
@@ -359,7 +380,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 42120.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 70.0
       },
       {
         "city": "邯郸市",
@@ -370,7 +392,8 @@ const warehouseData = {
         "duration": 0.9,
         "cost": 520.0,
         "totalCost": 49400.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 82.0
       },
       {
         "city": "石家庄市",
@@ -381,7 +404,8 @@ const warehouseData = {
         "duration": 1.74,
         "cost": 669.9,
         "totalCost": 103834.5,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 134.0
       },
       {
         "city": "衡水市",
@@ -392,7 +416,8 @@ const warehouseData = {
         "duration": 1.95,
         "cost": 815.9000000000001,
         "totalCost": 38347.3,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 40.0
       },
       {
         "city": "辛集市",
@@ -403,7 +428,8 @@ const warehouseData = {
         "duration": 1.98,
         "cost": 894.5,
         "totalCost": 894.5,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 0.0
       },
       {
         "city": "定州市",
@@ -414,7 +440,8 @@ const warehouseData = {
         "duration": 2.21,
         "cost": 990.7,
         "totalCost": 990.7,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 0.0
       }
     ]
   },
@@ -422,7 +449,7 @@ const warehouseData = {
     "totalCost": 149126.3,
     "center": {
       "longitude": 111.15416599999999,
-      "latitude": 40.516681000000005
+      "latitude": 40.516681
     },
     "warehouses": {
       "包头市": {
@@ -432,7 +459,8 @@ const warehouseData = {
         "totalCost": 149126.3,
         "cityCount": 4,
         "totalTrips": 184.0,
-        "avgDuration": 1.7174999999999998
+        "avgDuration": 1.7174999999999998,
+        "totalPlannedStores": 124.0
       }
     },
     "assignments": [
@@ -445,7 +473,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 26000.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 31.0
       },
       {
         "city": "鄂尔多斯市",
@@ -456,7 +485,8 @@ const warehouseData = {
         "duration": 1.65,
         "cost": 690.0,
         "totalCost": 34500.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 34.0
       },
       {
         "city": "呼和浩特市",
@@ -467,7 +497,8 @@ const warehouseData = {
         "duration": 1.9,
         "cost": 882.0,
         "totalCost": 55566.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 41.0
       },
       {
         "city": "乌兰察布市",
@@ -478,58 +509,87 @@ const warehouseData = {
         "duration": 3.32,
         "cost": 1574.3000000000002,
         "totalCost": 33060.3,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 18.0
       }
     ]
   },
   "吉林": {
-    "totalCost": 308243.8,
+    "totalCost": 349661.9,
     "center": {
       "longitude": 125.56074224999999,
-      "latitude": 43.50798958333334
+      "latitude": 43.507989583333334
     },
     "warehouses": {
+      "吉林市": {
+        "longitude": 126.549719,
+        "latitude": 43.838132,
+        "hasOvertime": false,
+        "totalCost": 118948.5,
+        "cityCount": 4,
+        "totalTrips": 112.0,
+        "avgDuration": 2.535,
+        "totalPlannedStores": 71.0
+      },
       "长春市": {
         "longitude": 125.323643,
         "latitude": 43.816996,
         "hasOvertime": true,
-        "totalCost": 286691.0,
-        "cityCount": 10,
-        "totalTrips": 333.0,
-        "avgDuration": 2.195
-      },
-      "延边朝鲜族自治州": {
-        "longitude": 129.470605,
-        "latitude": 42.909426,
-        "hasOvertime": false,
-        "totalCost": 21552.8,
-        "cityCount": 2,
-        "totalTrips": 41.0,
-        "avgDuration": 0.88
+        "totalCost": 230713.4,
+        "cityCount": 8,
+        "totalTrips": 262.0,
+        "avgDuration": 2.2199999999999998,
+        "totalPlannedStores": 142.0
       }
     },
     "assignments": [
       {
+        "city": "吉林市",
+        "warehouse": "吉林市",
+        "longitude": 126.549719,
+        "latitude": 43.838132,
+        "trips": 54.0,
+        "duration": 0.0,
+        "cost": 520.0,
+        "totalCost": 28080.0,
+        "isWarehouse": true,
+        "plannedStores": 36.0
+      },
+      {
+        "city": "白山市",
+        "warehouse": "吉林市",
+        "longitude": 126.414274,
+        "latitude": 41.944132,
+        "trips": 17.0,
+        "duration": 2.85,
+        "cost": 1354.3999999999999,
+        "totalCost": 23024.8,
+        "isWarehouse": false,
+        "plannedStores": 11.0
+      },
+      {
         "city": "延边朝鲜族自治州",
-        "warehouse": "延边朝鲜族自治州",
+        "warehouse": "吉林市",
         "longitude": 129.470605,
         "latitude": 42.909426,
         "trips": 40.0,
-        "duration": 0.0,
-        "cost": 520.0,
-        "totalCost": 20800.0,
-        "isWarehouse": true
+        "duration": 3.58,
+        "cost": 1657.9,
+        "totalCost": 66316.0,
+        "isWarehouse": false,
+        "plannedStores": 24.0
       },
       {
         "city": "长白山管委会",
-        "warehouse": "延边朝鲜族自治州",
+        "warehouse": "吉林市",
         "longitude": 128.123322,
         "latitude": 42.420555,
         "trips": 1.0,
-        "duration": 1.76,
-        "cost": 752.8,
-        "totalCost": 752.8,
-        "isWarehouse": false
+        "duration": 3.71,
+        "cost": 1527.7,
+        "totalCost": 1527.7,
+        "isWarehouse": false,
+        "plannedStores": 0.0
       },
       {
         "city": "长春市",
@@ -540,7 +600,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 63960.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 72.0
       },
       {
         "city": "四平市",
@@ -551,7 +612,8 @@ const warehouseData = {
         "duration": 1.42,
         "cost": 617.9000000000001,
         "totalCost": 11122.2,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 13.0
       },
       {
         "city": "辽源市",
@@ -562,18 +624,8 @@ const warehouseData = {
         "duration": 1.42,
         "cost": 591.4,
         "totalCost": 5914.0,
-        "isWarehouse": false
-      },
-      {
-        "city": "吉林市",
-        "warehouse": "长春市",
-        "longitude": 126.549719,
-        "latitude": 43.838132,
-        "trips": 54.0,
-        "duration": 1.44,
-        "cost": 605.1999999999999,
-        "totalCost": 32680.8,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 7.0
       },
       {
         "city": "梅河口市",
@@ -584,7 +636,8 @@ const warehouseData = {
         "duration": 1.77,
         "cost": 821.7,
         "totalCost": 821.7,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 0.0
       },
       {
         "city": "松原市",
@@ -595,7 +648,8 @@ const warehouseData = {
         "duration": 2.03,
         "cost": 890.8,
         "totalCost": 46321.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 12.0
       },
       {
         "city": "通化市",
@@ -606,18 +660,8 @@ const warehouseData = {
         "duration": 2.75,
         "cost": 1379.8,
         "totalCost": 31735.4,
-        "isWarehouse": false
-      },
-      {
-        "city": "白山市",
-        "warehouse": "长春市",
-        "longitude": 126.414274,
-        "latitude": 41.944132,
-        "trips": 17.0,
-        "duration": 2.75,
-        "cost": 1370.3999999999999,
-        "totalCost": 23296.8,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 16.0
       },
       {
         "city": "白城市",
@@ -628,7 +672,8 @@ const warehouseData = {
         "duration": 3.67,
         "cost": 1820.3,
         "totalCost": 36406.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 10.0
       },
       {
         "city": "兴安盟",
@@ -639,26 +684,18 @@ const warehouseData = {
         "duration": 4.7,
         "cost": 2295.5,
         "totalCost": 34432.5,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 12.0
       }
     ]
   },
   "山东": {
     "totalCost": 944500.9,
     "center": {
-      "longitude": 118.227401625,
+      "longitude": 118.22740162500001,
       "latitude": 36.3818816875
     },
     "warehouses": {
-      "青岛市": {
-        "longitude": 120.382665,
-        "latitude": 36.066938,
-        "hasOvertime": false,
-        "totalCost": 427595.5,
-        "cityCount": 6,
-        "totalTrips": 507.0,
-        "avgDuration": 2.146666666666667
-      },
       "泰安市": {
         "longitude": 117.086963,
         "latitude": 36.201784,
@@ -666,7 +703,18 @@ const warehouseData = {
         "totalCost": 516905.39999999997,
         "cityCount": 10,
         "totalTrips": 734.0,
-        "avgDuration": 1.721
+        "avgDuration": 1.721,
+        "totalPlannedStores": 601.0
+      },
+      "青岛市": {
+        "longitude": 120.382665,
+        "latitude": 36.066938,
+        "hasOvertime": false,
+        "totalCost": 427595.5,
+        "cityCount": 6,
+        "totalTrips": 507.0,
+        "avgDuration": 2.146666666666667,
+        "totalPlannedStores": 391.0
       }
     },
     "assignments": [
@@ -679,7 +727,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 29640.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 49.0
       },
       {
         "city": "济南市",
@@ -690,7 +739,8 @@ const warehouseData = {
         "duration": 1.11,
         "cost": 520.0,
         "totalCost": 154440.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 114.0
       },
       {
         "city": "济宁市",
@@ -701,7 +751,8 @@ const warehouseData = {
         "duration": 1.65,
         "cost": 684.1,
         "totalCost": 51307.5,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 66.0
       },
       {
         "city": "德州市",
@@ -712,7 +763,8 @@ const warehouseData = {
         "duration": 1.81,
         "cost": 856.6999999999999,
         "totalCost": 35124.7,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 59.0
       },
       {
         "city": "聊城市",
@@ -723,7 +775,8 @@ const warehouseData = {
         "duration": 1.84,
         "cost": 682.5,
         "totalCost": 25252.5,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 49.0
       },
       {
         "city": "淄博市",
@@ -734,7 +787,8 @@ const warehouseData = {
         "duration": 1.85,
         "cost": 816.0,
         "totalCost": 57120.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 56.0
       },
       {
         "city": "枣庄市",
@@ -745,7 +799,8 @@ const warehouseData = {
         "duration": 1.85,
         "cost": 901.2,
         "totalCost": 24332.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 28.0
       },
       {
         "city": "临沂市",
@@ -756,7 +811,8 @@ const warehouseData = {
         "duration": 2.25,
         "cost": 994.6999999999999,
         "totalCost": 52719.1,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 81.0
       },
       {
         "city": "菏泽市",
@@ -767,7 +823,8 @@ const warehouseData = {
         "duration": 2.41,
         "cost": 1126.6,
         "totalCost": 57456.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 62.0
       },
       {
         "city": "滨州市",
@@ -778,7 +835,8 @@ const warehouseData = {
         "duration": 2.44,
         "cost": 1135.1,
         "totalCost": 29512.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 37.0
       },
       {
         "city": "青岛市",
@@ -789,7 +847,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 95680.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 132.0
       },
       {
         "city": "潍坊市",
@@ -800,7 +859,8 @@ const warehouseData = {
         "duration": 1.91,
         "cost": 833.1999999999999,
         "totalCost": 84153.2,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 86.0
       },
       {
         "city": "烟台市",
@@ -811,7 +871,8 @@ const warehouseData = {
         "duration": 2.41,
         "cost": 1138.6000000000001,
         "totalCost": 111582.8,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 80.0
       },
       {
         "city": "日照市",
@@ -822,7 +883,8 @@ const warehouseData = {
         "duration": 2.54,
         "cost": 678.8,
         "totalCost": 35297.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 31.0
       },
       {
         "city": "东营市",
@@ -833,7 +895,8 @@ const warehouseData = {
         "duration": 2.94,
         "cost": 1433.8,
         "totalCost": 47315.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 28.0
       },
       {
         "city": "威海市",
@@ -844,184 +907,190 @@ const warehouseData = {
         "duration": 3.08,
         "cost": 1373.5,
         "totalCost": 53566.5,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 34.0
       }
     ]
   },
   "山西": {
-    "totalCost": 71023.3,
+    "totalCost": 82346.2,
     "center": {
-      "longitude": 112.45971236363636,
+      "longitude": 112.45971236363638,
       "latitude": 37.41645972727272
     },
     "warehouses": {
-      "临汾市": {
-        "longitude": 111.51931,
-        "latitude": 36.088581,
-        "hasOvertime": false,
-        "totalCost": 10707.900000000001,
-        "cityCount": 4,
-        "totalTrips": 14.0,
-        "avgDuration": 1.81
-      },
-      "太原市": {
-        "longitude": 112.549656,
-        "latitude": 37.870451,
-        "hasOvertime": false,
-        "totalCost": 60315.4,
-        "cityCount": 7,
-        "totalTrips": 87.0,
-        "avgDuration": 1.6414285714285715
+      "晋中市": {
+        "longitude": 112.752633,
+        "latitude": 37.688006,
+        "hasOvertime": true,
+        "totalCost": 82346.2,
+        "cityCount": 11,
+        "totalTrips": 101.0,
+        "avgDuration": 2.2936363636363635,
+        "totalPlannedStores": 342.0
       }
     },
     "assignments": [
       {
-        "city": "临汾市",
-        "warehouse": "临汾市",
-        "longitude": 111.51931,
-        "latitude": 36.088581,
-        "trips": 4.0,
-        "duration": 0.0,
-        "cost": 520.0,
-        "totalCost": 2080.0,
-        "isWarehouse": true
-      },
-      {
-        "city": "运城市",
-        "warehouse": "临汾市",
-        "longitude": 111.007051,
-        "latitude": 35.02667,
-        "trips": 3.0,
-        "duration": 1.88,
-        "cost": 776.1999999999999,
-        "totalCost": 2328.6,
-        "isWarehouse": false
-      },
-      {
-        "city": "长治市",
-        "warehouse": "临汾市",
-        "longitude": 113.117394,
-        "latitude": 36.195142,
-        "trips": 4.0,
-        "duration": 2.34,
-        "cost": 902.0,
-        "totalCost": 3608.0,
-        "isWarehouse": false
-      },
-      {
-        "city": "晋城市",
-        "warehouse": "临汾市",
-        "longitude": 112.852022,
-        "latitude": 35.491315,
-        "trips": 3.0,
-        "duration": 3.02,
-        "cost": 897.1,
-        "totalCost": 2691.3,
-        "isWarehouse": false
-      },
-      {
-        "city": "太原市",
-        "warehouse": "太原市",
-        "longitude": 112.549656,
-        "latitude": 37.870451,
-        "trips": 28.0,
-        "duration": 0.0,
-        "cost": 520.0,
-        "totalCost": 14560.0,
-        "isWarehouse": true
-      },
-      {
         "city": "晋中市",
-        "warehouse": "太原市",
+        "warehouse": "晋中市",
         "longitude": 112.752633,
         "latitude": 37.688006,
         "trips": 25.0,
-        "duration": 0.68,
+        "duration": 0.0,
         "cost": 520.0,
         "totalCost": 13000.0,
-        "isWarehouse": false
+        "isWarehouse": true,
+        "plannedStores": 42.0
+      },
+      {
+        "city": "太原市",
+        "warehouse": "晋中市",
+        "longitude": 112.549656,
+        "latitude": 37.870451,
+        "trips": 28.0,
+        "duration": 0.67,
+        "cost": 520.0,
+        "totalCost": 14560.0,
+        "isWarehouse": false,
+        "plannedStores": 52.0
       },
       {
         "city": "忻州市",
-        "warehouse": "太原市",
+        "warehouse": "晋中市",
         "longitude": 112.734149,
         "latitude": 38.415958,
         "trips": 3.0,
-        "duration": 1.25,
-        "cost": 520.0,
-        "totalCost": 1560.0,
-        "isWarehouse": false
+        "duration": 1.4,
+        "cost": 573.0,
+        "totalCost": 1719.0,
+        "isWarehouse": false,
+        "plannedStores": 32.0
       },
       {
         "city": "阳泉市",
-        "warehouse": "太原市",
+        "warehouse": "晋中市",
         "longitude": 113.580426,
         "latitude": 37.857094,
         "trips": 3.0,
-        "duration": 1.66,
-        "cost": 599.8000000000001,
-        "totalCost": 1799.4,
-        "isWarehouse": false
+        "duration": 1.4,
+        "cost": 520.0,
+        "totalCost": 1560.0,
+        "isWarehouse": false,
+        "plannedStores": 11.0
       },
       {
         "city": "吕梁市",
-        "warehouse": "太原市",
+        "warehouse": "晋中市",
         "longitude": 111.14454,
         "latitude": 37.518996,
         "trips": 20.0,
-        "duration": 2.3,
-        "cost": 961.2,
-        "totalCost": 19224.0,
-        "isWarehouse": false
+        "duration": 2.4,
+        "cost": 1002.7,
+        "totalCost": 20054.0,
+        "isWarehouse": false,
+        "plannedStores": 31.0
+      },
+      {
+        "city": "长治市",
+        "warehouse": "晋中市",
+        "longitude": 113.117394,
+        "latitude": 36.195142,
+        "trips": 4.0,
+        "duration": 2.59,
+        "cost": 1042.5,
+        "totalCost": 4170.0,
+        "isWarehouse": false,
+        "plannedStores": 31.0
       },
       {
         "city": "朔州市",
-        "warehouse": "太原市",
+        "warehouse": "晋中市",
         "longitude": 112.432906,
         "latitude": 39.331734,
         "trips": 4.0,
-        "duration": 2.43,
-        "cost": 1091.8,
-        "totalCost": 4367.2,
-        "isWarehouse": false
+        "duration": 2.67,
+        "cost": 1257.0,
+        "totalCost": 5028.0,
+        "isWarehouse": false,
+        "plannedStores": 14.0
+      },
+      {
+        "city": "临汾市",
+        "warehouse": "晋中市",
+        "longitude": 111.51931,
+        "latitude": 36.088581,
+        "trips": 4.0,
+        "duration": 2.97,
+        "cost": 1340.6,
+        "totalCost": 5362.4,
+        "isWarehouse": false,
+        "plannedStores": 36.0
       },
       {
         "city": "大同市",
-        "warehouse": "太原市",
+        "warehouse": "晋中市",
         "longitude": 113.366749,
         "latitude": 40.09711,
         "trips": 4.0,
-        "duration": 3.17,
-        "cost": 1451.2,
-        "totalCost": 5804.8,
-        "isWarehouse": false
+        "duration": 3.42,
+        "cost": 1616.5,
+        "totalCost": 6466.0,
+        "isWarehouse": false,
+        "plannedStores": 28.0
+      },
+      {
+        "city": "晋城市",
+        "warehouse": "晋中市",
+        "longitude": 112.852022,
+        "latitude": 35.491315,
+        "trips": 3.0,
+        "duration": 3.42,
+        "cost": 1464.8999999999999,
+        "totalCost": 4394.7,
+        "isWarehouse": false,
+        "plannedStores": 20.0
+      },
+      {
+        "city": "运城市",
+        "warehouse": "晋中市",
+        "longitude": 111.007051,
+        "latitude": 35.02667,
+        "trips": 3.0,
+        "duration": 4.29,
+        "cost": 2010.7,
+        "totalCost": 6032.1,
+        "isWarehouse": false,
+        "plannedStores": 45.0
       }
     ]
   },
   "川渝": {
-    "totalCost": 1035426.5,
+    "totalCost": 1117106.5,
     "center": {
       "longitude": 104.61214249999999,
       "latitude": 30.12705136363637
     },
     "warehouses": {
-      "凉山彝族自治州": {
-        "longitude": 102.267713,
-        "latitude": 27.881396,
-        "hasOvertime": false,
-        "totalCost": 66390.9,
-        "cityCount": 2,
-        "totalTrips": 86.0,
-        "avgDuration": 1.48
-      },
       "成都市": {
         "longitude": 104.066301,
         "latitude": 30.572961,
         "hasOvertime": false,
-        "totalCost": 571122.5,
-        "cityCount": 13,
-        "totalTrips": 768.0,
-        "avgDuration": 1.9015384615384614
+        "totalCost": 465995.60000000003,
+        "cityCount": 9,
+        "totalTrips": 634.0,
+        "avgDuration": 1.946666666666667,
+        "totalPlannedStores": 453.0
+      },
+      "雅安市": {
+        "longitude": 103.041538,
+        "latitude": 30.009998,
+        "hasOvertime": true,
+        "totalCost": 253197.8,
+        "cityCount": 6,
+        "totalTrips": 220.0,
+        "avgDuration": 2.4583333333333335,
+        "totalPlannedStores": 168.0
       },
       "广安市": {
         "longitude": 106.632647,
@@ -1030,32 +1099,11 @@ const warehouseData = {
         "totalCost": 397913.1,
         "cityCount": 7,
         "totalTrips": 584.0,
-        "avgDuration": 1.7285714285714289
+        "avgDuration": 1.7285714285714289,
+        "totalPlannedStores": 427.0
       }
     },
     "assignments": [
-      {
-        "city": "凉山彝族自治州",
-        "warehouse": "凉山彝族自治州",
-        "longitude": 102.267713,
-        "latitude": 27.881396,
-        "trips": 49.0,
-        "duration": 0.0,
-        "cost": 520.0,
-        "totalCost": 25480.0,
-        "isWarehouse": true
-      },
-      {
-        "city": "攀枝花市",
-        "warehouse": "凉山彝族自治州",
-        "longitude": 101.71846,
-        "latitude": 26.582417,
-        "trips": 37.0,
-        "duration": 2.96,
-        "cost": 1105.7,
-        "totalCost": 40910.9,
-        "isWarehouse": false
-      },
       {
         "city": "广安市",
         "warehouse": "广安市",
@@ -1065,7 +1113,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 22880.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 25.0
       },
       {
         "city": "南充市",
@@ -1076,7 +1125,8 @@ const warehouseData = {
         "duration": 1.08,
         "cost": 520.0,
         "totalCost": 41600.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 41.0
       },
       {
         "city": "遂宁市",
@@ -1087,7 +1137,8 @@ const warehouseData = {
         "duration": 1.41,
         "cost": 626.7,
         "totalCost": 25694.7,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 22.0
       },
       {
         "city": "重庆市",
@@ -1098,7 +1149,8 @@ const warehouseData = {
         "duration": 1.78,
         "cost": 628.1999999999999,
         "totalCost": 202280.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 278.0
       },
       {
         "city": "达州市",
@@ -1109,7 +1161,8 @@ const warehouseData = {
         "duration": 2.22,
         "cost": 868.9,
         "totalCost": 37362.7,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 25.0
       },
       {
         "city": "巴中市",
@@ -1120,7 +1173,8 @@ const warehouseData = {
         "duration": 2.31,
         "cost": 1009.1,
         "totalCost": 25227.5,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 17.0
       },
       {
         "city": "广元市",
@@ -1131,7 +1185,8 @@ const warehouseData = {
         "duration": 3.3,
         "cost": 1478.2,
         "totalCost": 42867.8,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 19.0
       },
       {
         "city": "成都市",
@@ -1142,18 +1197,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 166920.0,
-        "isWarehouse": true
-      },
-      {
-        "city": "眉山市",
-        "warehouse": "成都市",
-        "longitude": 103.848417,
-        "latitude": 30.077113,
-        "trips": 34.0,
-        "duration": 0.98,
-        "cost": 520.0,
-        "totalCost": 17680.0,
-        "isWarehouse": false
+        "isWarehouse": true,
+        "plannedStores": 224.0
       },
       {
         "city": "资阳市",
@@ -1164,7 +1209,8 @@ const warehouseData = {
         "duration": 1.04,
         "cost": 520.0,
         "totalCost": 11440.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 16.0
       },
       {
         "city": "德阳市",
@@ -1175,29 +1221,8 @@ const warehouseData = {
         "duration": 1.2,
         "cost": 520.0,
         "totalCost": 23400.0,
-        "isWarehouse": false
-      },
-      {
-        "city": "雅安市",
-        "warehouse": "成都市",
-        "longitude": 103.041538,
-        "latitude": 30.009998,
-        "trips": 31.0,
-        "duration": 1.51,
-        "cost": 681.5,
-        "totalCost": 21126.5,
-        "isWarehouse": false
-      },
-      {
-        "city": "乐山市",
-        "warehouse": "成都市",
-        "longitude": 103.766085,
-        "latitude": 29.552275,
-        "trips": 42.0,
-        "duration": 1.58,
-        "cost": 711.2,
-        "totalCost": 29870.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 36.0
       },
       {
         "city": "绵阳市",
@@ -1208,7 +1233,8 @@ const warehouseData = {
         "duration": 1.83,
         "cost": 695.9,
         "totalCost": 50800.7,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 46.0
       },
       {
         "city": "内江市",
@@ -1219,7 +1245,8 @@ const warehouseData = {
         "duration": 1.93,
         "cost": 887.3000000000001,
         "totalCost": 21295.2,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 17.0
       },
       {
         "city": "自贡市",
@@ -1230,7 +1257,8 @@ const warehouseData = {
         "duration": 2.06,
         "cost": 967.4,
         "totalCost": 30956.8,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 20.0
       },
       {
         "city": "宜宾市",
@@ -1241,7 +1269,8 @@ const warehouseData = {
         "duration": 2.66,
         "cost": 1234.4,
         "totalCost": 56782.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 38.0
       },
       {
         "city": "泸州市",
@@ -1252,18 +1281,8 @@ const warehouseData = {
         "duration": 2.88,
         "cost": 1349.5,
         "totalCost": 55329.5,
-        "isWarehouse": false
-      },
-      {
-        "city": "甘孜藏族自治州",
-        "warehouse": "成都市",
-        "longitude": 101.96231,
-        "latitude": 30.04952,
-        "trips": 27.0,
-        "duration": 3.13,
-        "cost": 1350.0,
-        "totalCost": 36450.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 28.0
       },
       {
         "city": "阿坝藏族羌族自治州",
@@ -1274,7 +1293,80 @@ const warehouseData = {
         "duration": 3.92,
         "cost": 1635.7,
         "totalCost": 49071.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 28.0
+      },
+      {
+        "city": "雅安市",
+        "warehouse": "雅安市",
+        "longitude": 103.041538,
+        "latitude": 30.009998,
+        "trips": 31.0,
+        "duration": 0.0,
+        "cost": 520.0,
+        "totalCost": 16120.0,
+        "isWarehouse": true,
+        "plannedStores": 22.0
+      },
+      {
+        "city": "眉山市",
+        "warehouse": "雅安市",
+        "longitude": 103.848417,
+        "latitude": 30.077113,
+        "trips": 34.0,
+        "duration": 1.27,
+        "cost": 520.0,
+        "totalCost": 17680.0,
+        "isWarehouse": false,
+        "plannedStores": 24.0
+      },
+      {
+        "city": "乐山市",
+        "warehouse": "雅安市",
+        "longitude": 103.766085,
+        "latitude": 29.552275,
+        "trips": 42.0,
+        "duration": 1.37,
+        "cost": 562.6,
+        "totalCost": 23629.2,
+        "isWarehouse": false,
+        "plannedStores": 39.0
+      },
+      {
+        "city": "甘孜藏族自治州",
+        "warehouse": "雅安市",
+        "longitude": 101.96231,
+        "latitude": 30.04952,
+        "trips": 27.0,
+        "duration": 1.93,
+        "cost": 699.8,
+        "totalCost": 18894.6,
+        "isWarehouse": false,
+        "plannedStores": 27.0
+      },
+      {
+        "city": "凉山彝族自治州",
+        "warehouse": "雅安市",
+        "longitude": 102.267713,
+        "latitude": 27.881396,
+        "trips": 49.0,
+        "duration": 4.06,
+        "cost": 1619.3,
+        "totalCost": 79345.7,
+        "isWarehouse": false,
+        "plannedStores": 33.0
+      },
+      {
+        "city": "攀枝花市",
+        "warehouse": "雅安市",
+        "longitude": 101.71846,
+        "latitude": 26.582417,
+        "trips": 37.0,
+        "duration": 6.12,
+        "cost": 2635.9,
+        "totalCost": 97528.3,
+        "isWarehouse": false,
+        "plannedStores": 23.0
       }
     ]
   },
@@ -1285,15 +1377,6 @@ const warehouseData = {
       "latitude": 22.991651095238097
     },
     "warehouses": {
-      "东莞市": {
-        "longitude": 113.751884,
-        "latitude": 23.021016,
-        "hasOvertime": false,
-        "totalCost": 363266.00000000006,
-        "cityCount": 13,
-        "totalTrips": 532.0,
-        "avgDuration": 1.6892307692307695
-      },
       "茂名市": {
         "longitude": 110.925533,
         "latitude": 21.662728,
@@ -1301,7 +1384,18 @@ const warehouseData = {
         "totalCost": 77763.4,
         "cityCount": 3,
         "totalTrips": 132.0,
-        "avgDuration": 1.0466666666666666
+        "avgDuration": 1.0466666666666666,
+        "totalPlannedStores": 128.0
+      },
+      "东莞市": {
+        "longitude": 113.751884,
+        "latitude": 23.021016,
+        "hasOvertime": false,
+        "totalCost": 363266.00000000006,
+        "cityCount": 13,
+        "totalTrips": 532.0,
+        "avgDuration": 1.6892307692307695,
+        "totalPlannedStores": 1280.0
       },
       "揭阳市": {
         "longitude": 116.372732,
@@ -1310,7 +1404,8 @@ const warehouseData = {
         "totalCost": 371401.7,
         "cityCount": 5,
         "totalTrips": 535.0,
-        "avgDuration": 1.184
+        "avgDuration": 1.184,
+        "totalPlannedStores": 246.0
       }
     },
     "assignments": [
@@ -1323,7 +1418,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 13000.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 132.0
       },
       {
         "city": "广州市",
@@ -1334,7 +1430,8 @@ const warehouseData = {
         "duration": 1.12,
         "cost": 520.0,
         "totalCost": 15600.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 318.0
       },
       {
         "city": "深圳市",
@@ -1345,7 +1442,8 @@ const warehouseData = {
         "duration": 1.27,
         "cost": 520.0,
         "totalCost": 25480.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 233.0
       },
       {
         "city": "惠州市",
@@ -1356,7 +1454,8 @@ const warehouseData = {
         "duration": 1.3,
         "cost": 520.0,
         "totalCost": 61360.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 105.0
       },
       {
         "city": "中山市",
@@ -1367,7 +1466,8 @@ const warehouseData = {
         "duration": 1.35,
         "cost": 520.0,
         "totalCost": 10920.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 65.0
       },
       {
         "city": "佛山市",
@@ -1378,7 +1478,8 @@ const warehouseData = {
         "duration": 1.38,
         "cost": 520.0,
         "totalCost": 11440.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 119.0
       },
       {
         "city": "江门市",
@@ -1389,7 +1490,8 @@ const warehouseData = {
         "duration": 1.6,
         "cost": 610.6,
         "totalCost": 48237.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 55.0
       },
       {
         "city": "珠海市",
@@ -1400,7 +1502,8 @@ const warehouseData = {
         "duration": 1.74,
         "cost": 674.5,
         "totalCost": 16188.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 55.0
       },
       {
         "city": "清远市",
@@ -1411,7 +1514,8 @@ const warehouseData = {
         "duration": 1.84,
         "cost": 698.0,
         "totalCost": 25128.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 47.0
       },
       {
         "city": "河源市",
@@ -1422,7 +1526,8 @@ const warehouseData = {
         "duration": 2.19,
         "cost": 871.2,
         "totalCost": 47916.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 34.0
       },
       {
         "city": "肇庆市",
@@ -1433,7 +1538,8 @@ const warehouseData = {
         "duration": 2.36,
         "cost": 830.1,
         "totalCost": 11621.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 54.0
       },
       {
         "city": "云浮市",
@@ -1444,7 +1550,8 @@ const warehouseData = {
         "duration": 2.78,
         "cost": 1072.3999999999999,
         "totalCost": 12868.8,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 21.0
       },
       {
         "city": "韶关市",
@@ -1455,7 +1562,8 @@ const warehouseData = {
         "duration": 3.03,
         "cost": 1351.2,
         "totalCost": 63506.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 42.0
       },
       {
         "city": "揭阳市",
@@ -1466,7 +1574,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 45760.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 64.0
       },
       {
         "city": "潮州市",
@@ -1477,7 +1586,8 @@ const warehouseData = {
         "duration": 0.93,
         "cost": 520.0,
         "totalCost": 13520.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 28.0
       },
       {
         "city": "汕头市",
@@ -1488,7 +1598,8 @@ const warehouseData = {
         "duration": 1.24,
         "cost": 520.0,
         "totalCost": 1040.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 73.0
       },
       {
         "city": "梅州市",
@@ -1499,7 +1610,8 @@ const warehouseData = {
         "duration": 1.75,
         "cost": 568.3000000000001,
         "totalCost": 106272.1,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 40.0
       },
       {
         "city": "汕尾市",
@@ -1510,7 +1622,8 @@ const warehouseData = {
         "duration": 2.0,
         "cost": 882.8000000000001,
         "totalCost": 204809.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 41.0
       },
       {
         "city": "茂名市",
@@ -1521,7 +1634,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 17160.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 45.0
       },
       {
         "city": "湛江市",
@@ -1532,7 +1646,8 @@ const warehouseData = {
         "duration": 1.43,
         "cost": 520.0,
         "totalCost": 21320.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 56.0
       },
       {
         "city": "阳江市",
@@ -1543,15 +1658,16 @@ const warehouseData = {
         "duration": 1.71,
         "cost": 677.3000000000001,
         "totalCost": 39283.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 27.0
       }
     ]
   },
   "广西": {
     "totalCost": 508896.7,
     "center": {
-      "longitude": 109.14426885714283,
-      "latitude": 23.278474571428568
+      "longitude": 109.14426885714285,
+      "latitude": 23.27847457142857
     },
     "warehouses": {
       "柳州市": {
@@ -1561,7 +1677,8 @@ const warehouseData = {
         "totalCost": 219439.2,
         "cityCount": 6,
         "totalTrips": 266.0,
-        "avgDuration": 1.8133333333333332
+        "avgDuration": 1.8133333333333332,
+        "totalPlannedStores": 180.0
       },
       "南宁市": {
         "longitude": 108.366407,
@@ -1570,7 +1687,8 @@ const warehouseData = {
         "totalCost": 289457.5,
         "cityCount": 8,
         "totalTrips": 386.0,
-        "avgDuration": 1.84
+        "avgDuration": 1.84,
+        "totalPlannedStores": 262.0
       }
     },
     "assignments": [
@@ -1583,7 +1701,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 88400.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 100.0
       },
       {
         "city": "崇左市",
@@ -1594,7 +1713,8 @@ const warehouseData = {
         "duration": 1.57,
         "cost": 672.0,
         "totalCost": 13440.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 14.0
       },
       {
         "city": "钦州市",
@@ -1605,7 +1725,8 @@ const warehouseData = {
         "duration": 1.7,
         "cost": 654.6,
         "totalCost": 18328.8,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 21.0
       },
       {
         "city": "防城港市",
@@ -1616,7 +1737,8 @@ const warehouseData = {
         "duration": 1.7,
         "cost": 741.7,
         "totalCost": 15575.7,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 13.0
       },
       {
         "city": "贵港市",
@@ -1627,7 +1749,8 @@ const warehouseData = {
         "duration": 1.87,
         "cost": 780.1999999999999,
         "totalCost": 37449.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 27.0
       },
       {
         "city": "玉林市",
@@ -1638,7 +1761,8 @@ const warehouseData = {
         "duration": 2.41,
         "cost": 1079.0,
         "totalCost": 37765.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 33.0
       },
       {
         "city": "北海市",
@@ -1649,7 +1773,8 @@ const warehouseData = {
         "duration": 2.66,
         "cost": 1171.2,
         "totalCost": 30451.2,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 24.0
       },
       {
         "city": "百色市",
@@ -1660,7 +1785,8 @@ const warehouseData = {
         "duration": 2.81,
         "cost": 1264.3999999999999,
         "totalCost": 48047.2,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 30.0
       },
       {
         "city": "柳州市",
@@ -1671,7 +1797,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 29640.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 37.0
       },
       {
         "city": "来宾市",
@@ -1682,7 +1809,8 @@ const warehouseData = {
         "duration": 1.05,
         "cost": 520.0,
         "totalCost": 13520.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 16.0
       },
       {
         "city": "桂林市",
@@ -1693,7 +1821,8 @@ const warehouseData = {
         "duration": 1.78,
         "cost": 776.6,
         "totalCost": 70670.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 66.0
       },
       {
         "city": "河池市",
@@ -1704,7 +1833,8 @@ const warehouseData = {
         "duration": 2.05,
         "cost": 839.1999999999999,
         "totalCost": 27693.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 21.0
       },
       {
         "city": "梧州市",
@@ -1715,7 +1845,8 @@ const warehouseData = {
         "duration": 2.89,
         "cost": 1293.0,
         "totalCost": 47841.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 23.0
       },
       {
         "city": "贺州市",
@@ -1726,14 +1857,15 @@ const warehouseData = {
         "duration": 3.11,
         "cost": 1367.0,
         "totalCost": 30074.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 17.0
       }
     ]
   },
   "新疆": {
     "totalCost": 27576.3,
     "center": {
-      "longitude": 84.10677266666666,
+      "longitude": 84.10677266666667,
       "latitude": 43.075831666666666
     },
     "warehouses": {
@@ -1744,7 +1876,8 @@ const warehouseData = {
         "totalCost": 21458.3,
         "cityCount": 11,
         "totalTrips": 11.0,
-        "avgDuration": 4.168181818181818
+        "avgDuration": 4.168181818181818,
+        "totalPlannedStores": 194.0
       },
       "克孜勒苏柯尔克孜自治州": {
         "longitude": 76.167327,
@@ -1753,7 +1886,8 @@ const warehouseData = {
         "totalCost": 6118.0,
         "cityCount": 4,
         "totalTrips": 4.0,
-        "avgDuration": 2.8075
+        "avgDuration": 2.8075,
+        "totalPlannedStores": 96.0
       }
     },
     "assignments": [
@@ -1766,7 +1900,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 520.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 8.0
       },
       {
         "city": "喀什地区",
@@ -1777,7 +1912,8 @@ const warehouseData = {
         "duration": 0.79,
         "cost": 520.0,
         "totalCost": 520.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 42.0
       },
       {
         "city": "阿克苏地区",
@@ -1788,7 +1924,8 @@ const warehouseData = {
         "duration": 4.44,
         "cost": 2205.8,
         "totalCost": 2205.8,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 31.0
       },
       {
         "city": "和田地区",
@@ -1799,7 +1936,8 @@ const warehouseData = {
         "duration": 6.0,
         "cost": 2872.2,
         "totalCost": 2872.2,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 15.0
       },
       {
         "city": "昌吉回族自治州",
@@ -1810,7 +1948,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 520.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 17.0
       },
       {
         "city": "乌鲁木齐市",
@@ -1821,7 +1960,8 @@ const warehouseData = {
         "duration": 0.64,
         "cost": 520.0,
         "totalCost": 520.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 43.0
       },
       {
         "city": "石河子市",
@@ -1832,7 +1972,8 @@ const warehouseData = {
         "duration": 1.54,
         "cost": 619.5,
         "totalCost": 619.5,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 5.0
       },
       {
         "city": "吐鲁番市",
@@ -1843,7 +1984,8 @@ const warehouseData = {
         "duration": 2.71,
         "cost": 1167.7,
         "totalCost": 1167.7,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 11.0
       },
       {
         "city": "克拉玛依市",
@@ -1854,7 +1996,8 @@ const warehouseData = {
         "duration": 3.41,
         "cost": 1491.0,
         "totalCost": 1491.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 18.0
       },
       {
         "city": "阿勒泰地区",
@@ -1865,7 +2008,8 @@ const warehouseData = {
         "duration": 5.1,
         "cost": 2476.6,
         "totalCost": 2476.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 20.0
       },
       {
         "city": "博尔塔拉蒙古自治州",
@@ -1876,7 +2020,8 @@ const warehouseData = {
         "duration": 5.14,
         "cost": 2453.7,
         "totalCost": 2453.7,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 9.0
       },
       {
         "city": "塔城地区",
@@ -1887,7 +2032,8 @@ const warehouseData = {
         "duration": 5.8,
         "cost": 2778.4,
         "totalCost": 2778.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 11.0
       },
       {
         "city": "巴音郭楞蒙古自治州",
@@ -1898,7 +2044,8 @@ const warehouseData = {
         "duration": 6.23,
         "cost": 2605.4,
         "totalCost": 2605.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 20.0
       },
       {
         "city": "哈密市",
@@ -1909,7 +2056,8 @@ const warehouseData = {
         "duration": 7.47,
         "cost": 3403.7,
         "totalCost": 3403.7,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 11.0
       },
       {
         "city": "伊犁哈萨克自治州",
@@ -1920,7 +2068,8 @@ const warehouseData = {
         "duration": 7.81,
         "cost": 3422.3,
         "totalCost": 3422.3,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 29.0
       }
     ]
   },
@@ -1928,7 +2077,7 @@ const warehouseData = {
     "totalCost": 559418.1,
     "center": {
       "longitude": 115.76891054545453,
-      "latitude": 28.04642163636364
+      "latitude": 28.046421636363633
     },
     "warehouses": {
       "吉安市": {
@@ -1938,7 +2087,8 @@ const warehouseData = {
         "totalCost": 246205.8,
         "cityCount": 5,
         "totalTrips": 309.0,
-        "avgDuration": 1.616
+        "avgDuration": 1.616,
+        "totalPlannedStores": 241.0
       },
       "南昌市": {
         "longitude": 115.857972,
@@ -1947,7 +2097,8 @@ const warehouseData = {
         "totalCost": 313212.3,
         "cityCount": 6,
         "totalTrips": 410.0,
-        "avgDuration": 1.7566666666666666
+        "avgDuration": 1.7566666666666666,
+        "totalPlannedStores": 295.0
       }
     },
     "assignments": [
@@ -1960,7 +2111,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 69160.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 90.0
       },
       {
         "city": "抚州市",
@@ -1971,7 +2123,8 @@ const warehouseData = {
         "duration": 1.41,
         "cost": 595.3000000000001,
         "totalCost": 26193.2,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 34.0
       },
       {
         "city": "九江市",
@@ -1982,7 +2135,8 @@ const warehouseData = {
         "duration": 1.43,
         "cost": 642.1,
         "totalCost": 66136.3,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 69.0
       },
       {
         "city": "鹰潭市",
@@ -1993,7 +2147,8 @@ const warehouseData = {
         "duration": 2.0,
         "cost": 806.0,
         "totalCost": 15314.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 18.0
       },
       {
         "city": "景德镇市",
@@ -2004,7 +2159,8 @@ const warehouseData = {
         "duration": 2.36,
         "cost": 1005.4,
         "totalCost": 34183.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 22.0
       },
       {
         "city": "上饶市",
@@ -2015,7 +2171,8 @@ const warehouseData = {
         "duration": 3.34,
         "cost": 1327.6,
         "totalCost": 102225.2,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 62.0
       },
       {
         "city": "吉安市",
@@ -2026,7 +2183,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 31720.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 51.0
       },
       {
         "city": "新余市",
@@ -2037,7 +2195,8 @@ const warehouseData = {
         "duration": 1.44,
         "cost": 542.6,
         "totalCost": 9224.2,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 11.0
       },
       {
         "city": "宜春市",
@@ -2048,7 +2207,8 @@ const warehouseData = {
         "duration": 1.96,
         "cost": 637.9000000000001,
         "totalCost": 39549.8,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 50.0
       },
       {
         "city": "赣州市",
@@ -2059,7 +2219,8 @@ const warehouseData = {
         "duration": 2.16,
         "cost": 962.8,
         "totalCost": 134792.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 106.0
       },
       {
         "city": "萍乡市",
@@ -2070,14 +2231,15 @@ const warehouseData = {
         "duration": 2.52,
         "cost": 1066.2,
         "totalCost": 30919.8,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 23.0
       }
     ]
   },
   "河南": {
     "totalCost": 727295.3,
     "center": {
-      "longitude": 113.73024722222222,
+      "longitude": 113.7302472222222,
       "latitude": 34.42902477777778
     },
     "warehouses": {
@@ -2088,7 +2250,8 @@ const warehouseData = {
         "totalCost": 405231.3,
         "cityCount": 10,
         "totalTrips": 611.0,
-        "avgDuration": 1.6380000000000003
+        "avgDuration": 1.6380000000000003,
+        "totalPlannedStores": 518.0
       },
       "漯河市": {
         "longitude": 114.0166,
@@ -2097,7 +2260,8 @@ const warehouseData = {
         "totalCost": 322064.0,
         "cityCount": 8,
         "totalTrips": 428.0,
-        "avgDuration": 1.52375
+        "avgDuration": 1.52375,
+        "totalPlannedStores": 361.0
       }
     },
     "assignments": [
@@ -2110,7 +2274,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 10920.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 21.0
       },
       {
         "city": "许昌市",
@@ -2121,7 +2286,8 @@ const warehouseData = {
         "duration": 1.07,
         "cost": 520.0,
         "totalCost": 20280.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 37.0
       },
       {
         "city": "平顶山市",
@@ -2132,7 +2298,8 @@ const warehouseData = {
         "duration": 1.23,
         "cost": 520.0,
         "totalCost": 22360.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 38.0
       },
       {
         "city": "驻马店市",
@@ -2143,7 +2310,8 @@ const warehouseData = {
         "duration": 1.25,
         "cost": 520.0,
         "totalCost": 24960.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 45.0
       },
       {
         "city": "周口市",
@@ -2154,7 +2322,8 @@ const warehouseData = {
         "duration": 1.3,
         "cost": 520.0,
         "totalCost": 32760.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 52.0
       },
       {
         "city": "信阳市",
@@ -2165,7 +2334,8 @@ const warehouseData = {
         "duration": 2.2,
         "cost": 954.6,
         "totalCost": 61094.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 50.0
       },
       {
         "city": "南阳市",
@@ -2176,7 +2346,8 @@ const warehouseData = {
         "duration": 2.57,
         "cost": 950.1,
         "totalCost": 87409.2,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 72.0
       },
       {
         "city": "商丘市",
@@ -2187,7 +2358,8 @@ const warehouseData = {
         "duration": 2.57,
         "cost": 1073.8,
         "totalCost": 62280.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 46.0
       },
       {
         "city": "焦作市",
@@ -2198,7 +2370,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 21320.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 39.0
       },
       {
         "city": "济源市",
@@ -2209,7 +2382,8 @@ const warehouseData = {
         "duration": 1.06,
         "cost": 520.0,
         "totalCost": 4680.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 7.0
       },
       {
         "city": "新乡市",
@@ -2220,7 +2394,8 @@ const warehouseData = {
         "duration": 1.25,
         "cost": 520.0,
         "totalCost": 44720.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 67.0
       },
       {
         "city": "郑州市",
@@ -2231,7 +2406,8 @@ const warehouseData = {
         "duration": 1.32,
         "cost": 520.0,
         "totalCost": 101400.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 165.0
       },
       {
         "city": "洛阳市",
@@ -2242,7 +2418,8 @@ const warehouseData = {
         "duration": 1.66,
         "cost": 635.5999999999999,
         "totalCost": 66102.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 85.0
       },
       {
         "city": "开封市",
@@ -2253,7 +2430,8 @@ const warehouseData = {
         "duration": 1.76,
         "cost": 694.1,
         "totalCost": 27069.9,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 37.0
       },
       {
         "city": "鹤壁市",
@@ -2264,7 +2442,8 @@ const warehouseData = {
         "duration": 1.76,
         "cost": 766.0,
         "totalCost": 19150.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 21.0
       },
       {
         "city": "安阳市",
@@ -2275,7 +2454,8 @@ const warehouseData = {
         "duration": 2.2,
         "cost": 988.8,
         "totalCost": 49440.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 45.0
       },
       {
         "city": "濮阳市",
@@ -2286,7 +2466,8 @@ const warehouseData = {
         "duration": 2.5,
         "cost": 1101.6,
         "totalCost": 39657.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 31.0
       },
       {
         "city": "三门峡市",
@@ -2297,26 +2478,18 @@ const warehouseData = {
         "duration": 2.87,
         "cost": 1218.9,
         "totalCost": 31691.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 21.0
       }
     ]
   },
   "浙江": {
     "totalCost": 660154.2,
     "center": {
-      "longitude": 120.54709154545452,
+      "longitude": 120.54709154545456,
       "latitude": 29.54100781818182
     },
     "warehouses": {
-      "温州市": {
-        "longitude": 120.699279,
-        "latitude": 27.993849,
-        "hasOvertime": false,
-        "totalCost": 162417.4,
-        "cityCount": 3,
-        "totalTrips": 277.0,
-        "avgDuration": 1.33
-      },
       "绍兴市": {
         "longitude": 120.582886,
         "latitude": 30.051549,
@@ -2324,7 +2497,18 @@ const warehouseData = {
         "totalCost": 497736.80000000005,
         "cityCount": 8,
         "totalTrips": 747.0,
-        "avgDuration": 1.6112499999999998
+        "avgDuration": 1.6112499999999998,
+        "totalPlannedStores": 678.0
+      },
+      "温州市": {
+        "longitude": 120.699279,
+        "latitude": 27.993849,
+        "hasOvertime": false,
+        "totalCost": 162417.4,
+        "cityCount": 3,
+        "totalTrips": 277.0,
+        "avgDuration": 1.33,
+        "totalPlannedStores": 291.0
       }
     },
     "assignments": [
@@ -2337,7 +2521,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 76440.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 150.0
       },
       {
         "city": "丽水市",
@@ -2348,7 +2533,8 @@ const warehouseData = {
         "duration": 1.84,
         "cost": 674.9,
         "totalCost": 31720.3,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 45.0
       },
       {
         "city": "台州市",
@@ -2359,7 +2545,8 @@ const warehouseData = {
         "duration": 2.15,
         "cost": 653.6999999999999,
         "totalCost": 54257.1,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 96.0
       },
       {
         "city": "绍兴市",
@@ -2370,7 +2557,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 31720.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 61.0
       },
       {
         "city": "杭州市",
@@ -2381,7 +2569,8 @@ const warehouseData = {
         "duration": 0.86,
         "cost": 520.0,
         "totalCost": 129480.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 197.0
       },
       {
         "city": "嘉兴市",
@@ -2392,7 +2581,8 @@ const warehouseData = {
         "duration": 1.31,
         "cost": 538.0999999999999,
         "totalCost": 41433.7,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 73.0
       },
       {
         "city": "宁波市",
@@ -2403,7 +2593,8 @@ const warehouseData = {
         "duration": 1.47,
         "cost": 619.8000000000001,
         "totalCost": 74995.8,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 129.0
       },
       {
         "city": "湖州市",
@@ -2414,7 +2605,8 @@ const warehouseData = {
         "duration": 1.85,
         "cost": 727.6999999999999,
         "totalCost": 37112.7,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 51.0
       },
       {
         "city": "舟山市",
@@ -2425,7 +2617,8 @@ const warehouseData = {
         "duration": 2.19,
         "cost": 978.9000000000001,
         "totalCost": 25451.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 22.0
       },
       {
         "city": "金华市",
@@ -2436,7 +2629,8 @@ const warehouseData = {
         "duration": 2.29,
         "cost": 873.4,
         "totalCost": 107428.2,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 108.0
       },
       {
         "city": "衢州市",
@@ -2447,15 +2641,16 @@ const warehouseData = {
         "duration": 2.92,
         "cost": 1285.0,
         "totalCost": 50115.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 37.0
       }
     ]
   },
   "海南": {
     "totalCost": 173672.5,
     "center": {
-      "longitude": 109.8072305,
-      "latitude": 19.189997722222227
+      "longitude": 109.80723049999999,
+      "latitude": 19.189997722222223
     },
     "warehouses": {
       "琼中黎族苗族自治县": {
@@ -2465,7 +2660,8 @@ const warehouseData = {
         "totalCost": 173672.5,
         "cityCount": 18,
         "totalTrips": 257.0,
-        "avgDuration": 1.4799999999999998
+        "avgDuration": 1.4799999999999998,
+        "totalPlannedStores": 168.0
       }
     },
     "assignments": [
@@ -2478,7 +2674,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 1040.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 2.0
       },
       {
         "city": "屯昌县",
@@ -2489,7 +2686,8 @@ const warehouseData = {
         "duration": 0.78,
         "cost": 520.0,
         "totalCost": 4160.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 2.0
       },
       {
         "city": "五指山市",
@@ -2500,7 +2698,8 @@ const warehouseData = {
         "duration": 1.06,
         "cost": 520.0,
         "totalCost": 3120.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 4.0
       },
       {
         "city": "儋州市",
@@ -2511,7 +2710,8 @@ const warehouseData = {
         "duration": 1.11,
         "cost": 520.0,
         "totalCost": 16640.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 15.0
       },
       {
         "city": "乐东黎族自治县",
@@ -2522,7 +2722,8 @@ const warehouseData = {
         "duration": 1.15,
         "cost": 520.0,
         "totalCost": 4680.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 7.0
       },
       {
         "city": "琼海市",
@@ -2533,7 +2734,8 @@ const warehouseData = {
         "duration": 1.25,
         "cost": 520.0,
         "totalCost": 5720.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 9.0
       },
       {
         "city": "万宁市",
@@ -2544,7 +2746,8 @@ const warehouseData = {
         "duration": 1.28,
         "cost": 520.0,
         "totalCost": 4160.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 8.0
       },
       {
         "city": "白沙黎族自治县",
@@ -2555,7 +2758,8 @@ const warehouseData = {
         "duration": 1.34,
         "cost": 520.0,
         "totalCost": 2600.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 5.0
       },
       {
         "city": "定安县",
@@ -2566,7 +2770,8 @@ const warehouseData = {
         "duration": 1.35,
         "cost": 583.9,
         "totalCost": 2335.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 4.0
       },
       {
         "city": "保亭黎族苗族自治县",
@@ -2577,7 +2782,8 @@ const warehouseData = {
         "duration": 1.43,
         "cost": 589.5,
         "totalCost": 4716.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 4.0
       },
       {
         "city": "澄迈县",
@@ -2588,7 +2794,8 @@ const warehouseData = {
         "duration": 1.5,
         "cost": 579.3,
         "totalCost": 5213.7,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 7.0
       },
       {
         "city": "文昌市",
@@ -2599,7 +2806,8 @@ const warehouseData = {
         "duration": 1.67,
         "cost": 740.5999999999999,
         "totalCost": 6665.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 9.0
       },
       {
         "city": "海口市",
@@ -2610,7 +2818,8 @@ const warehouseData = {
         "duration": 1.71,
         "cost": 720.0,
         "totalCost": 50400.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 39.0
       },
       {
         "city": "临高县",
@@ -2621,7 +2830,8 @@ const warehouseData = {
         "duration": 1.83,
         "cost": 772.3,
         "totalCost": 1544.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 2.0
       },
       {
         "city": "昌江黎族自治县",
@@ -2632,7 +2842,8 @@ const warehouseData = {
         "duration": 2.01,
         "cost": 921.8,
         "totalCost": 7374.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 4.0
       },
       {
         "city": "陵水黎族自治县",
@@ -2643,7 +2854,8 @@ const warehouseData = {
         "duration": 2.29,
         "cost": 520.0,
         "totalCost": 9360.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 12.0
       },
       {
         "city": "三亚市",
@@ -2654,7 +2866,8 @@ const warehouseData = {
         "duration": 2.4,
         "cost": 886.5,
         "totalCost": 37233.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 29.0
       },
       {
         "city": "东方市",
@@ -2665,7 +2878,8 @@ const warehouseData = {
         "duration": 2.48,
         "cost": 1118.3,
         "totalCost": 6709.8,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 6.0
       }
     ]
   },
@@ -2673,17 +2887,18 @@ const warehouseData = {
     "totalCost": 482080.9,
     "center": {
       "longitude": 112.88791800000001,
-      "latitude": 30.83552611764705
+      "latitude": 30.835526117647063
     },
     "warehouses": {
-      "襄阳市": {
-        "longitude": 112.121743,
-        "latitude": 32.010161,
+      "武汉市": {
+        "longitude": 114.304569,
+        "latitude": 30.593354,
         "hasOvertime": false,
-        "totalCost": 88670.8,
-        "cityCount": 4,
-        "totalTrips": 126.0,
-        "avgDuration": 1.5975000000000001
+        "totalCost": 250384.4,
+        "cityCount": 9,
+        "totalTrips": 479.0,
+        "avgDuration": 1.3322222222222222,
+        "totalPlannedStores": 372.0
       },
       "宜昌市": {
         "longitude": 111.286962,
@@ -2692,16 +2907,18 @@ const warehouseData = {
         "totalCost": 143025.7,
         "cityCount": 4,
         "totalTrips": 196.0,
-        "avgDuration": 1.71
+        "avgDuration": 1.71,
+        "totalPlannedStores": 164.0
       },
-      "武汉市": {
-        "longitude": 114.304569,
-        "latitude": 30.593354,
+      "襄阳市": {
+        "longitude": 112.121743,
+        "latitude": 32.010161,
         "hasOvertime": false,
-        "totalCost": 250384.4,
-        "cityCount": 9,
-        "totalTrips": 479.0,
-        "avgDuration": 1.3322222222222222
+        "totalCost": 88670.8,
+        "cityCount": 4,
+        "totalTrips": 126.0,
+        "avgDuration": 1.5975000000000001,
+        "totalPlannedStores": 104.0
       }
     },
     "assignments": [
@@ -2714,7 +2931,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 26520.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 47.0
       },
       {
         "city": "荆州市",
@@ -2725,7 +2943,8 @@ const warehouseData = {
         "duration": 1.45,
         "cost": 576.6,
         "totalCost": 36902.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 49.0
       },
       {
         "city": "荆门市",
@@ -2736,7 +2955,8 @@ const warehouseData = {
         "duration": 1.74,
         "cost": 653.3,
         "totalCost": 16985.8,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 22.0
       },
       {
         "city": "恩施土家族苗族自治州",
@@ -2747,7 +2967,8 @@ const warehouseData = {
         "duration": 3.65,
         "cost": 1138.5,
         "totalCost": 62617.5,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 46.0
       },
       {
         "city": "武汉市",
@@ -2758,7 +2979,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 156000.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 204.0
       },
       {
         "city": "孝感市",
@@ -2769,7 +2991,8 @@ const warehouseData = {
         "duration": 1.05,
         "cost": 520.0,
         "totalCost": 18720.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 29.0
       },
       {
         "city": "黄冈市",
@@ -2780,7 +3003,8 @@ const warehouseData = {
         "duration": 1.18,
         "cost": 520.0,
         "totalCost": 24960.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 45.0
       },
       {
         "city": "鄂州市",
@@ -2791,7 +3015,8 @@ const warehouseData = {
         "duration": 1.24,
         "cost": 520.0,
         "totalCost": 11960.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 19.0
       },
       {
         "city": "咸宁市",
@@ -2802,7 +3027,8 @@ const warehouseData = {
         "duration": 1.45,
         "cost": 520.0,
         "totalCost": 18200.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 24.0
       },
       {
         "city": "仙桃市",
@@ -2813,7 +3039,8 @@ const warehouseData = {
         "duration": 1.46,
         "cost": 535.9,
         "totalCost": 535.9,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 14.0
       },
       {
         "city": "黄石市",
@@ -2824,7 +3051,8 @@ const warehouseData = {
         "duration": 1.47,
         "cost": 543.0,
         "totalCost": 18462.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 23.0
       },
       {
         "city": "潜江市",
@@ -2835,7 +3063,8 @@ const warehouseData = {
         "duration": 1.99,
         "cost": 817.2,
         "totalCost": 817.2,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 7.0
       },
       {
         "city": "天门市",
@@ -2846,7 +3075,8 @@ const warehouseData = {
         "duration": 2.15,
         "cost": 729.3,
         "totalCost": 729.3,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 7.0
       },
       {
         "city": "襄阳市",
@@ -2857,7 +3087,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 32760.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 49.0
       },
       {
         "city": "随州市",
@@ -2868,7 +3099,8 @@ const warehouseData = {
         "duration": 1.91,
         "cost": 876.1999999999999,
         "totalCost": 16647.8,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 17.0
       },
       {
         "city": "十堰市",
@@ -2879,7 +3111,8 @@ const warehouseData = {
         "duration": 2.13,
         "cost": 890.5,
         "totalCost": 38291.5,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 32.0
       },
       {
         "city": "神农架林区",
@@ -2890,26 +3123,18 @@ const warehouseData = {
         "duration": 2.35,
         "cost": 971.5,
         "totalCost": 971.5,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 6.0
       }
     ]
   },
   "湖南": {
     "totalCost": 707395.2,
     "center": {
-      "longitude": 111.93445150000001,
+      "longitude": 111.93445150000002,
       "latitude": 27.846758071428578
     },
     "warehouses": {
-      "衡阳市": {
-        "longitude": 112.572016,
-        "latitude": 26.894216,
-        "hasOvertime": false,
-        "totalCost": 258778.1,
-        "cityCount": 5,
-        "totalTrips": 363.0,
-        "avgDuration": 1.536
-      },
       "益阳市": {
         "longitude": 112.355994,
         "latitude": 28.554853,
@@ -2917,7 +3142,18 @@ const warehouseData = {
         "totalCost": 448617.1,
         "cityCount": 9,
         "totalTrips": 589.0,
-        "avgDuration": 2.0677777777777777
+        "avgDuration": 2.0677777777777777,
+        "totalPlannedStores": 446.0
+      },
+      "衡阳市": {
+        "longitude": 112.572016,
+        "latitude": 26.894216,
+        "hasOvertime": false,
+        "totalCost": 258778.1,
+        "cityCount": 5,
+        "totalTrips": 363.0,
+        "avgDuration": 1.536,
+        "totalPlannedStores": 292.0
       }
     },
     "assignments": [
@@ -2930,7 +3166,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 16120.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 27.0
       },
       {
         "city": "长沙市",
@@ -2941,7 +3178,8 @@ const warehouseData = {
         "duration": 1.21,
         "cost": 520.0,
         "totalCost": 122720.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 154.0
       },
       {
         "city": "常德市",
@@ -2952,7 +3190,8 @@ const warehouseData = {
         "duration": 1.36,
         "cost": 532.0,
         "totalCost": 40432.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 49.0
       },
       {
         "city": "娄底市",
@@ -2963,7 +3202,8 @@ const warehouseData = {
         "duration": 1.71,
         "cost": 646.6,
         "totalCost": 29743.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 35.0
       },
       {
         "city": "湘潭市",
@@ -2974,7 +3214,8 @@ const warehouseData = {
         "duration": 1.77,
         "cost": 652.5999999999999,
         "totalCost": 26756.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 32.0
       },
       {
         "city": "岳阳市",
@@ -2985,7 +3226,8 @@ const warehouseData = {
         "duration": 1.99,
         "cost": 837.6999999999999,
         "totalCost": 52775.1,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 52.0
       },
       {
         "city": "张家界市",
@@ -2996,7 +3238,8 @@ const warehouseData = {
         "duration": 2.88,
         "cost": 1326.3,
         "totalCost": 1326.3,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 21.0
       },
       {
         "city": "怀化市",
@@ -3007,7 +3250,8 @@ const warehouseData = {
         "duration": 3.79,
         "cost": 1713.5,
         "totalCost": 102810.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 50.0
       },
       {
         "city": "湘西土家族苗族自治州",
@@ -3018,7 +3262,8 @@ const warehouseData = {
         "duration": 3.9,
         "cost": 1598.1,
         "totalCost": 55933.5,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 26.0
       },
       {
         "city": "衡阳市",
@@ -3029,7 +3274,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 43680.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 66.0
       },
       {
         "city": "永州市",
@@ -3040,7 +3286,8 @@ const warehouseData = {
         "duration": 1.67,
         "cost": 708.0,
         "totalCost": 55932.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 56.0
       },
       {
         "city": "邵阳市",
@@ -3051,7 +3298,8 @@ const warehouseData = {
         "duration": 1.82,
         "cost": 713.9,
         "totalCost": 46403.5,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 59.0
       },
       {
         "city": "株洲市",
@@ -3062,7 +3310,8 @@ const warehouseData = {
         "duration": 1.87,
         "cost": 740.0,
         "totalCost": 45880.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 51.0
       },
       {
         "city": "郴州市",
@@ -3073,386 +3322,421 @@ const warehouseData = {
         "duration": 2.32,
         "cost": 916.2,
         "totalCost": 66882.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 60.0
       }
     ]
   },
   "甘青宁": {
-    "totalCost": 74159.0,
+    "totalCost": 107808.3,
     "center": {
-      "longitude": 103.36425758064519,
-      "latitude": 36.96223132258064
+      "longitude": 103.36425758064516,
+      "latitude": 36.96223132258065
     },
     "warehouses": {
-      "定西市": {
-        "longitude": 104.592342,
-        "latitude": 35.607947,
+      "吴忠市": {
+        "longitude": 106.198613,
+        "latitude": 37.997755,
         "hasOvertime": true,
-        "totalCost": 16041.9,
-        "cityCount": 12,
-        "totalTrips": 12.0,
-        "avgDuration": 2.8633333333333333
+        "totalCost": 86284.9,
+        "cityCount": 16,
+        "totalTrips": 59.0,
+        "avgDuration": 3.039375,
+        "totalPlannedStores": 280.0
       },
-      "西宁市": {
-        "longitude": 101.777795,
-        "latitude": 36.616621,
+      "海南藏族自治州": {
+        "longitude": 100.622647,
+        "latitude": 36.296399,
         "hasOvertime": true,
-        "totalCost": 19427.0,
-        "cityCount": 11,
-        "totalTrips": 11.0,
-        "avgDuration": 4.079999999999999
+        "totalCost": 16348.9,
+        "cityCount": 10,
+        "totalTrips": 10.0,
+        "avgDuration": 3.7399999999999998,
+        "totalPlannedStores": 131.0
       },
-      "乌海市": {
-        "longitude": 106.79415,
-        "latitude": 39.655048,
+      "张掖市": {
+        "longitude": 100.449858,
+        "latitude": 38.924766,
         "hasOvertime": false,
-        "totalCost": 38690.10000000001,
-        "cityCount": 8,
-        "totalTrips": 51.0,
-        "avgDuration": 1.9012499999999999
+        "totalCost": 5174.5,
+        "cityCount": 5,
+        "totalTrips": 5.0,
+        "avgDuration": 2.07,
+        "totalPlannedStores": 55.0
       }
     },
     "assignments": [
       {
-        "city": "乌海市",
-        "warehouse": "乌海市",
-        "longitude": 106.79415,
-        "latitude": 39.655048,
-        "trips": 14.0,
-        "duration": 0.0,
-        "cost": 520.0,
-        "totalCost": 7280.0,
-        "isWarehouse": true
-      },
-      {
-        "city": "石嘴山市",
-        "warehouse": "乌海市",
-        "longitude": 106.382792,
-        "latitude": 38.984632,
-        "trips": 1.0,
-        "duration": 1.41,
-        "cost": 584.2,
-        "totalCost": 584.2,
-        "isWarehouse": false
-      },
-      {
-        "city": "巴彦淖尔市",
-        "warehouse": "乌海市",
-        "longitude": 107.387767,
-        "latitude": 40.742987,
-        "trips": 22.0,
-        "duration": 1.79,
-        "cost": 799.5,
-        "totalCost": 17589.0,
-        "isWarehouse": false
-      },
-      {
-        "city": "银川市",
-        "warehouse": "乌海市",
-        "longitude": 106.230977,
-        "latitude": 38.487783,
-        "trips": 1.0,
-        "duration": 1.88,
-        "cost": 835.9,
-        "totalCost": 835.9,
-        "isWarehouse": false
-      },
-      {
-        "city": "阿拉善盟",
-        "warehouse": "乌海市",
-        "longitude": 105.729135,
-        "latitude": 38.851554,
-        "trips": 10.0,
-        "duration": 2.03,
-        "cost": 841.2,
-        "totalCost": 8412.0,
-        "isWarehouse": false
-      },
-      {
         "city": "吴忠市",
-        "warehouse": "乌海市",
+        "warehouse": "吴忠市",
         "longitude": 106.198613,
         "latitude": 37.997755,
         "trips": 1.0,
-        "duration": 2.27,
-        "cost": 1112.4,
-        "totalCost": 1112.4,
-        "isWarehouse": false
+        "duration": 0.0,
+        "cost": 520.0,
+        "totalCost": 520.0,
+        "isWarehouse": true,
+        "plannedStores": 19.0
       },
       {
         "city": "青铜峡市",
-        "warehouse": "乌海市",
+        "warehouse": "吴忠市",
         "longitude": 106.07906,
         "latitude": 38.021579,
         "trips": 1.0,
-        "duration": 2.3,
-        "cost": 1115.3,
-        "totalCost": 1115.3,
-        "isWarehouse": false
+        "duration": 0.39,
+        "cost": 520.0,
+        "totalCost": 520.0,
+        "isWarehouse": false,
+        "plannedStores": 0.0
+      },
+      {
+        "city": "银川市",
+        "warehouse": "吴忠市",
+        "longitude": 106.230977,
+        "latitude": 38.487783,
+        "trips": 1.0,
+        "duration": 0.99,
+        "cost": 520.0,
+        "totalCost": 520.0,
+        "isWarehouse": false,
+        "plannedStores": 34.0
+      },
+      {
+        "city": "石嘴山市",
+        "warehouse": "吴忠市",
+        "longitude": 106.382792,
+        "latitude": 38.984632,
+        "trips": 1.0,
+        "duration": 1.51,
+        "cost": 652.7,
+        "totalCost": 652.7,
+        "isWarehouse": false,
+        "plannedStores": 9.0
       },
       {
         "city": "中卫市",
-        "warehouse": "乌海市",
+        "warehouse": "吴忠市",
         "longitude": 105.19677,
         "latitude": 37.500185,
         "trips": 1.0,
-        "duration": 3.53,
-        "cost": 1761.3,
-        "totalCost": 1761.3,
-        "isWarehouse": false
+        "duration": 1.53,
+        "cost": 680.1,
+        "totalCost": 680.1,
+        "isWarehouse": false,
+        "plannedStores": 9.0
       },
       {
-        "city": "定西市",
-        "warehouse": "定西市",
-        "longitude": 104.592342,
-        "latitude": 35.607947,
-        "trips": 1.0,
-        "duration": 0.0,
-        "cost": 520.0,
-        "totalCost": 520.0,
-        "isWarehouse": true
+        "city": "阿拉善盟",
+        "warehouse": "吴忠市",
+        "longitude": 105.729135,
+        "latitude": 38.851554,
+        "trips": 10.0,
+        "duration": 1.93,
+        "cost": 900.9,
+        "totalCost": 9009.0,
+        "isWarehouse": false,
+        "plannedStores": 10.0
       },
       {
-        "city": "兰州市",
-        "warehouse": "定西市",
-        "longitude": 103.834228,
-        "latitude": 36.060798,
-        "trips": 1.0,
-        "duration": 1.33,
-        "cost": 545.0,
-        "totalCost": 545.0,
-        "isWarehouse": false
-      },
-      {
-        "city": "白银市",
-        "warehouse": "定西市",
-        "longitude": 104.138872,
-        "latitude": 36.545123,
-        "trips": 1.0,
-        "duration": 1.99,
-        "cost": 891.6,
-        "totalCost": 891.6,
-        "isWarehouse": false
-      },
-      {
-        "city": "天水市",
-        "warehouse": "定西市",
-        "longitude": 105.724828,
-        "latitude": 34.581514,
-        "trips": 1.0,
-        "duration": 2.35,
-        "cost": 1122.8,
-        "totalCost": 1122.8,
-        "isWarehouse": false
+        "city": "乌海市",
+        "warehouse": "吴忠市",
+        "longitude": 106.79415,
+        "latitude": 39.655048,
+        "trips": 14.0,
+        "duration": 2.34,
+        "cost": 1119.5,
+        "totalCost": 15673.0,
+        "isWarehouse": false,
+        "plannedStores": 10.0
       },
       {
         "city": "固原市",
-        "warehouse": "定西市",
+        "warehouse": "吴忠市",
         "longitude": 106.24267,
         "latitude": 36.01628,
         "trips": 1.0,
-        "duration": 2.4,
-        "cost": 1027.4,
-        "totalCost": 1027.4,
-        "isWarehouse": false
+        "duration": 2.74,
+        "cost": 1348.8,
+        "totalCost": 1348.8,
+        "isWarehouse": false,
+        "plannedStores": 19.0
+      },
+      {
+        "city": "白银市",
+        "warehouse": "吴忠市",
+        "longitude": 104.138872,
+        "latitude": 36.545123,
+        "trips": 1.0,
+        "duration": 3.05,
+        "cost": 1546.4,
+        "totalCost": 1546.4,
+        "isWarehouse": false,
+        "plannedStores": 13.0
       },
       {
         "city": "平凉市",
-        "warehouse": "定西市",
+        "warehouse": "吴忠市",
         "longitude": 106.664913,
         "latitude": 35.542417,
         "trips": 1.0,
-        "duration": 2.58,
-        "cost": 1160.8,
-        "totalCost": 1160.8,
-        "isWarehouse": false
+        "duration": 3.72,
+        "cost": 1804.0,
+        "totalCost": 1804.0,
+        "isWarehouse": false,
+        "plannedStores": 16.0
       },
       {
-        "city": "临夏回族自治州",
-        "warehouse": "定西市",
-        "longitude": 103.210386,
-        "latitude": 35.601792,
-        "trips": 1.0,
-        "duration": 2.63,
-        "cost": 1038.2,
-        "totalCost": 1038.2,
-        "isWarehouse": false
+        "city": "巴彦淖尔市",
+        "warehouse": "吴忠市",
+        "longitude": 107.387767,
+        "latitude": 40.742987,
+        "trips": 22.0,
+        "duration": 3.81,
+        "cost": 1887.7,
+        "totalCost": 41529.4,
+        "isWarehouse": false,
+        "plannedStores": 15.0
       },
       {
-        "city": "甘南藏族自治州",
-        "warehouse": "定西市",
-        "longitude": 102.911736,
-        "latitude": 34.983266,
+        "city": "兰州市",
+        "warehouse": "吴忠市",
+        "longitude": 103.834228,
+        "latitude": 36.060798,
         "trips": 1.0,
-        "duration": 3.51,
-        "cost": 1514.5,
-        "totalCost": 1514.5,
-        "isWarehouse": false
-      },
-      {
-        "city": "武威市",
-        "warehouse": "定西市",
-        "longitude": 102.637821,
-        "latitude": 37.92898,
-        "trips": 1.0,
-        "duration": 4.02,
-        "cost": 1913.5,
-        "totalCost": 1913.5,
-        "isWarehouse": false
-      },
-      {
-        "city": "陇南市",
-        "warehouse": "定西市",
-        "longitude": 104.960296,
-        "latitude": 33.370174,
-        "trips": 1.0,
-        "duration": 4.27,
-        "cost": 1914.5,
-        "totalCost": 1914.5,
-        "isWarehouse": false
+        "duration": 3.93,
+        "cost": 1910.3,
+        "totalCost": 1910.3,
+        "isWarehouse": false,
+        "plannedStores": 50.0
       },
       {
         "city": "庆阳市",
-        "warehouse": "定西市",
+        "warehouse": "吴忠市",
         "longitude": 107.643433,
         "latitude": 35.709459,
         "trips": 1.0,
-        "duration": 4.31,
-        "cost": 1996.5,
-        "totalCost": 1996.5,
-        "isWarehouse": false
+        "duration": 4.4,
+        "cost": 1776.8,
+        "totalCost": 1776.8,
+        "isWarehouse": false,
+        "plannedStores": 17.0
       },
       {
-        "city": "金昌市",
-        "warehouse": "定西市",
-        "longitude": 102.187972,
-        "latitude": 38.521468,
+        "city": "定西市",
+        "warehouse": "吴忠市",
+        "longitude": 104.592342,
+        "latitude": 35.607947,
         "trips": 1.0,
-        "duration": 4.97,
-        "cost": 2397.1,
-        "totalCost": 2397.1,
-        "isWarehouse": false
+        "duration": 4.56,
+        "cost": 2278.2,
+        "totalCost": 2278.2,
+        "isWarehouse": false,
+        "plannedStores": 18.0
       },
       {
-        "city": "西宁市",
-        "warehouse": "西宁市",
-        "longitude": 101.777795,
-        "latitude": 36.616621,
+        "city": "天水市",
+        "warehouse": "吴忠市",
+        "longitude": 105.724828,
+        "latitude": 34.581514,
+        "trips": 1.0,
+        "duration": 5.49,
+        "cost": 2649.3,
+        "totalCost": 2649.3,
+        "isWarehouse": false,
+        "plannedStores": 23.0
+      },
+      {
+        "city": "陇南市",
+        "warehouse": "吴忠市",
+        "longitude": 104.960296,
+        "latitude": 33.370174,
+        "trips": 1.0,
+        "duration": 8.24,
+        "cost": 3866.9,
+        "totalCost": 3866.9,
+        "isWarehouse": false,
+        "plannedStores": 18.0
+      },
+      {
+        "city": "张掖市",
+        "warehouse": "张掖市",
+        "longitude": 100.449858,
+        "latitude": 38.924766,
         "trips": 1.0,
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 520.0,
-        "isWarehouse": true
-      },
-      {
-        "city": "海东市",
-        "warehouse": "西宁市",
-        "longitude": 102.41064,
-        "latitude": 36.473448,
-        "trips": 1.0,
-        "duration": 0.86,
-        "cost": 520.0,
-        "totalCost": 520.0,
-        "isWarehouse": false
-      },
-      {
-        "city": "海北藏族自治州",
-        "warehouse": "西宁市",
-        "longitude": 100.900944,
-        "latitude": 36.954612,
-        "trips": 1.0,
-        "duration": 1.53,
-        "cost": 525.6,
-        "totalCost": 525.6,
-        "isWarehouse": false
-      },
-      {
-        "city": "海南藏族自治州",
-        "warehouse": "西宁市",
-        "longitude": 100.622647,
-        "latitude": 36.296399,
-        "trips": 1.0,
-        "duration": 1.72,
-        "cost": 711.4,
-        "totalCost": 711.4,
-        "isWarehouse": false
-      },
-      {
-        "city": "黄南藏族自治州",
-        "warehouse": "西宁市",
-        "longitude": 102.015397,
-        "latitude": 35.519317,
-        "trips": 1.0,
-        "duration": 2.04,
-        "cost": 829.0,
-        "totalCost": 829.0,
-        "isWarehouse": false
-      },
-      {
-        "city": "张掖市",
-        "warehouse": "西宁市",
-        "longitude": 100.449858,
-        "latitude": 38.924766,
-        "trips": 1.0,
-        "duration": 4.24,
-        "cost": 1780.1,
-        "totalCost": 1780.1,
-        "isWarehouse": false
-      },
-      {
-        "city": "海西蒙古族藏族自治州",
-        "warehouse": "西宁市",
-        "longitude": 97.33197,
-        "latitude": 37.348114,
-        "trips": 1.0,
-        "duration": 5.42,
-        "cost": 2510.3,
-        "totalCost": 2510.3,
-        "isWarehouse": false
+        "isWarehouse": true,
+        "plannedStores": 13.0
       },
       {
         "city": "酒泉市",
-        "warehouse": "西宁市",
+        "warehouse": "张掖市",
         "longitude": 98.49432,
         "latitude": 39.733416,
         "trips": 1.0,
-        "duration": 6.26,
-        "cost": 2845.0,
-        "totalCost": 2845.0,
-        "isWarehouse": false
+        "duration": 2.32,
+        "cost": 1074.1,
+        "totalCost": 1074.1,
+        "isWarehouse": false,
+        "plannedStores": 16.0
       },
       {
         "city": "嘉峪关市",
-        "warehouse": "西宁市",
+        "warehouse": "张掖市",
         "longitude": 98.2882,
         "latitude": 39.77325,
         "trips": 1.0,
-        "duration": 6.4,
-        "cost": 2937.9,
-        "totalCost": 2937.9,
-        "isWarehouse": false
+        "duration": 2.47,
+        "cost": 1167.0,
+        "totalCost": 1167.0,
+        "isWarehouse": false,
+        "plannedStores": 6.0
+      },
+      {
+        "city": "金昌市",
+        "warehouse": "张掖市",
+        "longitude": 102.187972,
+        "latitude": 38.521468,
+        "trips": 1.0,
+        "duration": 2.66,
+        "cost": 1143.8,
+        "totalCost": 1143.8,
+        "isWarehouse": false,
+        "plannedStores": 7.0
+      },
+      {
+        "city": "武威市",
+        "warehouse": "张掖市",
+        "longitude": 102.637821,
+        "latitude": 37.92898,
+        "trips": 1.0,
+        "duration": 2.9,
+        "cost": 1269.6,
+        "totalCost": 1269.6,
+        "isWarehouse": false,
+        "plannedStores": 13.0
+      },
+      {
+        "city": "海南藏族自治州",
+        "warehouse": "海南藏族自治州",
+        "longitude": 100.622647,
+        "latitude": 36.296399,
+        "trips": 1.0,
+        "duration": 0.0,
+        "cost": 520.0,
+        "totalCost": 520.0,
+        "isWarehouse": true,
+        "plannedStores": 9.0
+      },
+      {
+        "city": "西宁市",
+        "warehouse": "海南藏族自治州",
+        "longitude": 101.777795,
+        "latitude": 36.616621,
+        "trips": 1.0,
+        "duration": 1.82,
+        "cost": 747.0,
+        "totalCost": 747.0,
+        "isWarehouse": false,
+        "plannedStores": 25.0
+      },
+      {
+        "city": "海北藏族自治州",
+        "warehouse": "海南藏族自治州",
+        "longitude": 100.900944,
+        "latitude": 36.954612,
+        "trips": 1.0,
+        "duration": 1.84,
+        "cost": 638.5,
+        "totalCost": 638.5,
+        "isWarehouse": false,
+        "plannedStores": 9.0
+      },
+      {
+        "city": "海东市",
+        "warehouse": "海南藏族自治州",
+        "longitude": 102.41064,
+        "latitude": 36.473448,
+        "trips": 1.0,
+        "duration": 2.43,
+        "cost": 1074.0,
+        "totalCost": 1074.0,
+        "isWarehouse": false,
+        "plannedStores": 19.0
+      },
+      {
+        "city": "黄南藏族自治州",
+        "warehouse": "海南藏族自治州",
+        "longitude": 102.015397,
+        "latitude": 35.519317,
+        "trips": 1.0,
+        "duration": 3.61,
+        "cost": 1560.1,
+        "totalCost": 1560.1,
+        "isWarehouse": false,
+        "plannedStores": 6.0
+      },
+      {
+        "city": "海西蒙古族藏族自治州",
+        "warehouse": "海南藏族自治州",
+        "longitude": 97.33197,
+        "latitude": 37.348114,
+        "trips": 1.0,
+        "duration": 3.77,
+        "cost": 1820.2,
+        "totalCost": 1820.2,
+        "isWarehouse": false,
+        "plannedStores": 14.0
+      },
+      {
+        "city": "临夏回族自治州",
+        "warehouse": "海南藏族自治州",
+        "longitude": 103.210386,
+        "latitude": 35.601792,
+        "trips": 1.0,
+        "duration": 5.06,
+        "cost": 2020.6,
+        "totalCost": 2020.6,
+        "isWarehouse": false,
+        "plannedStores": 17.0
       },
       {
         "city": "果洛藏族自治州",
-        "warehouse": "西宁市",
+        "warehouse": "海南藏族自治州",
         "longitude": 100.245161,
         "latitude": 34.472179,
         "trips": 1.0,
-        "duration": 6.76,
-        "cost": 2152.1,
-        "totalCost": 2152.1,
-        "isWarehouse": false
+        "duration": 5.26,
+        "cost": 2118.9,
+        "totalCost": 2118.9,
+        "isWarehouse": false,
+        "plannedStores": 4.0
+      },
+      {
+        "city": "甘南藏族自治州",
+        "warehouse": "海南藏族自治州",
+        "longitude": 102.911736,
+        "latitude": 34.983266,
+        "trips": 1.0,
+        "duration": 5.42,
+        "cost": 2444.1,
+        "totalCost": 2444.1,
+        "isWarehouse": false,
+        "plannedStores": 22.0
       },
       {
         "city": "玉树藏族自治州",
-        "warehouse": "西宁市",
+        "warehouse": "海南藏族自治州",
         "longitude": 97.006292,
         "latitude": 33.006308,
         "trips": 1.0,
-        "duration": 9.65,
-        "cost": 4095.6,
-        "totalCost": 4095.6,
-        "isWarehouse": false
+        "duration": 8.19,
+        "cost": 3405.5,
+        "totalCost": 3405.5,
+        "isWarehouse": false,
+        "plannedStores": 6.0
       }
     ]
   },
@@ -3470,7 +3754,8 @@ const warehouseData = {
         "totalCost": 293604.80000000005,
         "cityCount": 5,
         "totalTrips": 434.0,
-        "avgDuration": 1.666
+        "avgDuration": 1.666,
+        "totalPlannedStores": 308.0
       },
       "厦门市": {
         "longitude": 118.08891,
@@ -3479,7 +3764,8 @@ const warehouseData = {
         "totalCost": 240927.6,
         "cityCount": 4,
         "totalTrips": 444.0,
-        "avgDuration": 1.09
+        "avgDuration": 1.09,
+        "totalPlannedStores": 346.0
       }
     },
     "assignments": [
@@ -3492,7 +3778,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 67600.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 80.0
       },
       {
         "city": "漳州市",
@@ -3503,7 +3790,8 @@ const warehouseData = {
         "duration": 1.08,
         "cost": 520.0,
         "totalCost": 42640.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 70.0
       },
       {
         "city": "泉州市",
@@ -3514,7 +3802,8 @@ const warehouseData = {
         "duration": 1.37,
         "cost": 520.0,
         "totalCost": 101920.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 152.0
       },
       {
         "city": "龙岩市",
@@ -3525,7 +3814,8 @@ const warehouseData = {
         "duration": 1.91,
         "cost": 799.0999999999999,
         "totalCost": 28767.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 44.0
       },
       {
         "city": "福州市",
@@ -3536,7 +3826,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 111280.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 136.0
       },
       {
         "city": "宁德市",
@@ -3547,7 +3838,8 @@ const warehouseData = {
         "duration": 1.4,
         "cost": 525.2,
         "totalCost": 32037.2,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 43.0
       },
       {
         "city": "莆田市",
@@ -3558,7 +3850,8 @@ const warehouseData = {
         "duration": 1.44,
         "cost": 554.3,
         "totalCost": 34366.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 50.0
       },
       {
         "city": "南平市",
@@ -3569,7 +3862,8 @@ const warehouseData = {
         "duration": 2.64,
         "cost": 1201.7,
         "totalCost": 60085.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 41.0
       },
       {
         "city": "三明市",
@@ -3580,25 +3874,27 @@ const warehouseData = {
         "duration": 2.85,
         "cost": 1188.0,
         "totalCost": 55836.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 38.0
       }
     ]
   },
   "苏皖": {
     "totalCost": 1147779.7,
     "center": {
-      "longitude": 118.33382182758625,
-      "latitude": 32.30442855172414
+      "longitude": 118.3338218275862,
+      "latitude": 32.304428551724136
     },
     "warehouses": {
-      "常州市": {
-        "longitude": 119.974092,
-        "latitude": 31.811313,
+      "芜湖市": {
+        "longitude": 118.433065,
+        "latitude": 31.352614,
         "hasOvertime": false,
-        "totalCost": 356025.9,
-        "cityCount": 8,
-        "totalTrips": 612.0,
-        "avgDuration": 1.35
+        "totalCost": 412664.4,
+        "cityCount": 11,
+        "totalTrips": 575.0,
+        "avgDuration": 1.6090909090909091,
+        "totalPlannedStores": 514.0
       },
       "宿州市": {
         "longitude": 116.96419,
@@ -3607,16 +3903,18 @@ const warehouseData = {
         "totalCost": 379089.4,
         "cityCount": 10,
         "totalTrips": 465.0,
-        "avgDuration": 1.86
+        "avgDuration": 1.86,
+        "totalPlannedStores": 368.0
       },
-      "芜湖市": {
-        "longitude": 118.433065,
-        "latitude": 31.352614,
+      "常州市": {
+        "longitude": 119.974092,
+        "latitude": 31.811313,
         "hasOvertime": false,
-        "totalCost": 412664.4,
-        "cityCount": 11,
-        "totalTrips": 575.0,
-        "avgDuration": 1.6090909090909091
+        "totalCost": 356025.9,
+        "cityCount": 8,
+        "totalTrips": 612.0,
+        "avgDuration": 1.35,
+        "totalPlannedStores": 586.0
       }
     },
     "assignments": [
@@ -3629,7 +3927,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 16640.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 29.0
       },
       {
         "city": "淮北市",
@@ -3640,7 +3939,8 @@ const warehouseData = {
         "duration": 1.07,
         "cost": 520.0,
         "totalCost": 9360.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 18.0
       },
       {
         "city": "徐州市",
@@ -3651,7 +3951,8 @@ const warehouseData = {
         "duration": 1.21,
         "cost": 520.0,
         "totalCost": 55120.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 73.0
       },
       {
         "city": "蚌埠市",
@@ -3662,7 +3963,8 @@ const warehouseData = {
         "duration": 1.48,
         "cost": 563.1999999999999,
         "totalCost": 18585.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 28.0
       },
       {
         "city": "亳州市",
@@ -3673,7 +3975,8 @@ const warehouseData = {
         "duration": 1.86,
         "cost": 732.1,
         "totalCost": 25623.5,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 21.0
       },
       {
         "city": "淮南市",
@@ -3684,7 +3987,8 @@ const warehouseData = {
         "duration": 1.86,
         "cost": 851.3,
         "totalCost": 25539.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 24.0
       },
       {
         "city": "宿迁市",
@@ -3695,7 +3999,8 @@ const warehouseData = {
         "duration": 2.01,
         "cost": 925.3,
         "totalCost": 36086.7,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 39.0
       },
       {
         "city": "淮安市",
@@ -3706,7 +4011,8 @@ const warehouseData = {
         "duration": 2.67,
         "cost": 1214.3,
         "totalCost": 57072.1,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 41.0
       },
       {
         "city": "连云港市",
@@ -3717,7 +4023,8 @@ const warehouseData = {
         "duration": 3.06,
         "cost": 1529.0,
         "totalCost": 76450.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 43.0
       },
       {
         "city": "阜阳市",
@@ -3728,7 +4035,8 @@ const warehouseData = {
         "duration": 3.38,
         "cost": 781.5,
         "totalCost": 58612.5,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 52.0
       },
       {
         "city": "常州市",
@@ -3739,7 +4047,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 34320.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 58.0
       },
       {
         "city": "镇江市",
@@ -3750,7 +4059,8 @@ const warehouseData = {
         "duration": 1.02,
         "cost": 520.0,
         "totalCost": 34320.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 49.0
       },
       {
         "city": "无锡市",
@@ -3761,7 +4071,8 @@ const warehouseData = {
         "duration": 1.09,
         "cost": 520.0,
         "totalCost": 43680.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 93.0
       },
       {
         "city": "泰州市",
@@ -3772,7 +4083,8 @@ const warehouseData = {
         "duration": 1.22,
         "cost": 520.0,
         "totalCost": 23920.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 49.0
       },
       {
         "city": "扬州市",
@@ -3783,7 +4095,8 @@ const warehouseData = {
         "duration": 1.44,
         "cost": 570.9,
         "totalCost": 25119.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 45.0
       },
       {
         "city": "苏州市",
@@ -3794,7 +4107,8 @@ const warehouseData = {
         "duration": 1.58,
         "cost": 520.0,
         "totalCost": 98800.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 169.0
       },
       {
         "city": "南通市",
@@ -3805,7 +4119,8 @@ const warehouseData = {
         "duration": 2.16,
         "cost": 623.8000000000001,
         "totalCost": 39299.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 67.0
       },
       {
         "city": "盐城市",
@@ -3816,7 +4131,8 @@ const warehouseData = {
         "duration": 2.29,
         "cost": 1067.3,
         "totalCost": 56566.9,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 56.0
       },
       {
         "city": "芜湖市",
@@ -3827,7 +4143,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 30680.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 48.0
       },
       {
         "city": "马鞍山市",
@@ -3838,7 +4155,8 @@ const warehouseData = {
         "duration": 0.76,
         "cost": 520.0,
         "totalCost": 18200.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 33.0
       },
       {
         "city": "宣城市",
@@ -3849,7 +4167,8 @@ const warehouseData = {
         "duration": 1.18,
         "cost": 520.0,
         "totalCost": 17680.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 28.0
       },
       {
         "city": "铜陵市",
@@ -3860,7 +4179,8 @@ const warehouseData = {
         "duration": 1.36,
         "cost": 520.0,
         "totalCost": 1560.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 12.0
       },
       {
         "city": "南京市",
@@ -3871,7 +4191,8 @@ const warehouseData = {
         "duration": 1.47,
         "cost": 522.6,
         "totalCost": 65847.6,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 119.0
       },
       {
         "city": "滁州市",
@@ -3882,7 +4203,8 @@ const warehouseData = {
         "duration": 1.66,
         "cost": 718.9,
         "totalCost": 35226.1,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 49.0
       },
       {
         "city": "池州市",
@@ -3893,7 +4215,8 @@ const warehouseData = {
         "duration": 1.75,
         "cost": 731.8,
         "totalCost": 10977.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 14.0
       },
       {
         "city": "合肥市",
@@ -3904,7 +4227,8 @@ const warehouseData = {
         "duration": 1.82,
         "cost": 779.4,
         "totalCost": 113013.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 106.0
       },
       {
         "city": "安庆市",
@@ -3915,7 +4239,8 @@ const warehouseData = {
         "duration": 2.19,
         "cost": 997.8000000000001,
         "totalCost": 52883.4,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 42.0
       },
       {
         "city": "六安市",
@@ -3926,7 +4251,8 @@ const warehouseData = {
         "duration": 2.7,
         "cost": 1206.0,
         "totalCost": 42210.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 36.0
       },
       {
         "city": "黄山市",
@@ -3937,26 +4263,18 @@ const warehouseData = {
         "duration": 2.81,
         "cost": 1161.3,
         "totalCost": 24387.3,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 27.0
       }
     ]
   },
   "贵州": {
     "totalCost": 303196.5,
     "center": {
-      "longitude": 106.59230133333334,
+      "longitude": 106.59230133333332,
       "latitude": 26.68378488888889
     },
     "warehouses": {
-      "安顺市": {
-        "longitude": 105.9476,
-        "latitude": 26.253103,
-        "hasOvertime": false,
-        "totalCost": 152651.4,
-        "cityCount": 6,
-        "totalTrips": 207.0,
-        "avgDuration": 1.906666666666667
-      },
       "遵义市": {
         "longitude": 107.031922,
         "latitude": 27.721931,
@@ -3964,7 +4282,18 @@ const warehouseData = {
         "totalCost": 150545.1,
         "cityCount": 3,
         "totalTrips": 177.0,
-        "avgDuration": 2.016666666666667
+        "avgDuration": 2.016666666666667,
+        "totalPlannedStores": 155.0
+      },
+      "安顺市": {
+        "longitude": 105.9476,
+        "latitude": 26.253103,
+        "hasOvertime": false,
+        "totalCost": 152651.4,
+        "cityCount": 6,
+        "totalTrips": 207.0,
+        "avgDuration": 1.906666666666667,
+        "totalPlannedStores": 235.0
       }
     },
     "assignments": [
@@ -3977,7 +4306,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 9880.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 23.0
       },
       {
         "city": "贵阳市",
@@ -3988,7 +4318,8 @@ const warehouseData = {
         "duration": 1.32,
         "cost": 520.0,
         "totalCost": 46280.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 78.0
       },
       {
         "city": "六盘水市",
@@ -3999,7 +4330,8 @@ const warehouseData = {
         "duration": 2.0,
         "cost": 810.2,
         "totalCost": 35648.8,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 19.0
       },
       {
         "city": "黔南布依族苗族自治州",
@@ -4010,7 +4342,8 @@ const warehouseData = {
         "duration": 2.49,
         "cost": 1033.3,
         "totalCost": 3099.9,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 41.0
       },
       {
         "city": "毕节市",
@@ -4021,7 +4354,8 @@ const warehouseData = {
         "duration": 2.66,
         "cost": 1074.2,
         "totalCost": 20409.8,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 41.0
       },
       {
         "city": "黔西南布依族苗族自治州",
@@ -4032,7 +4366,8 @@ const warehouseData = {
         "duration": 2.97,
         "cost": 1131.3,
         "totalCost": 37332.9,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 33.0
       },
       {
         "city": "遵义市",
@@ -4043,7 +4378,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 49920.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 82.0
       },
       {
         "city": "黔东南苗族侗族自治州",
@@ -4054,7 +4390,8 @@ const warehouseData = {
         "duration": 2.56,
         "cost": 1173.1,
         "totalCost": 59828.1,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 45.0
       },
       {
         "city": "铜仁市",
@@ -4065,34 +4402,37 @@ const warehouseData = {
         "duration": 3.49,
         "cost": 1359.9,
         "totalCost": 40797.0,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 28.0
       }
     ]
   },
   "辽宁": {
-    "totalCost": 539786.5,
+    "totalCost": 541964.8,
     "center": {
       "longitude": 122.02017383333333,
       "latitude": 41.49891866666667
     },
     "warehouses": {
-      "辽阳市": {
-        "longitude": 123.239669,
-        "latitude": 41.267396,
-        "hasOvertime": false,
-        "totalCost": 450422.80000000005,
-        "cityCount": 15,
-        "totalTrips": 483.0,
-        "avgDuration": 2.071333333333333
-      },
       "赤峰市": {
         "longitude": 118.887613,
         "latitude": 42.256876,
         "hasOvertime": true,
-        "totalCost": 89363.7,
-        "cityCount": 3,
-        "totalTrips": 82.0,
-        "avgDuration": 2.0433333333333334
+        "totalCost": 140555.7,
+        "cityCount": 4,
+        "totalTrips": 109.0,
+        "avgDuration": 2.4975,
+        "totalPlannedStores": 105.0
+      },
+      "鞍山市": {
+        "longitude": 122.994183,
+        "latitude": 41.108239,
+        "hasOvertime": false,
+        "totalCost": 401409.10000000003,
+        "cityCount": 14,
+        "totalTrips": 456.0,
+        "avgDuration": 2.013571428571429,
+        "totalPlannedStores": 388.0
       }
     },
     "assignments": [
@@ -4105,7 +4445,8 @@ const warehouseData = {
         "duration": 0.0,
         "cost": 520.0,
         "totalCost": 19760.0,
-        "isWarehouse": true
+        "isWarehouse": true,
+        "plannedStores": 40.0
       },
       {
         "city": "朝阳市",
@@ -4116,7 +4457,20 @@ const warehouseData = {
         "duration": 2.06,
         "cost": 922.3000000000001,
         "totalCost": 17523.7,
-        "isWarehouse": false
+        "isWarehouse": false,
+        "plannedStores": 13.0
+      },
+      {
+        "city": "通辽市",
+        "warehouse": "赤峰市",
+        "longitude": 122.243309,
+        "latitude": 43.653566,
+        "trips": 27.0,
+        "duration": 3.86,
+        "cost": 1896.0,
+        "totalCost": 51192.0,
+        "isWarehouse": false,
+        "plannedStores": 27.0
       },
       {
         "city": "锡林郭勒盟",
@@ -4127,505 +4481,528 @@ const warehouseData = {
         "duration": 4.07,
         "cost": 2083.2,
         "totalCost": 52080.0,
-        "isWarehouse": false
-      },
-      {
-        "city": "辽阳市",
-        "warehouse": "辽阳市",
-        "longitude": 123.239669,
-        "latitude": 41.267396,
-        "trips": 20.0,
-        "duration": 0.0,
-        "cost": 520.0,
-        "totalCost": 10400.0,
-        "isWarehouse": true
+        "isWarehouse": false,
+        "plannedStores": 25.0
       },
       {
         "city": "鞍山市",
-        "warehouse": "辽阳市",
+        "warehouse": "鞍山市",
         "longitude": 122.994183,
         "latitude": 41.108239,
         "trips": 38.0,
-        "duration": 0.92,
+        "duration": 0.0,
         "cost": 520.0,
         "totalCost": 19760.0,
-        "isWarehouse": false
+        "isWarehouse": true,
+        "plannedStores": 35.0
       },
       {
-        "city": "沈抚示范区",
-        "warehouse": "辽阳市",
-        "longitude": 123.636671,
-        "latitude": 41.801651,
-        "trips": 1.0,
-        "duration": 1.16,
+        "city": "辽阳市",
+        "warehouse": "鞍山市",
+        "longitude": 123.239669,
+        "latitude": 41.267396,
+        "trips": 20.0,
+        "duration": 0.95,
         "cost": 520.0,
-        "totalCost": 520.0,
-        "isWarehouse": false
+        "totalCost": 10400.0,
+        "isWarehouse": false,
+        "plannedStores": 15.0
       },
       {
         "city": "沈阳市",
-        "warehouse": "辽阳市",
+        "warehouse": "鞍山市",
         "longitude": 123.464675,
         "latitude": 41.677576,
         "trips": 123.0,
-        "duration": 1.21,
-        "cost": 520.0,
-        "totalCost": 63960.0,
-        "isWarehouse": false
+        "duration": 1.32,
+        "cost": 534.5,
+        "totalCost": 65743.5,
+        "isWarehouse": false,
+        "plannedStores": 100.0
       },
       {
-        "city": "本溪市",
-        "warehouse": "辽阳市",
-        "longitude": 123.684984,
-        "latitude": 41.486834,
-        "trips": 17.0,
-        "duration": 1.29,
-        "cost": 520.0,
-        "totalCost": 8840.0,
-        "isWarehouse": false
-      },
-      {
-        "city": "铁岭市",
-        "warehouse": "辽阳市",
-        "longitude": 123.726008,
-        "latitude": 42.223709,
-        "trips": 14.0,
-        "duration": 1.68,
-        "cost": 756.8000000000001,
-        "totalCost": 10595.2,
-        "isWarehouse": false
+        "city": "沈抚示范区",
+        "warehouse": "鞍山市",
+        "longitude": 123.636671,
+        "latitude": 41.801651,
+        "trips": 1.0,
+        "duration": 1.45,
+        "cost": 628.0,
+        "totalCost": 628.0,
+        "isWarehouse": false,
+        "plannedStores": 0.0
       },
       {
         "city": "营口市",
-        "warehouse": "辽阳市",
+        "warehouse": "鞍山市",
         "longitude": 122.219148,
         "latitude": 40.625027,
         "trips": 29.0,
-        "duration": 1.74,
-        "cost": 700.5,
-        "totalCost": 20314.5,
-        "isWarehouse": false
+        "duration": 1.52,
+        "cost": 543.1999999999999,
+        "totalCost": 15752.8,
+        "isWarehouse": false,
+        "plannedStores": 23.0
+      },
+      {
+        "city": "本溪市",
+        "warehouse": "鞍山市",
+        "longitude": 123.684984,
+        "latitude": 41.486834,
+        "trips": 17.0,
+        "duration": 1.55,
+        "cost": 534.0,
+        "totalCost": 9078.0,
+        "isWarehouse": false,
+        "plannedStores": 12.0
       },
       {
         "city": "盘锦市",
-        "warehouse": "辽阳市",
+        "warehouse": "鞍山市",
         "longitude": 122.170729,
         "latitude": 40.71956,
         "trips": 12.0,
-        "duration": 1.89,
-        "cost": 737.1999999999999,
-        "totalCost": 8846.4,
-        "isWarehouse": false
+        "duration": 1.67,
+        "cost": 580.0,
+        "totalCost": 6960.0,
+        "isWarehouse": false,
+        "plannedStores": 14.0
       },
       {
         "city": "抚顺市",
-        "warehouse": "辽阳市",
+        "warehouse": "鞍山市",
         "longitude": 123.957053,
         "latitude": 41.881311,
         "trips": 22.0,
-        "duration": 2.04,
-        "cost": 549.1999999999999,
-        "totalCost": 12082.4,
-        "isWarehouse": false
+        "duration": 1.95,
+        "cost": 862.0,
+        "totalCost": 18964.0,
+        "isWarehouse": false,
+        "plannedStores": 22.0
       },
       {
-        "city": "丹东市",
-        "warehouse": "辽阳市",
-        "longitude": 124.354419,
-        "latitude": 40.000646,
-        "trips": 36.0,
-        "duration": 2.68,
-        "cost": 1165.1,
-        "totalCost": 41943.6,
-        "isWarehouse": false
+        "city": "铁岭市",
+        "warehouse": "鞍山市",
+        "longitude": 123.726008,
+        "latitude": 42.223709,
+        "trips": 14.0,
+        "duration": 1.96,
+        "cost": 897.3000000000001,
+        "totalCost": 12562.2,
+        "isWarehouse": false,
+        "plannedStores": 20.0
       },
       {
         "city": "锦州市",
-        "warehouse": "辽阳市",
+        "warehouse": "鞍山市",
         "longitude": 121.126859,
         "latitude": 41.096114,
         "trips": 30.0,
-        "duration": 2.83,
-        "cost": 1118.1,
-        "totalCost": 33543.0,
-        "isWarehouse": false
+        "duration": 2.81,
+        "cost": 1113.4,
+        "totalCost": 33402.0,
+        "isWarehouse": false,
+        "plannedStores": 22.0
       },
       {
         "city": "阜新市",
-        "warehouse": "辽阳市",
+        "warehouse": "鞍山市",
         "longitude": 121.670052,
         "latitude": 42.022028,
         "trips": 20.0,
-        "duration": 3.04,
-        "cost": 984.8,
-        "totalCost": 19696.0,
-        "isWarehouse": false
+        "duration": 3.13,
+        "cost": 1004.3,
+        "totalCost": 20086.0,
+        "isWarehouse": false,
+        "plannedStores": 13.0
       },
       {
         "city": "大连市",
-        "warehouse": "辽阳市",
+        "warehouse": "鞍山市",
         "longitude": 121.614786,
         "latitude": 38.913962,
         "trips": 68.0,
-        "duration": 3.41,
-        "cost": 1716.2,
-        "totalCost": 116701.6,
-        "isWarehouse": false
+        "duration": 3.18,
+        "cost": 1558.8999999999999,
+        "totalCost": 106005.2,
+        "isWarehouse": false,
+        "plannedStores": 70.0
+      },
+      {
+        "city": "丹东市",
+        "warehouse": "鞍山市",
+        "longitude": 124.354419,
+        "latitude": 40.000646,
+        "trips": 36.0,
+        "duration": 3.28,
+        "cost": 1302.6999999999998,
+        "totalCost": 46897.2,
+        "isWarehouse": false,
+        "plannedStores": 22.0
       },
       {
         "city": "葫芦岛市",
-        "warehouse": "辽阳市",
+        "warehouse": "鞍山市",
         "longitude": 120.836783,
         "latitude": 40.710974,
         "trips": 26.0,
-        "duration": 3.41,
-        "cost": 1357.4,
-        "totalCost": 35292.4,
-        "isWarehouse": false
-      },
-      {
-        "city": "通辽市",
-        "warehouse": "辽阳市",
-        "longitude": 122.243309,
-        "latitude": 43.653566,
-        "trips": 27.0,
-        "duration": 3.77,
-        "cost": 1775.1,
-        "totalCost": 47927.7,
-        "isWarehouse": false
+        "duration": 3.42,
+        "cost": 1352.6999999999998,
+        "totalCost": 35170.2,
+        "isWarehouse": false,
+        "plannedStores": 20.0
       }
     ]
   },
   "陕西": {
-    "totalCost": 324364.3,
+    "totalCost": 480698.0,
     "center": {
       "longitude": 108.85961981818183,
-      "latitude": 34.661943272727264
+      "latitude": 34.66194327272727
     },
     "warehouses": {
-      "咸阳市": {
-        "longitude": 108.708837,
-        "latitude": 34.329896,
-        "hasOvertime": false,
-        "totalCost": 260619.09999999998,
-        "cityCount": 9,
-        "totalTrips": 399.0,
-        "avgDuration": 1.7022222222222223
-      },
-      "榆林市": {
-        "longitude": 109.734104,
-        "latitude": 38.28576,
-        "hasOvertime": false,
-        "totalCost": 63745.2,
-        "cityCount": 2,
-        "totalTrips": 84.0,
-        "avgDuration": 1.545
+      "铜川市": {
+        "longitude": 108.945116,
+        "latitude": 34.897133,
+        "hasOvertime": true,
+        "totalCost": 480698.0,
+        "cityCount": 11,
+        "totalTrips": 483.0,
+        "avgDuration": 2.449090909090909,
+        "totalPlannedStores": 402.0
       }
     },
     "assignments": [
       {
-        "city": "咸阳市",
-        "warehouse": "咸阳市",
-        "longitude": 108.708837,
-        "latitude": 34.329896,
-        "trips": 76.0,
-        "duration": 0.0,
-        "cost": 520.0,
-        "totalCost": 39520.0,
-        "isWarehouse": true
-      },
-      {
-        "city": "西安市",
-        "warehouse": "咸阳市",
-        "longitude": 108.939645,
-        "latitude": 34.343207,
-        "trips": 167.0,
-        "duration": 0.72,
-        "cost": 520.0,
-        "totalCost": 86840.0,
-        "isWarehouse": false
-      },
-      {
-        "city": "杨凌区",
-        "warehouse": "咸阳市",
-        "longitude": 108.953939,
-        "latitude": 34.266611,
-        "trips": 1.0,
-        "duration": 1.02,
-        "cost": 520.0,
-        "totalCost": 520.0,
-        "isWarehouse": false
-      },
-      {
-        "city": "渭南市",
-        "warehouse": "咸阳市",
-        "longitude": 109.470962,
-        "latitude": 34.520632,
-        "trips": 37.0,
-        "duration": 1.27,
-        "cost": 520.0,
-        "totalCost": 19240.0,
-        "isWarehouse": false
-      },
-      {
         "city": "铜川市",
-        "warehouse": "咸阳市",
+        "warehouse": "铜川市",
         "longitude": 108.945116,
         "latitude": 34.897133,
         "trips": 16.0,
-        "duration": 1.41,
+        "duration": 0.0,
         "cost": 520.0,
         "totalCost": 8320.0,
-        "isWarehouse": false
+        "isWarehouse": true,
+        "plannedStores": 12.0
+      },
+      {
+        "city": "西安市",
+        "warehouse": "铜川市",
+        "longitude": 108.939645,
+        "latitude": 34.343207,
+        "trips": 167.0,
+        "duration": 1.04,
+        "cost": 520.0,
+        "totalCost": 86840.0,
+        "isWarehouse": false,
+        "plannedStores": 140.0
+      },
+      {
+        "city": "杨凌区",
+        "warehouse": "铜川市",
+        "longitude": 108.953939,
+        "latitude": 34.266611,
+        "trips": 1.0,
+        "duration": 1.32,
+        "cost": 520.0,
+        "totalCost": 520.0,
+        "isWarehouse": false,
+        "plannedStores": 0.0
+      },
+      {
+        "city": "渭南市",
+        "warehouse": "铜川市",
+        "longitude": 109.470962,
+        "latitude": 34.520632,
+        "trips": 37.0,
+        "duration": 1.34,
+        "cost": 523.9,
+        "totalCost": 19384.3,
+        "isWarehouse": false,
+        "plannedStores": 37.0
+      },
+      {
+        "city": "咸阳市",
+        "warehouse": "铜川市",
+        "longitude": 108.708837,
+        "latitude": 34.329896,
+        "trips": 76.0,
+        "duration": 1.36,
+        "cost": 520.0,
+        "totalCost": 39520.0,
+        "isWarehouse": false,
+        "plannedStores": 49.0
       },
       {
         "city": "宝鸡市",
-        "warehouse": "咸阳市",
+        "warehouse": "铜川市",
         "longitude": 107.237682,
         "latitude": 34.362862,
         "trips": 44.0,
-        "duration": 1.69,
-        "cost": 773.7,
-        "totalCost": 34042.8,
-        "isWarehouse": false
+        "duration": 2.47,
+        "cost": 1153.8999999999999,
+        "totalCost": 50771.6,
+        "isWarehouse": false,
+        "plannedStores": 36.0
       },
       {
         "city": "商洛市",
-        "warehouse": "咸阳市",
+        "warehouse": "铜川市",
         "longitude": 109.918646,
         "latitude": 33.873358,
         "trips": 13.0,
-        "duration": 2.15,
-        "cost": 800.5999999999999,
-        "totalCost": 10407.8,
-        "isWarehouse": false
-      },
-      {
-        "city": "安康市",
-        "warehouse": "咸阳市",
-        "longitude": 109.029017,
-        "latitude": 32.685435,
-        "trips": 20.0,
-        "duration": 3.32,
-        "cost": 1354.8,
-        "totalCost": 27096.0,
-        "isWarehouse": false
-      },
-      {
-        "city": "汉中市",
-        "warehouse": "咸阳市",
-        "longitude": 107.02319,
-        "latitude": 33.066373,
-        "trips": 25.0,
-        "duration": 3.74,
-        "cost": 1385.3,
-        "totalCost": 34632.5,
-        "isWarehouse": false
-      },
-      {
-        "city": "榆林市",
-        "warehouse": "榆林市",
-        "longitude": 109.734104,
-        "latitude": 38.28576,
-        "trips": 61.0,
-        "duration": 0.0,
-        "cost": 520.0,
-        "totalCost": 31720.0,
-        "isWarehouse": true
+        "duration": 2.56,
+        "cost": 995.0999999999999,
+        "totalCost": 12936.3,
+        "isWarehouse": false,
+        "plannedStores": 11.0
       },
       {
         "city": "延安市",
-        "warehouse": "榆林市",
+        "warehouse": "铜川市",
         "longitude": 109.49468,
         "latitude": 36.650109,
         "trips": 23.0,
-        "duration": 3.09,
-        "cost": 1392.4,
-        "totalCost": 32025.2,
-        "isWarehouse": false
+        "duration": 2.92,
+        "cost": 1283.8,
+        "totalCost": 29527.4,
+        "isWarehouse": false,
+        "plannedStores": 25.0
+      },
+      {
+        "city": "安康市",
+        "warehouse": "铜川市",
+        "longitude": 109.029017,
+        "latitude": 32.685435,
+        "trips": 20.0,
+        "duration": 3.94,
+        "cost": 1611.1,
+        "totalCost": 32222.0,
+        "isWarehouse": false,
+        "plannedStores": 23.0
+      },
+      {
+        "city": "汉中市",
+        "warehouse": "铜川市",
+        "longitude": 107.02319,
+        "latitude": 33.066373,
+        "trips": 25.0,
+        "duration": 4.68,
+        "cost": 1804.5,
+        "totalCost": 45112.5,
+        "isWarehouse": false,
+        "plannedStores": 25.0
+      },
+      {
+        "city": "榆林市",
+        "warehouse": "铜川市",
+        "longitude": 109.734104,
+        "latitude": 38.28576,
+        "trips": 61.0,
+        "duration": 5.31,
+        "cost": 2549.9,
+        "totalCost": 155543.9,
+        "isWarehouse": false,
+        "plannedStores": 44.0
       }
     ]
   },
   "黑龙江": {
-    "totalCost": 558210.7,
+    "totalCost": 665133.9,
     "center": {
-      "longitude": 127.58249485714285,
+      "longitude": 127.58249485714286,
       "latitude": 47.17122371428571
     },
     "warehouses": {
-      "呼伦贝尔市": {
-        "longitude": 119.77845,
-        "latitude": 49.166536,
-        "hasOvertime": true,
-        "totalCost": 61571.0,
-        "cityCount": 2,
-        "totalTrips": 66.0,
-        "avgDuration": 3.135
+      "佳木斯市": {
+        "longitude": 130.318916,
+        "latitude": 46.800002,
+        "hasOvertime": false,
+        "totalCost": 147235.0,
+        "cityCount": 7,
+        "totalTrips": 137.0,
+        "avgDuration": 1.8485714285714288,
+        "totalPlannedStores": 107.0
       },
-      "哈尔滨市": {
-        "longitude": 126.53505,
-        "latitude": 45.802981,
+      "齐齐哈尔市": {
+        "longitude": 123.918193,
+        "latitude": 47.354892,
         "hasOvertime": true,
-        "totalCost": 496639.7,
-        "cityCount": 12,
-        "totalTrips": 394.0,
-        "avgDuration": 3.674166666666667
+        "totalCost": 517898.9,
+        "cityCount": 7,
+        "totalTrips": 323.0,
+        "avgDuration": 3.3114285714285714,
+        "totalPlannedStores": 239.0
       }
     },
     "assignments": [
       {
-        "city": "呼伦贝尔市",
-        "warehouse": "呼伦贝尔市",
-        "longitude": 119.77845,
-        "latitude": 49.166536,
-        "trips": 52.0,
-        "duration": 0.0,
-        "cost": 520.0,
-        "totalCost": 27040.0,
-        "isWarehouse": true
-      },
-      {
-        "city": "大兴安岭地区",
-        "warehouse": "呼伦贝尔市",
-        "longitude": 124.11786,
-        "latitude": 50.41129,
-        "trips": 14.0,
-        "duration": 6.27,
-        "cost": 2466.5,
-        "totalCost": 34531.0,
-        "isWarehouse": false
-      },
-      {
-        "city": "哈尔滨市",
-        "warehouse": "哈尔滨市",
-        "longitude": 126.53505,
-        "latitude": 45.802981,
-        "trips": 133.0,
-        "duration": 0.0,
-        "cost": 520.0,
-        "totalCost": 69160.0,
-        "isWarehouse": true
-      },
-      {
-        "city": "绥化市",
-        "warehouse": "哈尔滨市",
-        "longitude": 126.968714,
-        "latitude": 46.654147,
-        "trips": 30.0,
-        "duration": 1.67,
-        "cost": 597.5,
-        "totalCost": 17925.0,
-        "isWarehouse": false
-      },
-      {
-        "city": "大庆市",
-        "warehouse": "哈尔滨市",
-        "longitude": 125.104078,
-        "latitude": 46.589498,
-        "trips": 42.0,
-        "duration": 1.84,
-        "cost": 798.8,
-        "totalCost": 33549.6,
-        "isWarehouse": false
-      },
-      {
-        "city": "齐齐哈尔市",
-        "warehouse": "哈尔滨市",
-        "longitude": 123.918193,
-        "latitude": 47.354892,
-        "trips": 34.0,
-        "duration": 3.22,
-        "cost": 1585.3999999999999,
-        "totalCost": 53903.6,
-        "isWarehouse": false
-      },
-      {
-        "city": "伊春市",
-        "warehouse": "哈尔滨市",
-        "longitude": 128.840863,
-        "latitude": 47.728332,
-        "trips": 27.0,
-        "duration": 3.62,
-        "cost": 1683.0,
-        "totalCost": 45441.0,
-        "isWarehouse": false
-      },
-      {
-        "city": "牡丹江市",
-        "warehouse": "哈尔滨市",
-        "longitude": 129.632928,
-        "latitude": 44.551486,
-        "trips": 40.0,
-        "duration": 3.73,
-        "cost": 1741.3,
-        "totalCost": 69652.0,
-        "isWarehouse": false
-      },
-      {
         "city": "佳木斯市",
-        "warehouse": "哈尔滨市",
+        "warehouse": "佳木斯市",
         "longitude": 130.318916,
         "latitude": 46.800002,
         "trips": 22.0,
-        "duration": 4.16,
-        "cost": 1939.7,
-        "totalCost": 42673.4,
-        "isWarehouse": false
-      },
-      {
-        "city": "七台河市",
-        "warehouse": "哈尔滨市",
-        "longitude": 131.003015,
-        "latitude": 45.771178,
-        "trips": 14.0,
-        "duration": 4.69,
-        "cost": 2177.0,
-        "totalCost": 30478.0,
-        "isWarehouse": false
-      },
-      {
-        "city": "双鸭山市",
-        "warehouse": "哈尔滨市",
-        "longitude": 131.141563,
-        "latitude": 46.676157,
-        "trips": 11.0,
-        "duration": 4.92,
-        "cost": 2310.7999999999997,
-        "totalCost": 25418.8,
-        "isWarehouse": false
+        "duration": 0.0,
+        "cost": 520.0,
+        "totalCost": 11440.0,
+        "isWarehouse": true,
+        "plannedStores": 19.0
       },
       {
         "city": "鹤岗市",
-        "warehouse": "哈尔滨市",
+        "warehouse": "佳木斯市",
         "longitude": 130.297687,
         "latitude": 47.350659,
         "trips": 7.0,
-        "duration": 4.93,
-        "cost": 2244.9,
-        "totalCost": 15714.3,
-        "isWarehouse": false
+        "duration": 1.04,
+        "cost": 520.0,
+        "totalCost": 3640.0,
+        "isWarehouse": false,
+        "plannedStores": 7.0
+      },
+      {
+        "city": "双鸭山市",
+        "warehouse": "佳木斯市",
+        "longitude": 131.141563,
+        "latitude": 46.676157,
+        "trips": 11.0,
+        "duration": 1.09,
+        "cost": 520.0,
+        "totalCost": 5720.0,
+        "isWarehouse": false,
+        "plannedStores": 11.0
+      },
+      {
+        "city": "七台河市",
+        "warehouse": "佳木斯市",
+        "longitude": 131.003015,
+        "latitude": 45.771178,
+        "trips": 14.0,
+        "duration": 1.82,
+        "cost": 725.1999999999999,
+        "totalCost": 10152.8,
+        "isWarehouse": false,
+        "plannedStores": 8.0
       },
       {
         "city": "鸡西市",
-        "warehouse": "哈尔滨市",
+        "warehouse": "佳木斯市",
         "longitude": 130.969385,
         "latitude": 45.295087,
         "trips": 16.0,
-        "duration": 5.21,
-        "cost": 2442.3,
-        "totalCost": 39076.8,
-        "isWarehouse": false
+        "duration": 2.3,
+        "cost": 1045.3,
+        "totalCost": 16724.8,
+        "isWarehouse": false,
+        "plannedStores": 16.0
+      },
+      {
+        "city": "伊春市",
+        "warehouse": "佳木斯市",
+        "longitude": 128.840863,
+        "latitude": 47.728332,
+        "trips": 27.0,
+        "duration": 2.98,
+        "cost": 1064.2,
+        "totalCost": 28733.4,
+        "isWarehouse": false,
+        "plannedStores": 16.0
+      },
+      {
+        "city": "牡丹江市",
+        "warehouse": "佳木斯市",
+        "longitude": 129.632928,
+        "latitude": 44.551486,
+        "trips": 40.0,
+        "duration": 3.71,
+        "cost": 1770.6,
+        "totalCost": 70824.0,
+        "isWarehouse": false,
+        "plannedStores": 30.0
+      },
+      {
+        "city": "齐齐哈尔市",
+        "warehouse": "齐齐哈尔市",
+        "longitude": 123.918193,
+        "latitude": 47.354892,
+        "trips": 34.0,
+        "duration": 0.0,
+        "cost": 520.0,
+        "totalCost": 17680.0,
+        "isWarehouse": true,
+        "plannedStores": 35.0
+      },
+      {
+        "city": "大庆市",
+        "warehouse": "齐齐哈尔市",
+        "longitude": 125.104078,
+        "latitude": 46.589498,
+        "trips": 42.0,
+        "duration": 1.8,
+        "cost": 829.0999999999999,
+        "totalCost": 34822.2,
+        "isWarehouse": false,
+        "plannedStores": 32.0
+      },
+      {
+        "city": "哈尔滨市",
+        "warehouse": "齐齐哈尔市",
+        "longitude": 126.53505,
+        "latitude": 45.802981,
+        "trips": 133.0,
+        "duration": 3.24,
+        "cost": 1587.9,
+        "totalCost": 211190.7,
+        "isWarehouse": false,
+        "plannedStores": 89.0
+      },
+      {
+        "city": "绥化市",
+        "warehouse": "齐齐哈尔市",
+        "longitude": 126.968714,
+        "latitude": 46.654147,
+        "trips": 30.0,
+        "duration": 3.31,
+        "cost": 1708.9,
+        "totalCost": 51267.0,
+        "isWarehouse": false,
+        "plannedStores": 26.0
+      },
+      {
+        "city": "大兴安岭地区",
+        "warehouse": "齐齐哈尔市",
+        "longitude": 124.11786,
+        "latitude": 50.41129,
+        "trips": 14.0,
+        "duration": 4.68,
+        "cost": 2254.6,
+        "totalCost": 31564.4,
+        "isWarehouse": false,
+        "plannedStores": 7.0
       },
       {
         "city": "黑河市",
-        "warehouse": "哈尔滨市",
+        "warehouse": "齐齐哈尔市",
         "longitude": 127.528226,
         "latitude": 50.244887,
         "trips": 18.0,
-        "duration": 6.1,
-        "cost": 2980.3999999999996,
-        "totalCost": 53647.2,
-        "isWarehouse": false
+        "duration": 5.05,
+        "cost": 2563.5,
+        "totalCost": 46143.0,
+        "isWarehouse": false,
+        "plannedStores": 13.0
+      },
+      {
+        "city": "呼伦贝尔市",
+        "warehouse": "齐齐哈尔市",
+        "longitude": 119.77845,
+        "latitude": 49.166536,
+        "trips": 52.0,
+        "duration": 5.1,
+        "cost": 2408.3,
+        "totalCost": 125231.6,
+        "isWarehouse": false,
+        "plannedStores": 37.0
       }
     ]
   }
